@@ -174,7 +174,6 @@ void clearArea(int start, int stop){
     }
 }
 
-
 char kontrola_vstavljen_LCD(void){
     //return 1;   
     P2DIR |= 0x03;  P1DIR |= 0xCF; 
@@ -202,7 +201,7 @@ enum errorCodes{
 };
 
 void potek_kontrole(void){
-    
+    int napacenPin;
     int errorCode;
     
     
@@ -228,7 +227,7 @@ void potek_kontrole(void){
     
     
         
- switch (){
+ switch (kontrola){
             
    case ZACETEK:
         LCD_vstavljen = 0;
@@ -278,7 +277,7 @@ void potek_kontrole(void){
         }     
 
         break; 
-    
+        
     case KONTROLA_KABELNA: 
         LCD_vstavljen = 1;
         test_koncan = 0;
