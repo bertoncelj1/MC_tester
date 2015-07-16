@@ -249,7 +249,7 @@ void BeriKey_2(void)
     //P4OUT=0;  // vse data linije na 0
     P2OUT &= ~0x03;  P1OUT &= ~0xCF;
     t=0;
-    if (TipkaVhod_2()==0)//ker je pin P3.0 TIPKA na 0 je pritisnjena ena od tipk 
+    if (TipkaVhod_2()==0)//kadar je pin P3.0 TIPKA na 0, je pritisnjena ena od tipk 
     {
         i=0x20;  //zaène pri Data 5 in gre do Data 1
         //prebere vhod

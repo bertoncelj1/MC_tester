@@ -166,10 +166,14 @@ void zgoraj_crno(){
 void clear(){
     for(int i = 0; i < 1024; ++i){ 
         LCD[i]=0x00;
-        
     }
-    
 }
+void clearArea(int start, int stop){
+    for(int i = start; i < stop; ++i){ 
+        LCD[i] =0x00;
+    }
+}
+
 
 char kontrola_vstavljen_LCD(void){
     //return 1;   
@@ -198,14 +202,11 @@ enum errorCodes{
 };
 
 void potek_kontrole(void){
-    int t;
-    int napacenPin;
+    
     int errorCode;
     
-    t=KGet();
     
-    
-    if(t==TkLev){
+    if(KGet(TkLev | TkDes)){
        kontrola = SERVICE_MODE;
        zakasnitev_ser_mode = 0; 
        zakasnitev_testa = 0;
@@ -222,11 +223,12 @@ void potek_kontrole(void){
         
         LCD_sendC();
         apps_disable(LCD_TEST_APP);
-       
     }
     
+    
+    
         
- switch (kontrola){
+ switch (){
             
    case ZACETEK:
         LCD_vstavljen = 0;
@@ -276,7 +278,7 @@ void potek_kontrole(void){
         }     
 
         break; 
-        
+    
     case KONTROLA_KABELNA: 
         LCD_vstavljen = 1;
         test_koncan = 0;
@@ -433,7 +435,7 @@ void potek_kontrole(void){
            zakasnitev_ser_mode=0;
            zakasnitev_testa =1;
        }
-       if((t==1)&& zakasnitev_testa){ 
+       if((KGet(TkEnt))&& zakasnitev_testa){ 
             display_state = 0;
             kontrola =  ZACETEK;
        }

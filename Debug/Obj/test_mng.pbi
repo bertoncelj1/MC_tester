@@ -323,7 +323,17 @@
 <L><invalid loc>:327:9: macro definition=_DLIB_CONFIG_FILE_HEADER_NAME <US>c:macro@_DLIB_CONFIG_FILE_HEADER_NAME<UE> <DS>_DLIB_CONFIG_FILE_HEADER_NAME<DE> Extent=<ES>327:9 - 327:132<EE>
 <L><invalid loc>:328:9: macro definition=_DLIB_CONFIG_FILE_STRING <US>c:macro@_DLIB_CONFIG_FILE_STRING<UE> <DS>_DLIB_CONFIG_FILE_STRING<DE> Extent=<ES>328:9 - 328:134<EE>
 <L><invalid loc>:329:9: macro definition=__VERSION__ <US>c:macro@__VERSION__<UE> <DS>__VERSION__<DE> Extent=<ES>329:9 - 329:90<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:1:1: inclusion directive=msp430.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h<IE>  [multi-include guarded] Extent=<ES>1:1 - 1:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:1:1: inclusion directive=test_mng.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h<IE>  Extent=<ES>1:1 - 1:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:2:9: macro definition=test_mng_h <US>c:macro@test_mng_h<UE> <DS>test_mng_h<DE> Extent=<ES>2:9 - 2:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9: macro definition=ST_TEST_PROG <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>6:9 - 6:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:7:9: macro definition=MAX_TEST_PROG <US>c:macro@MAX_TEST_PROG<UE> <DS>MAX_TEST_PROG<DE> Extent=<ES>7:9 - 7:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:13:9: macro definition=ST_OPERACIJ <US>c:macro@ST_OPERACIJ<UE> <DS>ST_OPERACIJ<DE> Extent=<ES>13:9 - 13:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:30:9: macro definition=MAX_OPERACIJ <US>c:macro@MAX_OPERACIJ<UE> <DS>MAX_OPERACIJ<DE> Extent=<ES>30:9 - 30:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: macro expansion=MAX_OPERACIJ|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:30:9 <US>c:macro@MAX_OPERACIJ<UE> <DS>MAX_OPERACIJ<DE> Extent=<ES>35:36 - 35:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:2:1: inclusion directive=graphics.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\graphics.h<IE>  Extent=<ES>2:1 - 2:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:3:1: inclusion directive=head.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\head.h<IE>  [multi-include guarded] Extent=<ES>3:1 - 3:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\head.h:2:9: macro definition=__HEAD_H__ <US>c:macro@__HEAD_H__<UE> <DS>__HEAD_H__<DE> Extent=<ES>2:9 - 2:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\head.h:5:1: inclusion directive=msp430.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h<IE>  [multi-include guarded] Extent=<ES>5:1 - 5:11<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h:9:9: macro definition=__msp430 <US>c:macro@__msp430<UE> <DS>__msp430<DE> Extent=<ES>9:9 - 9:17<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h:268:1: inclusion directive=msp430f2410.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h<IE>  [multi-include guarded] Extent=<ES>268:1 - 268:25<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:19:9: macro definition=__msp430x24x <US>c:macro@__msp430x24x<UE> <DS>__msp430x24x<DE> Extent=<ES>19:9 - 19:21<EE>
@@ -1714,10 +1724,6 @@
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:1427:9: macro definition=TIMERB0_VECTOR <US>c:macro@TIMERB0_VECTOR<UE> <DS>TIMERB0_VECTOR<DE> Extent=<ES>1427:9 - 1427:38<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:1428:9: macro definition=NMI_VECTOR <US>c:macro@NMI_VECTOR<UE> <DS>NMI_VECTOR<DE> Extent=<ES>1428:9 - 1428:38<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:1429:9: macro definition=RESET_VECTOR <US>c:macro@RESET_VECTOR<UE> <DS>RESET_VECTOR<DE> Extent=<ES>1429:9 - 1429:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:2:1: inclusion directive=graphics.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\graphics.h<IE>  Extent=<ES>2:1 - 2:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:3:1: inclusion directive=head.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\head.h<IE>  [multi-include guarded] Extent=<ES>3:1 - 3:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\head.h:2:9: macro definition=__HEAD_H__ <US>c:macro@__HEAD_H__<UE> <DS>__HEAD_H__<DE> Extent=<ES>2:9 - 2:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\head.h:5:1: inclusion directive=msp430.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h<IE>  [multi-include guarded] Extent=<ES>5:1 - 5:11<EE>
 <L>D:\Documents\IAR_LCD_test\MC_tester\head.h:6:1: inclusion directive=stdio.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h<IE>  Extent=<ES>6:1 - 6:12<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:4:9: macro definition=_STDIO <US>c:macro@_STDIO<UE> <DS>_STDIO<DE> Extent=<ES>4:9 - 4:15<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:10:1: inclusion directive=ycheck.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\ycheck.h<IE>  Extent=<ES>10:1 - 10:11<EE>
@@ -2210,178 +2216,49 @@
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:228:9: macro definition=off_GREENled <US>c:macro@off_GREENled<UE> <DS>off_GREENled<DE> Extent=<ES>228:9 - 228:58<EE>
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:237:9: macro definition=DFpages <US>c:macro@DFpages<UE> <DS>DFpages<DE> Extent=<ES>237:9 - 237:22<EE>
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:239:9: macro definition=DFblokS <US>c:macro@DFblokS<UE> <DS>DFblokS<DE> Extent=<ES>239:9 - 239:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:3:1: inclusion directive=ini.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\ini.h<IE>  Extent=<ES>3:1 - 3:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:4:1: inclusion directive=head.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\head.h<IE>  [multi-include guarded] Extent=<ES>4:1 - 4:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:5:1: inclusion directive=scheduler.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h<IE>  [multi-include guarded] Extent=<ES>5:1 - 5:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:4:9: macro definition=__SCHEDULER_H__ <US>c:macro@__SCHEDULER_H__<UE> <DS>__SCHEDULER_H__<DE> Extent=<ES>4:9 - 4:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:7:1: inclusion directive=msp430.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430.h<IE>  [multi-include guarded] Extent=<ES>7:1 - 7:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:86:9: macro definition=USE_SEMAPHORE <US>c:macro@USE_SEMAPHORE<UE> <DS>USE_SEMAPHORE<DE> Extent=<ES>86:9 - 86:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:88:9: macro definition=TASK_LOG <US>c:macro@TASK_LOG<UE> <DS>TASK_LOG<DE> Extent=<ES>88:9 - 88:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:93:9: macro definition=MAX_NR_APPS <US>c:macro@MAX_NR_APPS<UE> <DS>MAX_NR_APPS<DE> Extent=<ES>93:9 - 93:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:97:9: macro definition=LCD_TEST_ID <US>c:macro@LCD_TEST_ID<UE> <DS>LCD_TEST_ID<DE> Extent=<ES>97:9 - 97:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:98:9: macro definition=REFRESH_DIS_ID <US>c:macro@REFRESH_DIS_ID<UE> <DS>REFRESH_DIS_ID<DE> Extent=<ES>98:9 - 98:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:99:9: macro definition=MENU_ID <US>c:macro@MENU_ID<UE> <DS>MENU_ID<DE> Extent=<ES>99:9 - 99:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:100:9: macro definition=REC_ID <US>c:macro@REC_ID<UE> <DS>REC_ID<DE> Extent=<ES>100:9 - 100:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:101:9: macro definition=SET_GAIN_ID <US>c:macro@SET_GAIN_ID<UE> <DS>SET_GAIN_ID<DE> Extent=<ES>101:9 - 101:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:102:9: macro definition=WRITE_TO_FLASH_ID <US>c:macro@WRITE_TO_FLASH_ID<UE> <DS>WRITE_TO_FLASH_ID<DE> Extent=<ES>102:9 - 102:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:103:9: macro definition=AUX_TX_ID <US>c:macro@AUX_TX_ID<UE> <DS>AUX_TX_ID<DE> Extent=<ES>103:9 - 103:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:104:9: macro definition=READ_KEY_ID <US>c:macro@READ_KEY_ID<UE> <DS>READ_KEY_ID<DE> Extent=<ES>104:9 - 104:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:105:9: macro definition=tipkeDVE_ID <US>c:macro@tipkeDVE_ID<UE> <DS>tipkeDVE_ID<DE> Extent=<ES>105:9 - 105:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:106:9: macro definition=lediceToggle_ID <US>c:macro@lediceToggle_ID<UE> <DS>lediceToggle_ID<DE> Extent=<ES>106:9 - 106:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:108:9: macro definition=a6_ID <US>c:macro@a6_ID<UE> <DS>a6_ID<DE> Extent=<ES>108:9 - 108:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:109:9: macro definition=a7_ID <US>c:macro@a7_ID<UE> <DS>a7_ID<DE> Extent=<ES>109:9 - 109:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:110:9: macro definition=a8_ID <US>c:macro@a8_ID<UE> <DS>a8_ID<DE> Extent=<ES>110:9 - 110:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:111:9: macro definition=a9_ID <US>c:macro@a9_ID<UE> <DS>a9_ID<DE> Extent=<ES>111:9 - 111:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:112:9: macro definition=a10_ID <US>c:macro@a10_ID<UE> <DS>a10_ID<DE> Extent=<ES>112:9 - 112:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:114:9: macro definition=a11_ID <US>c:macro@a11_ID<UE> <DS>a11_ID<DE> Extent=<ES>114:9 - 114:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:117:9: macro definition=NO_APP <US>c:macro@NO_APP<UE> <DS>NO_APP<DE> Extent=<ES>117:9 - 117:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:118:9: macro definition=LCD_TEST_APP <US>c:macro@LCD_TEST_APP<UE> <DS>LCD_TEST_APP<DE> Extent=<ES>118:9 - 118:64<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:119:9: macro definition=REFRESH_DIS_APP <US>c:macro@REFRESH_DIS_APP<UE> <DS>REFRESH_DIS_APP<DE> Extent=<ES>119:9 - 119:74<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:120:9: macro definition=MENU_APP <US>c:macro@MENU_APP<UE> <DS>MENU_APP<DE> Extent=<ES>120:9 - 120:60<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:121:9: macro definition=REC_APP <US>c:macro@REC_APP<UE> <DS>REC_APP<DE> Extent=<ES>121:9 - 121:66<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:122:9: macro definition=SET_GAIN_APP <US>c:macro@SET_GAIN_APP<UE> <DS>SET_GAIN_APP<DE> Extent=<ES>122:9 - 122:61<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:123:9: macro definition=WRITE_TO_FLASH_APP <US>c:macro@WRITE_TO_FLASH_APP<UE> <DS>WRITE_TO_FLASH_APP<DE> Extent=<ES>123:9 - 123:77<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:124:9: macro definition=AUX_TX_APP <US>c:macro@AUX_TX_APP<UE> <DS>AUX_TX_APP<DE> Extent=<ES>124:9 - 124:57<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:125:9: macro definition=READ_KEY_APP <US>c:macro@READ_KEY_APP<UE> <DS>READ_KEY_APP<DE> Extent=<ES>125:9 - 125:68<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:126:9: macro definition=tipkeDVE_APP <US>c:macro@tipkeDVE_APP<UE> <DS>tipkeDVE_APP<DE> Extent=<ES>126:9 - 126:71<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:127:9: macro definition=lediceToggle_APP <US>c:macro@lediceToggle_APP<UE> <DS>lediceToggle_APP<DE> Extent=<ES>127:9 - 127:75<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:128:9: macro definition=a6_APP <US>c:macro@a6_APP<UE> <DS>a6_APP<DE> Extent=<ES>128:9 - 128:57<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:130:9: macro definition=a7_APP <US>c:macro@a7_APP<UE> <DS>a7_APP<DE> Extent=<ES>130:9 - 130:52<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:131:9: macro definition=a8_APP <US>c:macro@a8_APP<UE> <DS>a8_APP<DE> Extent=<ES>131:9 - 131:50<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:132:9: macro definition=a9_APP <US>c:macro@a9_APP<UE> <DS>a9_APP<DE> Extent=<ES>132:9 - 132:50<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:133:9: macro definition=a10_APP <US>c:macro@a10_APP<UE> <DS>a10_APP<DE> Extent=<ES>133:9 - 133:52<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:134:9: macro definition=a11_APP <US>c:macro@a11_APP<UE> <DS>a11_APP<DE> Extent=<ES>134:9 - 134:52<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:151:1: macro expansion=__monitor|<invalid loc>:29:9 <US>c:macro@__monitor<UE> <DS>__monitor<DE> Extent=<ES>151:1 - 151:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:1: macro expansion=__monitor|<invalid loc>:29:9 <US>c:macro@__monitor<UE> <DS>__monitor<DE> Extent=<ES>152:1 - 152:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:159:9: macro definition=scheduler_init <US>c:macro@scheduler_init<UE> <DS>scheduler_init<DE> Extent=<ES>159:9 - 159:64<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:172:9: macro definition=apps_call <US>c:macro@apps_call<UE> <DS>apps_call<DE> Extent=<ES>172:9 - 172:44<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:186:9: macro definition=apps_enable <US>c:macro@apps_enable<UE> <DS>apps_enable<DE> Extent=<ES>186:9 - 186:52<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:200:9: macro definition=apps_disable <US>c:macro@apps_disable<UE> <DS>apps_disable<DE> Extent=<ES>200:9 - 200:54<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9: macro definition=apps_suspend <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>213:9 - 213:95<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:228:9: macro definition=_subapp_suspend <US>c:macro@_subapp_suspend<UE> <DS>_subapp_suspend<DE> Extent=<ES>228:9 - 228:66<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:231:9: macro definition=_subapp_call <US>c:macro@_subapp_call<UE> <DS>_subapp_call<DE> Extent=<ES>231:9 - 231:66<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:234:9: macro definition=_local_app_suspend <US>c:macro@_local_app_suspend<UE> <DS>_local_app_suspend<DE> Extent=<ES>234:9 - 234:94<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:241:5: macro expansion=USE_SEMAPHORE|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:86:9 <US>c:macro@USE_SEMAPHORE<UE> <DS>USE_SEMAPHORE<DE> Extent=<ES>241:5 - 241:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:306:5: macro expansion=TASK_LOG|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:88:9 <US>c:macro@TASK_LOG<UE> <DS>TASK_LOG<DE> Extent=<ES>306:5 - 306:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:6:1: inclusion directive=timerb.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\timerb.h<IE>  [multi-include guarded] Extent=<ES>6:1 - 6:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:4:9: macro definition=__TIMERB_H__ <US>c:macro@__TIMERB_H__<UE> <DS>__TIMERB_H__<DE> Extent=<ES>4:9 - 4:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:6:1: inclusion directive=scheduler.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h<IE>  [multi-include guarded] Extent=<ES>6:1 - 6:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:11:9: macro definition=MaxTim <US>c:macro@MaxTim<UE> <DS>MaxTim<DE> Extent=<ES>11:9 - 11:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:56:9: macro definition=RTCctr <US>c:macro@RTCctr<UE> <DS>RTCctr<DE> Extent=<ES>56:9 - 56:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:57:9: macro definition=STauto <US>c:macro@STauto<UE> <DS>STauto<DE> Extent=<ES>57:9 - 57:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:58:9: macro definition=STbit <US>c:macro@STbit<UE> <DS>STbit<DE> Extent=<ES>58:9 - 58:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:59:9: macro definition=DateCh <US>c:macro@DateCh<UE> <DS>DateCh<DE> Extent=<ES>59:9 - 59:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:60:9: macro definition=TimeCh <US>c:macro@TimeCh<UE> <DS>TimeCh<DE> Extent=<ES>60:9 - 60:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:63:9: macro definition=RTCsec <US>c:macro@RTCsec<UE> <DS>RTCsec<DE> Extent=<ES>63:9 - 63:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:64:9: macro definition=RTCmin <US>c:macro@RTCmin<UE> <DS>RTCmin<DE> Extent=<ES>64:9 - 64:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:65:9: macro definition=RTChour <US>c:macro@RTChour<UE> <DS>RTChour<DE> Extent=<ES>65:9 - 65:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:66:9: macro definition=RTCday <US>c:macro@RTCday<UE> <DS>RTCday<DE> Extent=<ES>66:9 - 66:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:67:9: macro definition=RTCmonth <US>c:macro@RTCmonth<UE> <DS>RTCmonth<DE> Extent=<ES>67:9 - 67:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:68:9: macro definition=RTCyear <US>c:macro@RTCyear<UE> <DS>RTCyear<DE> Extent=<ES>68:9 - 68:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:70:9: macro definition=RTCdvt <US>c:macro@RTCdvt<UE> <DS>RTCdvt<DE> Extent=<ES>70:9 - 70:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:72:9: macro definition=RTCtime <US>c:macro@RTCtime<UE> <DS>RTCtime<DE> Extent=<ES>72:9 - 72:45<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:74:9: macro definition=RTCdate <US>c:macro@RTCdate<UE> <DS>RTCdate<DE> Extent=<ES>74:9 - 74:45<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:76:9: macro definition=RTCabsDay <US>c:macro@RTCabsDay<UE> <DS>RTCabsDay<DE> Extent=<ES>76:9 - 76:47<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:99:9: macro definition=_timer1_ms <US>c:macro@_timer1_ms<UE> <DS>_timer1_ms<DE> Extent=<ES>99:9 - 99:63<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:100:9: macro definition=_timer2_ms <US>c:macro@_timer2_ms<UE> <DS>_timer2_ms<DE> Extent=<ES>100:9 - 100:63<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:101:9: macro definition=_timer3_ms <US>c:macro@_timer3_ms<UE> <DS>_timer3_ms<DE> Extent=<ES>101:9 - 101:63<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:102:9: macro definition=_timer4_ms <US>c:macro@_timer4_ms<UE> <DS>_timer4_ms<DE> Extent=<ES>102:9 - 102:63<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:105:9: macro definition=_timer1_arm <US>c:macro@_timer1_arm<UE> <DS>_timer1_arm<DE> Extent=<ES>105:9 - 105:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:106:9: macro definition=_timer2_arm <US>c:macro@_timer2_arm<UE> <DS>_timer2_arm<DE> Extent=<ES>106:9 - 106:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:107:9: macro definition=_timer3_arm <US>c:macro@_timer3_arm<UE> <DS>_timer3_arm<DE> Extent=<ES>107:9 - 107:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:108:9: macro definition=_timer4_arm <US>c:macro@_timer4_arm<UE> <DS>_timer4_arm<DE> Extent=<ES>108:9 - 108:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:111:9: macro definition=_timer1_disarm <US>c:macro@_timer1_disarm<UE> <DS>_timer1_disarm<DE> Extent=<ES>111:9 - 111:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:112:9: macro definition=_timer2_disarm <US>c:macro@_timer2_disarm<UE> <DS>_timer2_disarm<DE> Extent=<ES>112:9 - 112:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:113:9: macro definition=_timer3_disarm <US>c:macro@_timer3_disarm<UE> <DS>_timer3_disarm<DE> Extent=<ES>113:9 - 113:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:114:9: macro definition=_timer4_disarm <US>c:macro@_timer4_disarm<UE> <DS>_timer4_disarm<DE> Extent=<ES>114:9 - 114:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:7:1: inclusion directive=flash_test.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h<IE>  Extent=<ES>7:1 - 7:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:2:9: macro definition=flash_test_h <US>c:macro@flash_test_h<UE> <DS>flash_test_h<DE> Extent=<ES>2:9 - 2:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:4:1: inclusion directive=msp430x24x.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430x24x.h<IE>  Extent=<ES>4:1 - 4:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:17:9: macro definition=set_clock_1 <US>c:macro@set_clock_1<UE> <DS>set_clock_1<DE> Extent=<ES>17:9 - 17:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:18:9: macro definition=set_clock_0 <US>c:macro@set_clock_0<UE> <DS>set_clock_0<DE> Extent=<ES>18:9 - 18:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:19:9: macro definition=dir_clock_1 <US>c:macro@dir_clock_1<UE> <DS>dir_clock_1<DE> Extent=<ES>19:9 - 19:51<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:22:9: macro definition=set_input_1 <US>c:macro@set_input_1<UE> <DS>set_input_1<DE> Extent=<ES>22:9 - 22:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:23:9: macro definition=set_input_0 <US>c:macro@set_input_0<UE> <DS>set_input_0<DE> Extent=<ES>23:9 - 23:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:24:9: macro definition=get_input <US>c:macro@get_input<UE> <DS>get_input<DE> Extent=<ES>24:9 - 24:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:25:9: macro definition=dir_input_1 <US>c:macro@dir_input_1<UE> <DS>dir_input_1<DE> Extent=<ES>25:9 - 25:51<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:26:9: macro definition=dir_input_0 <US>c:macro@dir_input_0<UE> <DS>dir_input_0<DE> Extent=<ES>26:9 - 26:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:29:9: macro definition=set_output_1 <US>c:macro@set_output_1<UE> <DS>set_output_1<DE> Extent=<ES>29:9 - 29:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:30:9: macro definition=set_output_0 <US>c:macro@set_output_0<UE> <DS>set_output_0<DE> Extent=<ES>30:9 - 30:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:31:9: macro definition=get_output <US>c:macro@get_output<UE> <DS>get_output<DE> Extent=<ES>31:9 - 31:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:32:9: macro definition=dir_output_1 <US>c:macro@dir_output_1<UE> <DS>dir_output_1<DE> Extent=<ES>32:9 - 32:53<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:33:9: macro definition=dir_output_0 <US>c:macro@dir_output_0<UE> <DS>dir_output_0<DE> Extent=<ES>33:9 - 33:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:36:9: macro definition=set_chipSel_1 <US>c:macro@set_chipSel_1<UE> <DS>set_chipSel_1<DE> Extent=<ES>36:9 - 36:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:37:9: macro definition=set_chipSel_0 <US>c:macro@set_chipSel_0<UE> <DS>set_chipSel_0<DE> Extent=<ES>37:9 - 37:43<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:38:9: macro definition=dir_chipSel_1 <US>c:macro@dir_chipSel_1<UE> <DS>dir_chipSel_1<DE> Extent=<ES>38:9 - 38:55<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:41:9: macro definition=CMD_READ_ID <US>c:macro@CMD_READ_ID<UE> <DS>CMD_READ_ID<DE> Extent=<ES>41:9 - 41:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:8:1: inclusion directive=ledice_test.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h<IE>  Extent=<ES>8:1 - 8:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:2:9: macro definition=ledice_test_h <US>c:macro@ledice_test_h<UE> <DS>ledice_test_h<DE> Extent=<ES>2:9 - 2:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:4:1: inclusion directive=msp430x24x.h <US><UE> <DS><DE> <IS>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430x24x.h<IE>  Extent=<ES>4:1 - 4:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:17:9: macro definition=dir_ledAlert_1 <US>c:macro@dir_ledAlert_1<UE> <DS>dir_ledAlert_1<DE> Extent=<ES>17:9 - 17:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:18:9: macro definition=set_ledAlert_1 <US>c:macro@set_ledAlert_1<UE> <DS>set_ledAlert_1<DE> Extent=<ES>18:9 - 18:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:19:9: macro definition=set_ledAlert_0 <US>c:macro@set_ledAlert_0<UE> <DS>set_ledAlert_0<DE> Extent=<ES>19:9 - 19:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:20:9: macro definition=get_ledAlert_out <US>c:macro@get_ledAlert_out<UE> <DS>get_ledAlert_out<DE> Extent=<ES>20:9 - 20:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:24:9: macro definition=dir_ledPulse_1 <US>c:macro@dir_ledPulse_1<UE> <DS>dir_ledPulse_1<DE> Extent=<ES>24:9 - 24:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:25:9: macro definition=set_ledPulse_1 <US>c:macro@set_ledPulse_1<UE> <DS>set_ledPulse_1<DE> Extent=<ES>25:9 - 25:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:26:9: macro definition=set_ledPulse_0 <US>c:macro@set_ledPulse_0<UE> <DS>set_ledPulse_0<DE> Extent=<ES>26:9 - 26:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:27:9: macro definition=get_ledPulse_out <US>c:macro@get_ledPulse_out<UE> <DS>get_ledPulse_out<DE> Extent=<ES>27:9 - 27:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:31:9: macro definition=dir_latch_1 <US>c:macro@dir_latch_1<UE> <DS>dir_latch_1<DE> Extent=<ES>31:9 - 31:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:32:9: macro definition=set_latch_1 <US>c:macro@set_latch_1<UE> <DS>set_latch_1<DE> Extent=<ES>32:9 - 32:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:33:9: macro definition=set_latch_0 <US>c:macro@set_latch_0<UE> <DS>set_latch_0<DE> Extent=<ES>33:9 - 33:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:34:9: macro definition=get_latch_out <US>c:macro@get_latch_out<UE> <DS>get_latch_out<DE> Extent=<ES>34:9 - 34:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:9:1: inclusion directive=test_mng.h <US><UE> <DS><DE> <IS>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h<IE>  Extent=<ES>9:1 - 9:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:2:9: macro definition=test_mng_h <US>c:macro@test_mng_h<UE> <DS>test_mng_h<DE> Extent=<ES>2:9 - 2:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9: macro definition=ST_TEST_PROG <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>6:9 - 6:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:7:9: macro definition=MAX_TEST_PROG <US>c:macro@MAX_TEST_PROG<UE> <DS>MAX_TEST_PROG<DE> Extent=<ES>7:9 - 7:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:13:9: macro definition=ST_OPERACIJ <US>c:macro@ST_OPERACIJ<UE> <DS>ST_OPERACIJ<DE> Extent=<ES>13:9 - 13:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:30:9: macro definition=MAX_OPERACIJ <US>c:macro@MAX_OPERACIJ<UE> <DS>MAX_OPERACIJ<DE> Extent=<ES>30:9 - 30:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: macro expansion=MAX_OPERACIJ|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:30:9 <US>c:macro@MAX_OPERACIJ<UE> <DS>MAX_OPERACIJ<DE> Extent=<ES>35:36 - 35:48<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:18:12: macro expansion=WDTPW|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:1298:9 <US>c:macro@WDTPW<UE> <DS>WDTPW<DE> Extent=<ES>18:12 - 18:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:18:20: macro expansion=WDTHOLD|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\msp430f2410.h:1296:9 <US>c:macro@WDTHOLD<UE> <DS>WDTHOLD<DE> Extent=<ES>18:20 - 18:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:20:3: macro expansion=_EINT|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\in430.h:86:9 <US>c:macro@_EINT<UE> <DS>_EINT<DE> Extent=<ES>20:3 - 20:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:21:14: macro expansion=ZACETEK|D:\Documents\IAR_LCD_test\MC_tester\head.h:49:9 <US>c:macro@ZACETEK<UE> <DS>ZACETEK<DE> Extent=<ES>21:14 - 21:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:32:3: macro expansion=off_REDled|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:226:9 <US>c:macro@off_REDled<UE> <DS>off_REDled<DE> Extent=<ES>32:3 - 32:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:33:3: macro expansion=off_GREENled|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:228:9 <US>c:macro@off_GREENled<UE> <DS>off_GREENled<DE> Extent=<ES>33:3 - 33:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: macro expansion=apps_enable|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:186:9 <US>c:macro@apps_enable<UE> <DS>apps_enable<DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:15: macro expansion=REFRESH_DIS_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:119:9 <US>c:macro@REFRESH_DIS_APP<UE> <DS>REFRESH_DIS_APP<DE> Extent=<ES>61:15 - 61:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:33: macro expansion=REC_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:121:9 <US>c:macro@REC_APP<UE> <DS>REC_APP<DE> Extent=<ES>61:33 - 61:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:43: macro expansion=READ_KEY_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:125:9 <US>c:macro@READ_KEY_APP<UE> <DS>READ_KEY_APP<DE> Extent=<ES>61:43 - 61:55<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:58: macro expansion=tipkeDVE_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:126:9 <US>c:macro@tipkeDVE_APP<UE> <DS>tipkeDVE_APP<DE> Extent=<ES>61:58 - 61:70<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:73: macro expansion=lediceToggle_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:127:9 <US>c:macro@lediceToggle_APP<UE> <DS>lediceToggle_APP<DE> Extent=<ES>61:73 - 61:89<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:14: macro expansion=READ_KEY_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:104:9 <US>c:macro@READ_KEY_ID<UE> <DS>READ_KEY_ID<DE> Extent=<ES>63:14 - 63:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:14: macro expansion=tipkeDVE_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:105:9 <US>c:macro@tipkeDVE_ID<UE> <DS>tipkeDVE_ID<DE> Extent=<ES>64:14 - 64:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:77:10: macro expansion=NO_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:117:9 <US>c:macro@NO_APP<UE> <DS>NO_APP<DE> Extent=<ES>77:10 - 77:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: macro expansion=READ_KEY_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:125:9 <US>c:macro@READ_KEY_APP<UE> <DS>READ_KEY_APP<DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: macro expansion=apps_suspend|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9 <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:20: macro expansion=READ_KEY_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:125:9 <US>c:macro@READ_KEY_APP<UE> <DS>READ_KEY_APP<DE> Extent=<ES>85:20 - 85:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:18: macro expansion=READ_KEY_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:104:9 <US>c:macro@READ_KEY_ID<UE> <DS>READ_KEY_ID<DE> Extent=<ES>86:18 - 86:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: macro expansion=tipkeDVE_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:126:9 <US>c:macro@tipkeDVE_APP<UE> <DS>tipkeDVE_APP<DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: macro expansion=apps_suspend|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9 <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:20: macro expansion=tipkeDVE_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:126:9 <US>c:macro@tipkeDVE_APP<UE> <DS>tipkeDVE_APP<DE> Extent=<ES>93:20 - 93:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:18: macro expansion=tipkeDVE_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:105:9 <US>c:macro@tipkeDVE_ID<UE> <DS>tipkeDVE_ID<DE> Extent=<ES>94:18 - 94:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: macro expansion=LCD_TEST_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:118:9 <US>c:macro@LCD_TEST_APP<UE> <DS>LCD_TEST_APP<DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:115:18: macro expansion=STDOUT_LCD_NORMAL_FONT|D:\Documents\IAR_LCD_test\MC_tester\head.h:42:9 <US>c:macro@STDOUT_LCD_NORMAL_FONT<UE> <DS>STDOUT_LCD_NORMAL_FONT<DE> Extent=<ES>115:18 - 115:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: macro expansion=apps_suspend|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9 <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:22: macro expansion=LCD_TEST_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:118:9 <US>c:macro@LCD_TEST_APP<UE> <DS>LCD_TEST_APP<DE> Extent=<ES>123:22 - 123:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: macro expansion=apps_disable|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:200:9 <US>c:macro@apps_disable<UE> <DS>apps_disable<DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:22: macro expansion=LCD_TEST_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:118:9 <US>c:macro@LCD_TEST_APP<UE> <DS>LCD_TEST_APP<DE> Extent=<ES>124:22 - 124:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: macro expansion=apps_suspend|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9 <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:22: macro expansion=LCD_TEST_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:118:9 <US>c:macro@LCD_TEST_APP<UE> <DS>LCD_TEST_APP<DE> Extent=<ES>129:22 - 129:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:20: macro expansion=LCD_TEST_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:97:9 <US>c:macro@LCD_TEST_ID<UE> <DS>LCD_TEST_ID<DE> Extent=<ES>130:20 - 130:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: macro expansion=REFRESH_DIS_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:119:9 <US>c:macro@REFRESH_DIS_APP<UE> <DS>REFRESH_DIS_APP<DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: macro expansion=MENU_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:120:9 <US>c:macro@MENU_APP<UE> <DS>MENU_APP<DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: macro expansion=AUX_TX_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:124:9 <US>c:macro@AUX_TX_APP<UE> <DS>AUX_TX_APP<DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: macro expansion=SET_GAIN_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:122:9 <US>c:macro@SET_GAIN_APP<UE> <DS>SET_GAIN_APP<DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: macro expansion=REC_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:121:9 <US>c:macro@REC_APP<UE> <DS>REC_APP<DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: macro expansion=WRITE_TO_FLASH_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:123:9 <US>c:macro@WRITE_TO_FLASH_APP<UE> <DS>WRITE_TO_FLASH_APP<DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: macro expansion=lediceToggle_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:127:9 <US>c:macro@lediceToggle_APP<UE> <DS>lediceToggle_APP<DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: macro expansion=apps_suspend|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:213:9 <US>c:macro@apps_suspend<UE> <DS>apps_suspend<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:20: macro expansion=lediceToggle_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:127:9 <US>c:macro@lediceToggle_APP<UE> <DS>lediceToggle_APP<DE> Extent=<ES>160:20 - 160:36<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:18: macro expansion=lediceToggle_ID|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:106:9 <US>c:macro@lediceToggle_ID<UE> <DS>lediceToggle_ID<DE> Extent=<ES>161:18 - 161:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: macro expansion=a6_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:128:9 <US>c:macro@a6_APP<UE> <DS>a6_APP<DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: macro expansion=a7_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:130:9 <US>c:macro@a7_APP<UE> <DS>a7_APP<DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: macro expansion=a8_APP|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:131:9 <US>c:macro@a8_APP<UE> <DS>a8_APP<DE> Extent=<ES>172:10 - 172:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:12: macro expansion=NAPAKA|D:\Documents\IAR_LCD_test\MC_tester\head.h:52:9 <US>c:macro@NAPAKA<UE> <DS>NAPAKA<DE> Extent=<ES>18:12 - 18:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:40: macro expansion=MAX_TEST_PROG|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:7:9 <US>c:macro@MAX_TEST_PROG<UE> <DS>MAX_TEST_PROG<DE> Extent=<ES>22:40 - 22:53<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:61:12: macro expansion=STDOUT_LCD|D:\Documents\IAR_LCD_test\MC_tester\head.h:41:9 <US>c:macro@STDOUT_LCD<UE> <DS>STDOUT_LCD<DE> Extent=<ES>61:12 - 61:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:6: macro expansion=ST_TEST_PROG|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9 <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>72:6 - 72:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:12: macro expansion=ST_TEST_PROG|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9 <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>86:12 - 86:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:13: macro expansion=TkLev|D:\Documents\IAR_LCD_test\MC_tester\head.h:26:9 <US>c:macro@TkLev<UE> <DS>TkLev<DE> Extent=<ES>92:13 - 92:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:18: macro expansion=TkDes|D:\Documents\IAR_LCD_test\MC_tester\head.h:27:9 <US>c:macro@TkDes<UE> <DS>TkDes<DE> Extent=<ES>105:18 - 105:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:30: macro expansion=ST_TEST_PROG|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9 <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>109:30 - 109:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:28: macro expansion=ST_TEST_PROG|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:6:9 <US>c:macro@ST_TEST_PROG<UE> <DS>ST_TEST_PROG<DE> Extent=<ES>110:28 - 110:40<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:18: macro expansion=TkEnt|D:\Documents\IAR_LCD_test\MC_tester\head.h:28:9 <US>c:macro@TkEnt<UE> <DS>TkEnt<DE> Extent=<ES>118:18 - 118:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:151:12: macro expansion=STDOUT_LCD_NORMAL_FONT|D:\Documents\IAR_LCD_test\MC_tester\head.h:42:9 <US>c:macro@STDOUT_LCD_NORMAL_FONT<UE> <DS>STDOUT_LCD_NORMAL_FONT<DE> Extent=<ES>151:12 - 151:34<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:165:12: macro expansion=STDOUT_LCD|D:\Documents\IAR_LCD_test\MC_tester\head.h:41:9 <US>c:macro@STDOUT_LCD<UE> <DS>STDOUT_LCD<DE> Extent=<ES>165:12 - 165:22<EE>
 <L><invalid loc>:2:15: TypedefDecl=__builtin_va_list|<invalid loc>:2:15 (Definition) <US><UE> <DS>char *<DE> Extent=<ES>2:1 - 2:32<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:8:6: EnumDecl=izbireTestnihProgramov|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:8:6 (Definition) <US>c:@E@izbireTestnihProgramov<UE> <DS>izbireTestnihProgramov<DE> Extent=<ES>8:1 - 11:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:9:3: EnumConstantDecl=TEST_PROG_FLASH|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:9:3 (Definition) <US>c:@E@izbireTestnihProgramov@TEST_PROG_FLASH<UE> <DS>TEST_PROG_FLASH<DE> Extent=<ES>9:3 - 9:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:10:3: EnumConstantDecl=TEST_PROG_NORM|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:10:3 (Definition) <US>c:@E@izbireTestnihProgramov@TEST_PROG_NORM<UE> <DS>TEST_PROG_NORM<DE> Extent=<ES>10:3 - 10:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6: EnumDecl=testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Definition) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>25:1 - 27:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1: EnumConstantDecl=A|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1 (Definition) <US>c:@E@testneOperacije@A<UE> <DS>A<DE> Extent=<ES>26:1 - 26:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3: EnumConstantDecl=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 (Definition) <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>26:3 - 26:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5: EnumConstantDecl=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 (Definition) <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>26:5 - 26:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7: EnumConstantDecl=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 (Definition) <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>26:7 - 26:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:9: EnumConstantDecl=G|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:9 (Definition) <US>c:@E@testneOperacije@G<UE> <DS>G<DE> Extent=<ES>26:9 - 26:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:11: EnumConstantDecl=H|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:11 (Definition) <US>c:@E@testneOperacije@H<UE> <DS>H<DE> Extent=<ES>26:11 - 26:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9: StructDecl=|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9 (Definition) <US>c:@SA@s_testniProgram<UE> <DS><DE> Extent=<ES>31:9 - 36:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9: FieldDecl=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Definition) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>32:3 - 32:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7: FieldDecl=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Definition) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>33:3 - 33:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7: FieldDecl=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 (Definition) <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>34:3 - 34:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24: FieldDecl=operacijeID|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24 (Definition) <US>c:@SA@s_testniProgram@FI@operacijeID<UE> <DS>operacijeID<DE> Extent=<ES>35:3 - 35:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:8: TypeRef=enum testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Reference) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>35:8 - 35:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>35:36 - 35:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2: TypedefDecl=s_testniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2 (Definition) <US>c:test_mng.h@586@T@s_testniProgram<UE> <DS>struct s_testniProgram<DE> Extent=<ES>31:1 - 36:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9: StructDecl=|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9 (Definition) <US>c:@SA@s_testniProgram<UE> <DS><DE> Extent=<ES>31:9 - 36:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9: FieldDecl=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Definition) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>32:3 - 32:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7: FieldDecl=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Definition) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>33:3 - 33:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7: FieldDecl=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 (Definition) <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>34:3 - 34:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24: FieldDecl=operacijeID|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24 (Definition) <US>c:@SA@s_testniProgram@FI@operacijeID<UE> <DS>operacijeID<DE> Extent=<ES>35:3 - 35:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:8: TypeRef=enum testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Reference) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>35:8 - 35:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>35:36 - 35:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6: FunctionDecl=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:29:6 (Declaration) <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>41:1 - 41:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6: FunctionDecl=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:59:6 (Declaration) <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>42:1 - 42:28<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:43:5: FunctionDecl=getFirstOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:45:5 (Declaration) <US>c:@F@getFirstOperation<UE> <DS>int getFirstOperation(void)<DE> Extent=<ES>43:1 - 43:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:44:5: FunctionDecl=getNextOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:35:5 (Declaration) <US>c:@F@getNextOperation<UE> <DS>int getNextOperation(void)<DE> Extent=<ES>44:1 - 44:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:45:5: FunctionDecl=getOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:50:5 (Declaration) <US>c:@F@getOperation<UE> <DS>int getOperation(void)<DE> Extent=<ES>45:1 - 45:19<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:27:24: TypedefDecl=__istate_t|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:27:24 (Definition) <US>c:intrinsics.h@516@T@__istate_t<UE> <DS>unsigned short<DE> Extent=<ES>27:1 - 27:34<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:30:20: TypedefDecl=istate_t|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:30:20 (Definition) <US>c:intrinsics.h@573@T@istate_t<UE> <DS>__istate_t<DE> Extent=<ES>30:1 - 30:28<EE>
 <L>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:30:9: TypeRef=__istate_t|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:27:24 (Reference) <US>c:intrinsics.h@516@T@__istate_t<UE> <DS>unsigned short<DE> Extent=<ES>30:9 - 30:19<EE>
@@ -2975,676 +2852,516 @@
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:260:6: FunctionDecl=back_light_OFF|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:260:6 (Declaration) <US>c:@F@back_light_OFF<UE> <DS>void back_light_OFF(void)<DE> Extent=<ES>260:1 - 260:26<EE>
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:261:6: FunctionDecl=test_back_light|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:261:6 (Declaration) <US>c:@F@test_back_light<UE> <DS>char test_back_light(void)<DE> Extent=<ES>261:1 - 261:27<EE>
 <L>D:\Documents\IAR_LCD_test\MC_tester\graphics.h:262:6: FunctionDecl=led_diode|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:262:6 (Declaration) <US>c:@F@led_diode<UE> <DS>void led_diode(void)<DE> Extent=<ES>262:1 - 262:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ini.h:2:6: FunctionDecl=Init|D:\Documents\IAR_LCD_test\MC_tester\ini.h:2:6 (Declaration) <US>c:@F@Init<UE> <DS>void Init(void)<DE> Extent=<ES>2:1 - 2:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:138:8: StructDecl=struct_sched_apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:138:8 (Definition) <US>c:@S@struct_sched_apps<UE> <DS>struct_sched_apps<DE> Extent=<ES>138:1 - 143:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16: FieldDecl=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Definition) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>140:3 - 140:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:142:16: FieldDecl=enabled_mask|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:142:16 (Definition) <US>c:@S@struct_sched_apps@FI@enabled_mask<UE> <DS>enabled_mask<DE> Extent=<ES>142:3 - 142:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:145:34: TypedefDecl=apps_type|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:145:34 (Definition) <US>c:scheduler.h@4409@T@apps_type<UE> <DS>struct struct_sched_apps<DE> Extent=<ES>145:1 - 145:43<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:145:16: TypeRef=struct struct_sched_apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:138:8 (Reference) <US>c:@S@struct_sched_apps<UE> <DS>struct_sched_apps<DE> Extent=<ES>145:16 - 145:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27: VarDecl=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Declaration) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>148:1 - 148:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:17: TypeRef=apps_type|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:145:34 (Reference) <US>c:scheduler.h@4409@T@apps_type<UE> <DS>struct struct_sched_apps<DE> Extent=<ES>148:17 - 148:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:151:16: FunctionDecl=scheduler_init|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:151:16 (Declaration) <US>c:@F@scheduler_init<UE> <DS>void scheduler_init(void)<DE> Extent=<ES>151:11 - 151:36<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:24: FunctionDecl=apps_poll|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:24 (Declaration) <US>c:@F@apps_poll<UE> <DS>unsigned int apps_poll(void)<DE> Extent=<ES>152:11 - 152:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:14:6: FunctionDecl=timerb_init|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:14:6 (Declaration) <US>c:@F@timerb_init<UE> <DS>void timerb_init(void)<DE> Extent=<ES>14:1 - 14:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6: FunctionDecl=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Declaration) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>18:1 - 18:61<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:30: ParmDecl=t_appID|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:30 (Definition) <US>c:timerb.h@521@F@timer_wait@t_appID<UE> <DS>unsigned int<DE> Extent=<ES>18:17 - 18:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:52: ParmDecl=mili_sec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:52 (Definition) <US>c:timerb.h@543@F@timer_wait@mili_sec<UE> <DS>unsigned int<DE> Extent=<ES>18:39 - 18:60<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:19:6: FunctionDecl=timer_wait_off|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:19:6 (Declaration) <US>c:@F@timer_wait_off<UE> <DS>void timer_wait_off(unsigned int)<DE> Extent=<ES>19:1 - 19:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:19:34: ParmDecl=t_appID|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:19:34 (Definition) <US>c:timerb.h@588@F@timer_wait_off@t_appID<UE> <DS>unsigned int<DE> Extent=<ES>19:21 - 19:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:6: FunctionDecl=s_timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:6 (Declaration) <US>c:@F@s_timer_wait<UE> <DS>void s_timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>20:1 - 20:58<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:32: ParmDecl=t_appID|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:32 (Definition) <US>c:timerb.h@630@F@s_timer_wait@t_appID<UE> <DS>unsigned int<DE> Extent=<ES>20:19 - 20:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:54: ParmDecl=sec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:20:54 (Definition) <US>c:timerb.h@652@F@s_timer_wait@sec<UE> <DS>unsigned int<DE> Extent=<ES>20:41 - 20:57<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:21:6: FunctionDecl=s_timer_wait_off|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:21:6 (Declaration) <US>c:@F@s_timer_wait_off<UE> <DS>void s_timer_wait_off(unsigned int)<DE> Extent=<ES>21:1 - 21:44<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:21:36: ParmDecl=t_appID|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:21:36 (Definition) <US>c:timerb.h@694@F@s_timer_wait_off@t_appID<UE> <DS>unsigned int<DE> Extent=<ES>21:23 - 21:43<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:23:21: VarDecl=TimEnSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:23:21 (Declaration) <US>c:@TimEnSec<UE> <DS>TimEnSec<DE> Extent=<ES>23:1 - 23:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:24:21: VarDecl=TrigSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:24:21 (Declaration) <US>c:@TrigSec<UE> <DS>TrigSec<DE> Extent=<ES>24:1 - 24:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:25:22: VarDecl=RTCabsMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:25:22 (Declaration) <US>c:@RTCabsMin<UE> <DS>RTCabsMin<DE> Extent=<ES>25:1 - 25:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:26:21: VarDecl=SecStev|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:26:21 (Declaration) <US>c:@SecStev<UE> <DS>SecStev<DE> Extent=<ES>26:1 - 26:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:13: FunctionDecl=TimerSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:13 (Definition) <US>c:@F@TimerSec<UE> <DS>void TimerSec(unsigned int)<DE> Extent=<ES>28:1 - 32:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35: ParmDecl=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35 (Definition) <US>c:timerb.h@1069@F@TimerSec@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>28:22 - 28:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:29:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>29:1 - 32:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:30:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>30:3 - 30:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:30:3: DeclRefExpr=TimEnSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:23:21 (Reference) <US>c:@TimEnSec<UE> <DS>TimEnSec<DE> Extent=<ES>30:3 - 30:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:30:15: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35 <US>c:timerb.h@1069@F@TimerSec@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>30:15 - 30:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:30:15: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35 (Reference) <US>c:timerb.h@1069@F@TimerSec@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>30:15 - 30:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:31:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>31:3 - 31:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:31:3: DeclRefExpr=TrigSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:24:21 (Reference) <US>c:@TrigSec<UE> <DS>TrigSec<DE> Extent=<ES>31:3 - 31:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:31:13: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>31:13 - 31:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:31:14: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35 <US>c:timerb.h@1069@F@TimerSec@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>31:14 - 31:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:31:14: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:28:35 (Reference) <US>c:timerb.h@1069@F@TimerSec@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>31:14 - 31:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:13: FunctionDecl=TimerSec_off|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:13 (Definition) <US>c:@F@TimerSec_off<UE> <DS>void TimerSec_off(unsigned int)<DE> Extent=<ES>33:1 - 36:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:39: ParmDecl=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:39 (Definition) <US>c:timerb.h@1244@F@TimerSec_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>33:26 - 33:46<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:34:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>34:1 - 36:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:35:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>35:3 - 35:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:35:3: DeclRefExpr=TimEnSec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:23:21 (Reference) <US>c:@TimEnSec<UE> <DS>TimEnSec<DE> Extent=<ES>35:3 - 35:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:35:14: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>35:14 - 35:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:35:15: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:39 <US>c:timerb.h@1244@F@TimerSec_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>35:15 - 35:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:35:15: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:33:39 (Reference) <US>c:timerb.h@1244@F@TimerSec_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>35:15 - 35:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:38:21: VarDecl=TimEnMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:38:21 (Declaration) <US>c:@TimEnMin<UE> <DS>TimEnMin<DE> Extent=<ES>38:1 - 38:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:39:21: VarDecl=TrigMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:39:21 (Declaration) <US>c:@TrigMin<UE> <DS>TrigMin<DE> Extent=<ES>39:1 - 39:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:13: FunctionDecl=TimerMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:13 (Definition) <US>c:@F@TimerMin<UE> <DS>void TimerMin(unsigned int)<DE> Extent=<ES>41:1 - 45:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35: ParmDecl=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35 (Definition) <US>c:timerb.h@1523@F@TimerMin@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>41:22 - 41:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:42:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>42:1 - 45:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:43:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>43:3 - 43:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:43:3: DeclRefExpr=TimEnMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:38:21 (Reference) <US>c:@TimEnMin<UE> <DS>TimEnMin<DE> Extent=<ES>43:3 - 43:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:43:15: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35 <US>c:timerb.h@1523@F@TimerMin@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>43:15 - 43:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:43:15: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35 (Reference) <US>c:timerb.h@1523@F@TimerMin@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>43:15 - 43:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:44:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>44:3 - 44:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:44:3: DeclRefExpr=TrigMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:39:21 (Reference) <US>c:@TrigMin<UE> <DS>TrigMin<DE> Extent=<ES>44:3 - 44:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:44:13: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>44:13 - 44:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:44:14: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35 <US>c:timerb.h@1523@F@TimerMin@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>44:14 - 44:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:44:14: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:41:35 (Reference) <US>c:timerb.h@1523@F@TimerMin@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>44:14 - 44:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:13: FunctionDecl=TimerMin_off|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:13 (Definition) <US>c:@F@TimerMin_off<UE> <DS>void TimerMin_off(unsigned int)<DE> Extent=<ES>46:1 - 49:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:39: ParmDecl=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:39 (Definition) <US>c:timerb.h@1697@F@TimerMin_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>46:26 - 46:46<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:47:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>47:1 - 49:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:48:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>48:3 - 48:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:48:3: DeclRefExpr=TimEnMin|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:38:21 (Reference) <US>c:@TimEnMin<UE> <DS>TimEnMin<DE> Extent=<ES>48:3 - 48:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:48:14: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>48:14 - 48:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:48:15: UnexposedExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:39 <US>c:timerb.h@1697@F@TimerMin_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>48:15 - 48:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:48:15: DeclRefExpr=app_flg|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:46:39 (Reference) <US>c:timerb.h@1697@F@TimerMin_off@app_flg<UE> <DS>unsigned int<DE> Extent=<ES>48:15 - 48:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:53:31: VarDecl=RTC|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:53:31 (Declaration) <US>c:@RTC<UE> <DS>RTC<DE> Extent=<ES>53:1 - 53:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:53:35: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>53:35 - 53:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:78:15: FunctionDecl=PackTime|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:78:15 (Declaration) <US>c:@F@PackTime<UE> <DS>unsigned long PackTime(unsigned char *)<DE> Extent=<ES>78:1 - 78:45<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:78:39: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:78:39 (Definition) <US>c:timerb.h@2737@F@PackTime@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>78:24 - 78:44<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:79:15: FunctionDecl=UnpackTime|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:79:15 (Declaration) <US>c:@F@UnpackTime<UE> <DS>unsigned long UnpackTime(unsigned long)<DE> Extent=<ES>79:1 - 79:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:79:40: ParmDecl=t|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:79:40 (Definition) <US>c:timerb.h@2833@F@UnpackTime@t<UE> <DS>unsigned long<DE> Extent=<ES>79:26 - 79:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:6: FunctionDecl=CopyLong3Char|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:6 (Declaration) <US>c:@F@CopyLong3Char<UE> <DS>void CopyLong3Char(unsigned long, unsigned char *)<DE> Extent=<ES>80:1 - 80:58<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:34: ParmDecl=t|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:34 (Definition) <US>c:timerb.h@2911@F@CopyLong3Char@t<UE> <DS>unsigned long<DE> Extent=<ES>80:20 - 80:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:52: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:80:52 (Definition) <US>c:timerb.h@2928@F@CopyLong3Char@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>80:37 - 80:57<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:81:5: FunctionDecl=AbsDanC|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:81:5 (Declaration) <US>c:@F@AbsDanC<UE> <DS>int AbsDanC(unsigned char *)<DE> Extent=<ES>81:1 - 81:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:81:28: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:81:28 (Definition) <US>c:timerb.h@2964@F@AbsDanC@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>81:13 - 81:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:82:14: FunctionDecl=Abs2binDate|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:82:14 (Declaration) <US>c:@F@Abs2binDate<UE> <DS>unsigned int Abs2binDate(int)<DE> Extent=<ES>82:1 - 82:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:82:30: ParmDecl=d|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:82:30 (Definition) <US>c:timerb.h@3063@F@Abs2binDate@d<UE> <DS>int<DE> Extent=<ES>82:26 - 82:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:83:6: FunctionDecl=AbsMinC|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:83:6 (Declaration) <US>c:@F@AbsMinC<UE> <DS>long AbsMinC(unsigned char *)<DE> Extent=<ES>83:1 - 83:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:83:29: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:83:29 (Definition) <US>c:timerb.h@3144@F@AbsMinC@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>83:14 - 83:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:85:6: FunctionDecl=clock_offset|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:85:6 (Declaration) <US>c:@F@clock_offset<UE> <DS>void clock_offset(int)<DE> Extent=<ES>85:1 - 85:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:85:30: ParmDecl=sec_off|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:85:30 (Definition) <US>c:timerb.h@3236@F@clock_offset@sec_off<UE> <DS>int<DE> Extent=<ES>85:19 - 85:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:86:5: FunctionDecl=TestST|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:86:5 (Declaration) <US>c:@F@TestST<UE> <DS>int TestST(int)<DE> Extent=<ES>86:1 - 86:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:86:16: ParmDecl=set|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:86:16 (Definition) <US>c:timerb.h@3297@F@TestST@set<UE> <DS>int<DE> Extent=<ES>86:12 - 86:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:88:6: FunctionDecl=UpdateDST|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:88:6 (Declaration) <US>c:@F@UpdateDST<UE> <DS>void UpdateDST(char)<DE> Extent=<ES>88:1 - 88:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:88:21: ParmDecl=d|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:88:21 (Definition) <US>c:timerb.h@3349@F@UpdateDST@d<UE> <DS>char<DE> Extent=<ES>88:16 - 88:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:6: FunctionDecl=RTC_date_set|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:6 (Declaration) <US>c:@F@RTC_date_set<UE> <DS>void RTC_date_set(unsigned int, unsigned char)<DE> Extent=<ES>89:1 - 89:57<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:32: ParmDecl=date|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:32 (Definition) <US>c:timerb.h@3439@F@RTC_date_set@date<UE> <DS>unsigned int<DE> Extent=<ES>89:19 - 89:36<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:52: ParmDecl=year|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:89:52 (Definition) <US>c:timerb.h@3458@F@RTC_date_set@year<UE> <DS>unsigned char<DE> Extent=<ES>89:38 - 89:56<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:6: FunctionDecl=RTC_time_set|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:6 (Declaration) <US>c:@F@RTC_time_set<UE> <DS>void RTC_time_set(unsigned int, unsigned char)<DE> Extent=<ES>90:1 - 90:56<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:32: ParmDecl=time|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:32 (Definition) <US>c:timerb.h@3545@F@RTC_time_set@time<UE> <DS>unsigned int<DE> Extent=<ES>90:19 - 90:36<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:52: ParmDecl=sec|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:90:52 (Definition) <US>c:timerb.h@3564@F@RTC_time_set@sec<UE> <DS>unsigned char<DE> Extent=<ES>90:38 - 90:55<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:91:6: FunctionDecl=RTC_clock_set|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:91:6 (Declaration) <US>c:@F@RTC_clock_set<UE> <DS>void RTC_clock_set(unsigned char *)<DE> Extent=<ES>91:1 - 91:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:91:35: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:91:35 (Definition) <US>c:timerb.h@3650@F@RTC_clock_set@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>91:20 - 91:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:92:6: FunctionDecl=GSM_clock_sync|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:92:6 (Declaration) <US>c:@F@GSM_clock_sync<UE> <DS>void GSM_clock_sync(unsigned char *)<DE> Extent=<ES>92:1 - 92:42<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:92:36: ParmDecl=RTCmb|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:92:36 (Definition) <US>c:timerb.h@3724@F@GSM_clock_sync@RTCmb<UE> <DS>unsigned char *<DE> Extent=<ES>92:21 - 92:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:93:15: FunctionDecl=UnpackDate|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:93:15 (Declaration) <US>c:@F@UnpackDate<UE> <DS>unsigned long UnpackDate(unsigned int)<DE> Extent=<ES>93:1 - 93:41<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:93:39: ParmDecl=t|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:93:39 (Definition) <US>c:timerb.h@3837@F@UnpackDate@t<UE> <DS>unsigned int<DE> Extent=<ES>93:26 - 93:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\timerb.h:94:15: FunctionDecl=RTC_ckeck|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:94:15 (Declaration) <US>c:@F@RTC_ckeck<UE> <DS>unsigned char RTC_ckeck(void)<DE> Extent=<ES>94:1 - 94:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23: TypedefDecl=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Definition) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>8:1 - 8:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:9:14: TypedefDecl=int8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:9:14 (Definition) <US>c:flash_test.h@123@T@int8_t<UE> <DS>char<DE> Extent=<ES>9:1 - 9:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:11:22: TypedefDecl=uint16_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:11:22 (Definition) <US>c:flash_test.h@147@T@uint16_t<UE> <DS>unsigned int<DE> Extent=<ES>11:1 - 11:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:12:13: TypedefDecl=int16_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:12:13 (Definition) <US>c:flash_test.h@179@T@int16_t<UE> <DS>int<DE> Extent=<ES>12:1 - 12:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:45:6: FunctionDecl=flash_test_init|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:45:6 (Declaration) <US>c:@F@flash_test_init<UE> <DS>void flash_test_init(void)<DE> Extent=<ES>45:1 - 45:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:46:9: FunctionDecl=preveriFlash|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:46:9 (Declaration) <US>c:@F@preveriFlash<UE> <DS>uint8_t preveriFlash(void)<DE> Extent=<ES>46:1 - 46:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:46:1: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>46:1 - 46:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:9: FunctionDecl=getErrorLine|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:9 (Declaration) <US>c:@F@getErrorLine<UE> <DS>uint8_t getErrorLine(uint8_t *, uint8_t, uint8_t)<DE> Extent=<ES>47:1 - 47:74<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:1: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>47:1 - 47:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:31: ParmDecl=line|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:31 (Definition) <US>c:flash_test.h@1429@F@getErrorLine@line<UE> <DS>uint8_t *<DE> Extent=<ES>47:22 - 47:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:22: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>47:22 - 47:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:45: ParmDecl=lineLen|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:45 (Definition) <US>c:flash_test.h@1444@F@getErrorLine@lineLen<UE> <DS>uint8_t<DE> Extent=<ES>47:37 - 47:52<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:37: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>47:37 - 47:44<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:62: ParmDecl=errorOffset|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:62 (Definition) <US>c:flash_test.h@1461@F@getErrorLine@errorOffset<UE> <DS>uint8_t<DE> Extent=<ES>47:54 - 47:73<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:47:54: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>47:54 - 47:61<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:50:6: FunctionDecl=sendByte|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:50:6 (Declaration) <US>c:@F@sendByte<UE> <DS>void sendByte(uint8_t)<DE> Extent=<ES>50:1 - 50:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:50:23: ParmDecl=byte|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:50:23 (Definition) <US>c:flash_test.h@1699@F@sendByte@byte<UE> <DS>uint8_t<DE> Extent=<ES>50:15 - 50:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:50:15: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>50:15 - 50:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:51:9: FunctionDecl=readByte|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:51:9 (Declaration) <US>c:@F@readByte<UE> <DS>uint8_t readByte(void)<DE> Extent=<ES>51:1 - 51:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:51:1: TypeRef=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\flash_test.h:8:23 (Reference) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>51:1 - 51:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:8:23: TypedefDecl=uint8_t|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:8:23 (Definition) <US>c:flash_test.h@91@T@uint8_t<UE> <DS>unsigned char<DE> Extent=<ES>8:1 - 8:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:9:14: TypedefDecl=int8_t|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:9:14 (Definition) <US>c:flash_test.h@123@T@int8_t<UE> <DS>char<DE> Extent=<ES>9:1 - 9:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:11:22: TypedefDecl=uint16_t|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:11:22 (Definition) <US>c:flash_test.h@147@T@uint16_t<UE> <DS>unsigned int<DE> Extent=<ES>11:1 - 11:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:12:13: TypedefDecl=int16_t|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:12:13 (Definition) <US>c:flash_test.h@179@T@int16_t<UE> <DS>int<DE> Extent=<ES>12:1 - 12:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:36:6: FunctionDecl=ledice_test_init|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:36:6 (Declaration) <US>c:@F@ledice_test_init<UE> <DS>void ledice_test_init(void)<DE> Extent=<ES>36:1 - 36:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:39:6: FunctionDecl=setLed|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:39:6 (Declaration) <US>c:@F@setLed<UE> <DS>void setLed(void)<DE> Extent=<ES>39:1 - 39:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:40:6: FunctionDecl=setLedNext|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:40:6 (Declaration) <US>c:@F@setLedNext<UE> <DS>void setLedNext(void)<DE> Extent=<ES>40:1 - 40:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:8:6: EnumDecl=izbireTestnihProgramov|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:8:6 (Definition) <US>c:@E@izbireTestnihProgramov<UE> <DS>izbireTestnihProgramov<DE> Extent=<ES>8:1 - 11:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:9:3: EnumConstantDecl=TEST_PROG_FLASH|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:9:3 (Definition) <US>c:@E@izbireTestnihProgramov@TEST_PROG_FLASH<UE> <DS>TEST_PROG_FLASH<DE> Extent=<ES>9:3 - 9:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:10:3: EnumConstantDecl=TEST_PROG_NORM|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:10:3 (Definition) <US>c:@E@izbireTestnihProgramov@TEST_PROG_NORM<UE> <DS>TEST_PROG_NORM<DE> Extent=<ES>10:3 - 10:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6: EnumDecl=testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Definition) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>25:1 - 27:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1: EnumConstantDecl=A|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1 (Definition) <US>c:@E@testneOperacije@A<UE> <DS>A<DE> Extent=<ES>26:1 - 26:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3: EnumConstantDecl=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 (Definition) <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>26:3 - 26:4<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5: EnumConstantDecl=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 (Definition) <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>26:5 - 26:6<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7: EnumConstantDecl=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 (Definition) <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>26:7 - 26:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:9: EnumConstantDecl=G|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:9 (Definition) <US>c:@E@testneOperacije@G<UE> <DS>G<DE> Extent=<ES>26:9 - 26:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:11: EnumConstantDecl=H|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:11 (Definition) <US>c:@E@testneOperacije@H<UE> <DS>H<DE> Extent=<ES>26:11 - 26:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9: StructDecl=|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9 (Definition) <US>c:@SA@s_testniProgram<UE> <DS><DE> Extent=<ES>31:9 - 36:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9: FieldDecl=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Definition) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>32:3 - 32:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7: FieldDecl=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Definition) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>33:3 - 33:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7: FieldDecl=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 (Definition) <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>34:3 - 34:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24: FieldDecl=operacijeID|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24 (Definition) <US>c:@SA@s_testniProgram@FI@operacijeID<UE> <DS>operacijeID<DE> Extent=<ES>35:3 - 35:49<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:8: TypeRef=enum testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Reference) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>35:8 - 35:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>35:36 - 35:48<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2: TypedefDecl=s_testniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2 (Definition) <US>c:test_mng.h@586@T@s_testniProgram<UE> <DS>struct s_testniProgram<DE> Extent=<ES>31:1 - 36:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9: StructDecl=|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:31:9 (Definition) <US>c:@SA@s_testniProgram<UE> <DS><DE> Extent=<ES>31:9 - 36:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9: FieldDecl=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Definition) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>32:3 - 32:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7: FieldDecl=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Definition) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>33:3 - 33:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7: FieldDecl=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 (Definition) <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>34:3 - 34:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24: FieldDecl=operacijeID|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:24 (Definition) <US>c:@SA@s_testniProgram@FI@operacijeID<UE> <DS>operacijeID<DE> Extent=<ES>35:3 - 35:49<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:8: TypeRef=enum testneOperacije|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:25:6 (Reference) <US>c:@E@testneOperacije<UE> <DS>testneOperacije<DE> Extent=<ES>35:8 - 35:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:35:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>35:36 - 35:48<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6: FunctionDecl=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6 (Declaration) <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>41:1 - 41:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6: FunctionDecl=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6 (Declaration) <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>42:1 - 42:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:43:5: FunctionDecl=getFirstOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:43:5 (Declaration) <US>c:@F@getFirstOperation<UE> <DS>int getFirstOperation(void)<DE> Extent=<ES>43:1 - 43:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:44:5: FunctionDecl=getNextOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:44:5 (Declaration) <US>c:@F@getNextOperation<UE> <DS>int getNextOperation(void)<DE> Extent=<ES>44:1 - 44:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:45:5: FunctionDecl=getOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:45:5 (Declaration) <US>c:@F@getOperation<UE> <DS>int getOperation(void)<DE> Extent=<ES>45:1 - 45:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:15:5: FunctionDecl=main|D:\Documents\IAR_LCD_test\MC_tester\main.c:15:5 (Definition) <US>c:@F@main<UE> <DS>int main(void)<DE> Extent=<ES>15:1 - 180:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:16:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>16:1 - 180:2<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:19:3: CallExpr=Init|D:\Documents\IAR_LCD_test\MC_tester\ini.h:2:6 <US>c:@F@Init<UE> <DS>void Init(void)<DE> Extent=<ES>19:3 - 19:9<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:19:3: UnexposedExpr=Init|D:\Documents\IAR_LCD_test\MC_tester\ini.h:2:6 <US>c:@F@Init<UE> <DS>void Init(void)<DE> Extent=<ES>19:3 - 19:7<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:19:3: DeclRefExpr=Init|D:\Documents\IAR_LCD_test\MC_tester\ini.h:2:6 (Reference) <US>c:@F@Init<UE> <DS>void Init(void)<DE> Extent=<ES>19:3 - 19:7<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:20:3: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>20:3 - 20:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:20:3: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>20:3 - 20:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:20:3: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>20:3 - 20:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:21:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>21:3 - 21:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:21:3: DeclRefExpr=kontrola|D:\Documents\IAR_LCD_test\MC_tester\head.h:157:22 (Reference) <US>c:@kontrola<UE> <DS>kontrola<DE> Extent=<ES>21:3 - 21:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:21:14: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>21:14 - 21:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:21:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>21:14 - 21:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:24:3: CallExpr=LCD_init|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:133:6 <US>c:@F@LCD_init<UE> <DS>void LCD_init(void)<DE> Extent=<ES>24:3 - 24:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:24:3: UnexposedExpr=LCD_init|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:133:6 <US>c:@F@LCD_init<UE> <DS>void LCD_init(void)<DE> Extent=<ES>24:3 - 24:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:24:3: DeclRefExpr=LCD_init|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:133:6 (Reference) <US>c:@F@LCD_init<UE> <DS>void LCD_init(void)<DE> Extent=<ES>24:3 - 24:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:26:3: CallExpr=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6 <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>26:3 - 26:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:26:3: UnexposedExpr=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6 <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>26:3 - 26:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:26:3: DeclRefExpr=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:41:6 (Reference) <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>26:3 - 26:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:28:3: CallExpr=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6 <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>28:3 - 28:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:28:3: UnexposedExpr=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6 <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>28:3 - 28:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:28:3: DeclRefExpr=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:42:6 (Reference) <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>28:3 - 28:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:31:3: CallExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>31:3 - 31:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:31:3: UnexposedExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>31:3 - 31:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:31:3: DeclRefExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 (Reference) <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>31:3 - 31:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:34:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>34:3 - 34:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:34:3: DeclRefExpr=flags|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:45:12 (Reference) <US>c:@flags<UE> <DS>flags<DE> Extent=<ES>34:3 - 34:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:34:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>34:9 - 34:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:35:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>35:3 - 35:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:35:3: DeclRefExpr=LCDpr|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:31:22 (Reference) <US>c:@LCDpr<UE> <DS>LCDpr<DE> Extent=<ES>35:3 - 35:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:35:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>35:9 - 35:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:35:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>35:9 - 35:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:36:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>36:3 - 36:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:36:3: DeclRefExpr=blink|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:60:13 (Reference) <US>c:@blink<UE> <DS>blink<DE> Extent=<ES>36:3 - 36:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:36:11: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>36:11 - 36:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:36:11: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>36:11 - 36:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:37:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>37:3 - 37:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:37:3: DeclRefExpr=zakasnitev_ser_mode|D:\Documents\IAR_LCD_test\MC_tester\head.h:158:22 (Reference) <US>c:@zakasnitev_ser_mode<UE> <DS>zakasnitev_ser_mode<DE> Extent=<ES>37:3 - 37:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:37:25: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>37:25 - 37:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:37:25: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>37:25 - 37:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:42:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>42:3 - 42:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:42:3: DeclRefExpr=P4LATCH|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:54:22 (Reference) <US>c:@P4LATCH<UE> <DS>P4LATCH<DE> Extent=<ES>42:3 - 42:10<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:42:13: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>42:13 - 42:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:42:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>42:13 - 42:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:43:3: CallExpr=LE573set|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:176:6 <US>c:@F@LE573set<UE> <DS>void LE573set(void)<DE> Extent=<ES>43:3 - 43:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:43:3: UnexposedExpr=LE573set|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:176:6 <US>c:@F@LE573set<UE> <DS>void LE573set(void)<DE> Extent=<ES>43:3 - 43:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:43:3: DeclRefExpr=LE573set|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:176:6 (Reference) <US>c:@F@LE573set<UE> <DS>void LE573set(void)<DE> Extent=<ES>43:3 - 43:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:44:3: CallExpr=LE573hold|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:177:6 <US>c:@F@LE573hold<UE> <DS>void LE573hold(void)<DE> Extent=<ES>44:3 - 44:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:44:3: UnexposedExpr=LE573hold|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:177:6 <US>c:@F@LE573hold<UE> <DS>void LE573hold(void)<DE> Extent=<ES>44:3 - 44:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:44:3: DeclRefExpr=LE573hold|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:177:6 (Reference) <US>c:@F@LE573hold<UE> <DS>void LE573hold(void)<DE> Extent=<ES>44:3 - 44:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:47:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>47:3 - 47:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:47:3: DeclRefExpr=P4LATCH2|D:\Documents\IAR_LCD_test\MC_tester\head.h:156:22 (Reference) <US>c:@P4LATCH2<UE> <DS>P4LATCH2<DE> Extent=<ES>47:3 - 47:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:47:14: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>47:14 - 47:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:47:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>47:14 - 47:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:48:3: CallExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>48:3 - 48:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:48:3: UnexposedExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>48:3 - 48:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:48:3: DeclRefExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 (Reference) <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>48:3 - 48:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:49:3: CallExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>49:3 - 49:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:49:3: UnexposedExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>49:3 - 49:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:49:3: DeclRefExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 (Reference) <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>49:3 - 49:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:51:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>51:3 - 51:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:51:3: DeclRefExpr=napaka|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:34:13 (Reference) <US>c:@napaka<UE> <DS>napaka<DE> Extent=<ES>51:3 - 51:9<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:51:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>51:12 - 51:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:51:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>51:12 - 51:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:52:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>52:3 - 52:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:52:3: DeclRefExpr=LCD_vstavljen|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:35:13 (Reference) <US>c:@LCD_vstavljen<UE> <DS>LCD_vstavljen<DE> Extent=<ES>52:3 - 52:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:52:19: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>52:19 - 52:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:52:19: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>52:19 - 52:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:53:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>53:3 - 53:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:53:3: DeclRefExpr=test_koncan|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:36:13 (Reference) <US>c:@test_koncan<UE> <DS>test_koncan<DE> Extent=<ES>53:3 - 53:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:53:17: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>53:17 - 53:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:53:17: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>53:17 - 53:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:59:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>59:3 - 59:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:59:8: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>59:3 - 59:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:59:3: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>59:3 - 59:7<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:59:17: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>59:17 - 59:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:59:17: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>59:17 - 59:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:60:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>60:3 - 60:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:60:8: MemberRefExpr=enabled_mask|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:142:16 (Reference) <US>c:@S@struct_sched_apps@FI@enabled_mask<UE> <DS>enabled_mask<DE> Extent=<ES>60:3 - 60:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:60:3: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>60:3 - 60:7<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:60:23: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>60:23 - 60:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:60:23: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>60:23 - 60:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: MemberRefExpr=enabled_mask|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:142:16 (Reference) <US>c:@S@struct_sched_apps@FI@enabled_mask<UE> <DS>enabled_mask<DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: ParenExpr= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:61:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:91<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:3: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>63:3 - 63:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:3: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>63:3 - 63:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:3: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>63:3 - 63:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:14: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>63:14 - 63:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>63:14 - 63:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:27: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>63:27 - 63:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:63:27: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>63:27 - 63:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:3: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>64:3 - 64:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:3: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>64:3 - 64:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:3: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>64:3 - 64:13<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:14: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>64:14 - 64:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>64:14 - 64:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:27: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>64:27 - 64:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:64:27: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>64:27 - 64:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:71:3: WhileStmt= <US><UE> <DS><DE> Extent=<ES>71:3 - 177:4<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:71:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>71:10 - 71:11<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:72:3: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>72:3 - 177:4<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:74:5: SwitchStmt= <US><UE> <DS><DE> Extent=<ES>74:5 - 176:6<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:74:13: CallExpr=apps_poll|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:24 <US>c:@F@apps_poll<UE> <DS>unsigned int apps_poll(void)<DE> Extent=<ES>74:13 - 74:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:74:13: UnexposedExpr=apps_poll|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:24 <US>c:@F@apps_poll<UE> <DS>unsigned int apps_poll(void)<DE> Extent=<ES>74:13 - 74:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:74:13: DeclRefExpr=apps_poll|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:152:24 (Reference) <US>c:@F@apps_poll<UE> <DS>unsigned int apps_poll(void)<DE> Extent=<ES>74:13 - 74:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:75:5: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>75:5 - 176:6<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:76:5: DefaultStmt= <US><UE> <DS><DE> Extent=<ES>76:5 - 79:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:77:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>77:5 - 79:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:77:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>77:10 - 77:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:77:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>77:10 - 77:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:79:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>79:7 - 79:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>81:5 - 82:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:81:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>81:10 - 81:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:82:7: CallExpr=BeriKey_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:257:6 <US>c:@F@BeriKey_2<UE> <DS>void BeriKey_2(void)<DE> Extent=<ES>82:7 - 82:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:82:7: UnexposedExpr=BeriKey_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:257:6 <US>c:@F@BeriKey_2<UE> <DS>void BeriKey_2(void)<DE> Extent=<ES>82:7 - 82:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:82:7: DeclRefExpr=BeriKey_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:257:6 (Reference) <US>c:@F@BeriKey_2<UE> <DS>void BeriKey_2(void)<DE> Extent=<ES>82:7 - 82:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:83:7: CallExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>83:7 - 83:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:83:7: UnexposedExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>83:7 - 83:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:83:7: DeclRefExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 (Reference) <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>83:7 - 83:14<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:84:7: CallExpr=led_diode|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:262:6 <US>c:@F@led_diode<UE> <DS>void led_diode(void)<DE> Extent=<ES>84:7 - 84:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:84:7: UnexposedExpr=led_diode|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:262:6 <US>c:@F@led_diode<UE> <DS>void led_diode(void)<DE> Extent=<ES>84:7 - 84:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:84:7: DeclRefExpr=led_diode|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:262:6 (Reference) <US>c:@F@led_diode<UE> <DS>void led_diode(void)<DE> Extent=<ES>84:7 - 84:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: CallExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: UnexposedExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: DeclRefExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 (Reference) <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:85:7: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>85:7 - 85:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:7: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>86:7 - 86:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:7: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>86:7 - 86:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:7: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>86:7 - 86:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>86:18 - 86:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:18 - 86:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:31: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>86:31 - 86:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:86:31: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:31 - 86:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:88:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>88:7 - 88:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>90:5 - 92:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:90:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>90:10 - 90:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:92:7: CallExpr=potek_kontrole|D:\Documents\IAR_LCD_test\MC_tester\head.h:217:6 <US>c:@F@potek_kontrole<UE> <DS>void potek_kontrole(void)<DE> Extent=<ES>92:7 - 92:23<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:92:7: UnexposedExpr=potek_kontrole|D:\Documents\IAR_LCD_test\MC_tester\head.h:217:6 <US>c:@F@potek_kontrole<UE> <DS>void potek_kontrole(void)<DE> Extent=<ES>92:7 - 92:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:92:7: DeclRefExpr=potek_kontrole|D:\Documents\IAR_LCD_test\MC_tester\head.h:217:6 (Reference) <US>c:@F@potek_kontrole<UE> <DS>void potek_kontrole(void)<DE> Extent=<ES>92:7 - 92:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: CallExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: UnexposedExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: DeclRefExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 (Reference) <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:93:7: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>93:7 - 93:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:7: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>94:7 - 94:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:7: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>94:7 - 94:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:7: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>94:7 - 94:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>94:18 - 94:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>94:18 - 94:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:30: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>94:30 - 94:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:94:30: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>94:30 - 94:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:99:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>99:7 - 99:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>100:5 - 131:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:100:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>100:10 - 100:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:7: IfStmt= <US><UE> <DS><DE> Extent=<ES>103:7 - 131:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>103:11 - 103:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:11: CallExpr=tipke_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:162:5 <US>c:@F@tipke_2<UE> <DS>int tipke_2(void)<DE> Extent=<ES>103:11 - 103:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:11: UnexposedExpr=tipke_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:162:5 <US>c:@F@tipke_2<UE> <DS>int tipke_2(void)<DE> Extent=<ES>103:11 - 103:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:11: DeclRefExpr=tipke_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:162:5 (Reference) <US>c:@F@tipke_2<UE> <DS>int tipke_2(void)<DE> Extent=<ES>103:11 - 103:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>103:24 - 103:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:103:26: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>103:26 - 127:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:104:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>104:9 - 104:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:104:9: DeclRefExpr=napaka|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:34:13 (Reference) <US>c:@napaka<UE> <DS>napaka<DE> Extent=<ES>104:9 - 104:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:104:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>104:18 - 104:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:104:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>104:18 - 104:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:105:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>105:9 - 105:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:105:9: DeclRefExpr=LCD_vstavljen|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:35:13 (Reference) <US>c:@LCD_vstavljen<UE> <DS>LCD_vstavljen<DE> Extent=<ES>105:9 - 105:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:105:25: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>105:25 - 105:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:105:25: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>105:25 - 105:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:106:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>106:9 - 106:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:106:9: DeclRefExpr=test_koncan|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:36:13 (Reference) <US>c:@test_koncan<UE> <DS>test_koncan<DE> Extent=<ES>106:9 - 106:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:106:23: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>106:23 - 106:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:106:23: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>106:23 - 106:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:108:9: CallExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>108:9 - 108:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:108:9: UnexposedExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>108:9 - 108:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:108:9: DeclRefExpr=LCD_init_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:242:6 (Reference) <US>c:@F@LCD_init_2<UE> <DS>void LCD_init_2(void)<DE> Extent=<ES>108:9 - 108:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:111:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>111:9 - 111:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:111:9: DeclRefExpr=P4LATCH2|D:\Documents\IAR_LCD_test\MC_tester\head.h:156:22 (Reference) <US>c:@P4LATCH2<UE> <DS>P4LATCH2<DE> Extent=<ES>111:9 - 111:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:111:20: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>111:20 - 111:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:111:20: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>111:20 - 111:24<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:112:9: CallExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>112:9 - 112:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:112:9: UnexposedExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>112:9 - 112:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:112:9: DeclRefExpr=LE573set_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:243:6 (Reference) <US>c:@F@LE573set_2<UE> <DS>void LE573set_2(void)<DE> Extent=<ES>112:9 - 112:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:113:9: CallExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>113:9 - 113:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:113:9: UnexposedExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>113:9 - 113:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:113:9: DeclRefExpr=LE573hold_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:248:6 (Reference) <US>c:@F@LE573hold_2<UE> <DS>void LE573hold_2(void)<DE> Extent=<ES>113:9 - 113:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:115:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>115:9 - 115:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:115:9: DeclRefExpr=OutDev|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:32:22 (Reference) <US>c:@OutDev<UE> <DS>OutDev<DE> Extent=<ES>115:9 - 115:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:115:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>115:18 - 115:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:115:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>115:18 - 115:40<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>116:9 - 116:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:9: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>116:9 - 116:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>116:14 - 116:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:18: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>116:18 - 116:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:18: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>116:18 - 116:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:116:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>116:24 - 116:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:9: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>117:9 - 117:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:9: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>117:9 - 117:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:9: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>117:9 - 117:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:16: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>117:16 - 117:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:16: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>117:16 - 117:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:16: StringLiteral= <US><UE> <DS><DE> Extent=<ES>117:16 - 117:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:21: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>117:21 - 117:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:117:21: StringLiteral= <US><UE> <DS><DE> Extent=<ES>117:21 - 117:27<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>118:9 - 118:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:9: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>118:9 - 118:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>118:14 - 118:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:18: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>118:18 - 118:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:18: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>118:18 - 118:21<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:118:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>118:24 - 118:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:9: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>119:9 - 119:30<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:9: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>119:9 - 119:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:9: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>119:9 - 119:15<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:16: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>119:16 - 119:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:16: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>119:16 - 119:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:16: StringLiteral= <US><UE> <DS><DE> Extent=<ES>119:16 - 119:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:21: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>119:21 - 119:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:119:21: StringLiteral= <US><UE> <DS><DE> Extent=<ES>119:21 - 119:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:120:9: CallExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>120:9 - 120:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:120:9: UnexposedExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>120:9 - 120:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:120:9: DeclRefExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 (Reference) <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>120:9 - 120:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>122:9 - 122:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:9: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>122:9 - 122:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:9: UnexposedExpr=KeyBuf_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:62:22 <US>c:@KeyBuf_2<UE> <DS>KeyBuf_2<DE> Extent=<ES>122:9 - 122:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:9: DeclRefExpr=KeyBuf_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:62:22 (Reference) <US>c:@KeyBuf_2<UE> <DS>KeyBuf_2<DE> Extent=<ES>122:9 - 122:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>122:18 - 122:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:21: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>122:21 - 122:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:21: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>122:21 - 122:32<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:21: UnexposedExpr=KeyBuf_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:62:22 <US>c:@KeyBuf_2<UE> <DS>KeyBuf_2<DE> Extent=<ES>122:21 - 122:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:21: DeclRefExpr=KeyBuf_2|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:62:22 (Reference) <US>c:@KeyBuf_2<UE> <DS>KeyBuf_2<DE> Extent=<ES>122:21 - 122:29<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:30: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>122:30 - 122:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:33: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>122:33 - 122:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:122:33: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>122:33 - 122:34<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: CallExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: UnexposedExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: DeclRefExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 (Reference) <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:123:9: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>123:9 - 123:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: MemberRefExpr=enabled_mask|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:142:16 (Reference) <US>c:@S@struct_sched_apps@FI@enabled_mask<UE> <DS>enabled_mask<DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:124:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>124:9 - 124:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:128:11: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>128:11 - 131:8<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: CallExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: UnexposedExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: DeclRefExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 (Reference) <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:129:9: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>129:9 - 129:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:9: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>130:9 - 130:36<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:9: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>130:9 - 130:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:9: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>130:9 - 130:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:20: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>130:20 - 130:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:20: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>130:20 - 130:31<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:33: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>130:33 - 130:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:130:33: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>130:33 - 130:35<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:132:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>132:7 - 132:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>135:5 - 136:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:135:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:25<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:136:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>136:7 - 136:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>138:5 - 139:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:138:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>138:10 - 138:18<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:139:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>139:7 - 139:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>141:5 - 142:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:141:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>141:10 - 141:20<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:142:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>142:7 - 142:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>144:5 - 145:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:144:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>144:10 - 144:22<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:145:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>145:7 - 145:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>147:5 - 148:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:147:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>147:10 - 147:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:148:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>148:7 - 148:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>152:5 - 156:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:152:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>152:10 - 152:28<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:156:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>156:7 - 156:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>157:5 - 158:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:157:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>157:10 - 157:26<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:158:7: CallExpr=setLedNext|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:40:6 <US>c:@F@setLedNext<UE> <DS>void setLedNext(void)<DE> Extent=<ES>158:7 - 158:19<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:158:7: UnexposedExpr=setLedNext|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:40:6 <US>c:@F@setLedNext<UE> <DS>void setLedNext(void)<DE> Extent=<ES>158:7 - 158:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:158:7: DeclRefExpr=setLedNext|D:\Documents\IAR_LCD_test\MC_tester\ledice_test.h:40:6 (Reference) <US>c:@F@setLedNext<UE> <DS>void setLedNext(void)<DE> Extent=<ES>158:7 - 158:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: CallExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: UnexposedExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: DeclRefExpr=__disable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:39:20 (Reference) <US>c:@F@__disable_interrupt<UE> <DS>void __disable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: CompoundAssignOperator= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: MemberRefExpr=active|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:140:16 (Reference) <US>c:@S@struct_sched_apps@FI@active<UE> <DS>active<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: DeclRefExpr=apps|D:\Documents\IAR_LCD_test\MC_tester\scheduler.h:148:27 (Reference) <US>c:@apps<UE> <DS>apps<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: ParenExpr= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: CallExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: UnexposedExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:160:7: DeclRefExpr=__enable_interrupt|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\intrinsics.h:38:20 (Reference) <US>c:@F@__enable_interrupt<UE> <DS>void __enable_interrupt(void)<DE> Extent=<ES>160:7 - 160:37<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:7: CallExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>161:7 - 161:39<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:7: UnexposedExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>161:7 - 161:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:7: DeclRefExpr=timer_wait|D:\Documents\IAR_LCD_test\MC_tester\timerb.h:18:6 (Reference) <US>c:@F@timer_wait<UE> <DS>void timer_wait(unsigned int, unsigned int)<DE> Extent=<ES>161:7 - 161:17<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>161:18 - 161:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>161:18 - 161:33<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:35: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>161:35 - 161:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:161:35: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>161:35 - 161:38<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:163:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>163:7 - 163:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>164:5 - 166:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:164:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>164:10 - 164:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:166:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>166:7 - 166:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>168:5 - 170:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:168:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:170:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>170:7 - 170:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:5: CaseStmt= <US><UE> <DS><DE> Extent=<ES>172:5 - 174:12<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: CStyleCastExpr= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: ParenExpr= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:172:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>172:10 - 172:16<EE>
-<L>D:\Documents\IAR_LCD_test\MC_tester\main.c:174:7: BreakStmt= <US><UE> <DS><DE> Extent=<ES>174:7 - 174:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:7:24: VarDecl=testFlash|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:7:24 (Definition) <US>c:test_mng.c@175@testFlash<UE> <DS>testFlash<DE> Extent=<ES>7:1 - 12:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:7:8: TypeRef=s_testniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2 (Reference) <US>c:test_mng.h@586@T@s_testniProgram<UE> <DS>struct s_testniProgram<DE> Extent=<ES>7:8 - 7:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:7:36: InitListExpr= <US><UE> <DS><DE> Extent=<ES>7:36 - 12:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:8:3: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>8:3 - 8:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:8:3: StringLiteral= <US><UE> <DS><DE> Extent=<ES>8:3 - 8:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:9:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>9:3 - 9:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:10:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>10:3 - 10:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:3: UnexposedExpr=A|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1 <US>c:@E@testneOperacije@A<UE> <DS>A<DE> Extent=<ES>11:3 - 11:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:3: DeclRefExpr=A|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:1 (Reference) <US>c:@E@testneOperacije@A<UE> <DS>A<DE> Extent=<ES>11:3 - 11:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:6: UnexposedExpr=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>11:6 - 11:7<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:6: DeclRefExpr=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 (Reference) <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>11:6 - 11:7<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:9: UnexposedExpr=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>11:9 - 11:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:9: DeclRefExpr=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 (Reference) <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>11:9 - 11:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:12: UnexposedExpr=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>11:12 - 11:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:11:12: DeclRefExpr=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 (Reference) <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>11:12 - 11:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:14:24: VarDecl=testNormalen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:14:24 (Definition) <US>c:test_mng.c@389@testNormalen<UE> <DS>testNormalen<DE> Extent=<ES>14:1 - 19:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:14:8: TypeRef=s_testniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2 (Reference) <US>c:test_mng.h@586@T@s_testniProgram<UE> <DS>struct s_testniProgram<DE> Extent=<ES>14:8 - 14:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:14:39: InitListExpr= <US><UE> <DS><DE> Extent=<ES>14:39 - 19:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:15:3: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>15:3 - 15:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:15:3: StringLiteral= <US><UE> <DS><DE> Extent=<ES>15:3 - 15:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:16:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>16:3 - 16:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:17:3: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>17:3 - 17:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:3: UnexposedExpr=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>18:3 - 18:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:3: DeclRefExpr=F|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:7 (Reference) <US>c:@E@testneOperacije@F<UE> <DS>F<DE> Extent=<ES>18:3 - 18:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:6: UnexposedExpr=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>18:6 - 18:7<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:6: DeclRefExpr=D|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:5 (Reference) <US>c:@E@testneOperacije@D<UE> <DS>D<DE> Extent=<ES>18:6 - 18:7<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:9: UnexposedExpr=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>18:9 - 18:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:9: DeclRefExpr=S|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:26:3 (Reference) <US>c:@E@testneOperacije@S<UE> <DS>S<DE> Extent=<ES>18:9 - 18:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>18:12 - 18:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:18:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>18:12 - 18:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25: VarDecl=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Declaration) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>22:1 - 22:54<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:8: TypeRef=s_testniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:36:2 (Reference) <US>c:test_mng.h@586@T@s_testniProgram<UE> <DS>struct s_testniProgram<DE> Extent=<ES>22:8 - 22:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:40: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>22:40 - 22:53<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12: VarDecl=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Definition) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>23:1 - 23:35<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:33: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>23:33 - 23:35<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:34: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>23:34 - 23:35<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:6: FunctionDecl=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 (Declaration) <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>26:1 - 26:59<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:23: ParmDecl=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:23 (Definition) <US>c:test_mng.c@748@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>26:19 - 26:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:35: ParmDecl=leviZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:35 (Definition) <US>c:test_mng.c@760@F@izpisiIzbiro@leviZnak<UE> <DS>int<DE> Extent=<ES>26:31 - 26:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:49: ParmDecl=desniZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:26:49 (Definition) <US>c:test_mng.c@774@F@izpisiIzbiro@desniZnak<UE> <DS>int<DE> Extent=<ES>26:45 - 26:58<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:29:6: FunctionDecl=test_mng_init|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:29:6 (Definition) <US>c:@F@test_mng_init<UE> <DS>void test_mng_init(void)<DE> Extent=<ES>29:1 - 32:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:29:21: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>29:21 - 32:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:2: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>30:2 - 30:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:2: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>30:2 - 30:33<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:2: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>30:2 - 30:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:2: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>30:2 - 30:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:17: DeclRefExpr=TEST_PROG_FLASH|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:9:3 (Reference) <US>c:@E@izbireTestnihProgramov@TEST_PROG_FLASH<UE> <DS>TEST_PROG_FLASH<DE> Extent=<ES>30:17 - 30:32<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:36: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>30:36 - 30:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:30:37: DeclRefExpr=testFlash|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:7:24 (Reference) <US>c:test_mng.c@175@testFlash<UE> <DS>testFlash<DE> Extent=<ES>30:37 - 30:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:2: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>31:2 - 31:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:2: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>31:2 - 31:32<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:2: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>31:2 - 31:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:2: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>31:2 - 31:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:17: DeclRefExpr=TEST_PROG_NORM|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:10:3 (Reference) <US>c:@E@izbireTestnihProgramov@TEST_PROG_NORM<UE> <DS>TEST_PROG_NORM<DE> Extent=<ES>31:17 - 31:31<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:35: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>31:35 - 31:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:31:36: DeclRefExpr=testNormalen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:14:24 (Reference) <US>c:test_mng.c@389@testNormalen<UE> <DS>testNormalen<DE> Extent=<ES>31:36 - 31:48<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:35:5: FunctionDecl=getNextOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:35:5 (Definition) <US>c:@F@getNextOperation<UE> <DS>int getNextOperation(void)<DE> Extent=<ES>35:1 - 42:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:35:23: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>35:23 - 42:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:2: IfStmt= <US><UE> <DS><DE> Extent=<ES>36:2 - 36:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>36:5 - 36:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:5: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>36:5 - 36:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:5: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>36:5 - 36:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:26: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>36:26 - 36:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:28: WhileStmt= <US><UE> <DS><DE> Extent=<ES>36:28 - 36:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:34: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>36:34 - 36:35<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:36:36: NullStmt= <US><UE> <DS><DE> Extent=<ES>36:36 - 36:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:2: IfStmt= <US><UE> <DS><DE> Extent=<ES>37:2 - 39:3<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>37:5 - 37:104<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>37:5 - 37:55<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:41: MemberRefExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Reference) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>37:5 - 37:53<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>37:5 - 37:39<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>37:5 - 37:39<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>37:5 - 37:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:5: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>37:5 - 37:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:20: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>37:20 - 37:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:20: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>37:20 - 37:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:94: UnexposedExpr=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>37:58 - 37:104<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:94: MemberRefExpr=stOperacij|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:34:7 (Reference) <US>c:@SA@s_testniProgram@FI@stOperacij<UE> <DS>stOperacij<DE> Extent=<ES>37:58 - 37:104<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:58: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>37:58 - 37:92<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:58: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>37:58 - 37:92<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:58: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>37:58 - 37:72<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:58: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>37:58 - 37:72<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:73: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>37:73 - 37:91<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:73: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>37:73 - 37:91<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:37:105: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>37:105 - 39:3<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:38:3: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>38:3 - 38:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:38:10: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>38:10 - 38:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:38:11: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>38:11 - 38:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:2: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>41:2 - 41:57<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:45: UnexposedExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>41:9 - 41:57<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:45: MemberRefExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Reference) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>41:9 - 41:57<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>41:9 - 41:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:9: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>41:9 - 41:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:9: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>41:9 - 41:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:9: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>41:9 - 41:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:24: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>41:24 - 41:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:41:24: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>41:24 - 41:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:45:5: FunctionDecl=getFirstOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:45:5 (Definition) <US>c:@F@getFirstOperation<UE> <DS>int getFirstOperation(void)<DE> Extent=<ES>45:1 - 48:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:45:24: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>45:24 - 48:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:2: IfStmt= <US><UE> <DS><DE> Extent=<ES>46:2 - 46:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>46:5 - 46:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:5: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>46:5 - 46:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:5: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>46:5 - 46:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:26: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>46:26 - 46:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:28: WhileStmt= <US><UE> <DS><DE> Extent=<ES>46:28 - 46:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:34: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>46:34 - 46:35<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:46:36: NullStmt= <US><UE> <DS><DE> Extent=<ES>46:36 - 46:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:2: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>47:2 - 47:61<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>47:9 - 47:61<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:45: MemberRefExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Reference) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>47:9 - 47:57<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>47:9 - 47:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:9: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>47:9 - 47:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:9: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>47:9 - 47:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:9: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>47:9 - 47:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:24: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>47:24 - 47:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:24: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>47:24 - 47:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:47:60: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>47:60 - 47:61<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:50:5: FunctionDecl=getOperation|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:50:5 (Definition) <US>c:@F@getOperation<UE> <DS>int getOperation(void)<DE> Extent=<ES>50:1 - 52:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:50:19: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>50:19 - 52:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:3: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>51:3 - 51:58<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:46: UnexposedExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>51:10 - 51:58<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:46: MemberRefExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Reference) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>51:10 - 51:58<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>51:10 - 51:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:10: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>51:10 - 51:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:10: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>51:10 - 51:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:10: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>51:10 - 51:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:25: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>51:25 - 51:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:51:25: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>51:25 - 51:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:59:6: FunctionDecl=LCD_getTestniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:59:6 (Definition) <US>c:@F@LCD_getTestniProgram<UE> <DS>void LCD_getTestniProgram(void)<DE> Extent=<ES>59:1 - 131:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:59:28: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>59:28 - 131:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:60:3: CallExpr=clear|D:\Documents\IAR_LCD_test\MC_tester\head.h:226:6 <US>c:@F@clear<UE> <DS>void clear(void)<DE> Extent=<ES>60:3 - 60:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:60:3: UnexposedExpr=clear|D:\Documents\IAR_LCD_test\MC_tester\head.h:226:6 <US>c:@F@clear<UE> <DS>void clear(void)<DE> Extent=<ES>60:3 - 60:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:60:3: DeclRefExpr=clear|D:\Documents\IAR_LCD_test\MC_tester\head.h:226:6 (Reference) <US>c:@F@clear<UE> <DS>void clear(void)<DE> Extent=<ES>60:3 - 60:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:61:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>61:3 - 61:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:61:3: DeclRefExpr=OutDev|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:32:22 (Reference) <US>c:@OutDev<UE> <DS>OutDev<DE> Extent=<ES>61:3 - 61:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:61:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>61:12 - 61:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:61:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>61:12 - 61:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>62:3 - 62:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7: VarDecl=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 (Definition) <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>62:3 - 62:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:14: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>62:14 - 62:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>63:3 - 63:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:3: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>63:3 - 63:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:9: UnexposedExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>63:9 - 63:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:9: DeclRefExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 (Reference) <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>63:9 - 63:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:16: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>63:16 - 63:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:16: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>63:16 - 63:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:63:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>63:22 - 63:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:3: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>64:3 - 64:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:3: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>64:3 - 64:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:3: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>64:3 - 64:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>64:10 - 64:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>64:10 - 64:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:64:10: StringLiteral= <US><UE> <DS><DE> Extent=<ES>64:10 - 64:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>66:3 - 66:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:3: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>66:3 - 66:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:9: UnexposedExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>66:9 - 66:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:9: DeclRefExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 (Reference) <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>66:9 - 66:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:16: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>66:16 - 66:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:16: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>66:16 - 66:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:66:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>66:22 - 66:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:3: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>67:3 - 67:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:3: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>67:3 - 67:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:3: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>67:3 - 67:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>67:10 - 67:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>67:10 - 67:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:67:10: StringLiteral= <US><UE> <DS><DE> Extent=<ES>67:10 - 67:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>69:3 - 69:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:3: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>69:3 - 69:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:9: UnexposedExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>69:9 - 69:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:9: DeclRefExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 (Reference) <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>69:9 - 69:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:16: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>69:16 - 69:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:16: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>69:16 - 69:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:69:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>69:22 - 69:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:3: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>70:3 - 70:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:3: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>70:3 - 70:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:3: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>70:3 - 70:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>70:10 - 70:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>70:10 - 70:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:70:10: StringLiteral= <US><UE> <DS><DE> Extent=<ES>70:10 - 70:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:3: IfStmt= <US><UE> <DS><DE> Extent=<ES>72:3 - 78:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:6: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>72:6 - 72:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:6: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>72:6 - 72:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>72:22 - 72:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:72:24: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>72:24 - 78:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:2: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>73:2 - 73:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:2: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>73:2 - 73:5<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:8: UnexposedExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>73:8 - 73:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:8: DeclRefExpr=xPoz|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:62:7 (Reference) <US>c:test_mng.c@1718@F@LCD_getTestniProgram@xPoz<UE> <DS>xPoz<DE> Extent=<ES>73:8 - 73:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:15: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>73:15 - 73:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:15: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>73:15 - 73:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:73:21: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>73:21 - 73:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:2: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>74:2 - 74:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:2: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>74:2 - 74:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:2: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>74:2 - 74:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>74:9 - 74:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>74:9 - 74:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:74:9: StringLiteral= <US><UE> <DS><DE> Extent=<ES>74:9 - 74:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:75:2: CallExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>75:2 - 75:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:75:2: UnexposedExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>75:2 - 75:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:75:2: DeclRefExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 (Reference) <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>75:2 - 75:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:76:2: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>76:2 - 76:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:76:2: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>76:2 - 76:20<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:76:23: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>76:23 - 76:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:76:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>76:24 - 76:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:77:2: WhileStmt= <US><UE> <DS><DE> Extent=<ES>77:2 - 77:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:77:8: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>77:8 - 77:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:77:10: NullStmt= <US><UE> <DS><DE> Extent=<ES>77:10 - 77:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:81:3: CallExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>81:3 - 81:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:81:3: UnexposedExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>81:3 - 81:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:81:3: DeclRefExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 (Reference) <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>81:3 - 81:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>83:3 - 83:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7: VarDecl=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Definition) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>83:3 - 83:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>83:24 - 83:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>84:3 - 84:20<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7: VarDecl=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Definition) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>84:3 - 84:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>84:18 - 84:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>85:3 - 85:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7: VarDecl=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Definition) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>85:3 - 85:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14: VarDecl=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Declaration) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>85:14 - 85:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>86:3 - 86:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:3: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>86:3 - 86:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:11: ConditionalOperator= <US><UE> <DS><DE> Extent=<ES>86:11 - 86:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:11: ParenExpr= <US><UE> <DS><DE> Extent=<ES>86:11 - 86:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:12: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>86:12 - 86:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:12 - 86:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:28: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:28 - 86:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:32: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:32 - 86:33<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:86:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>86:36 - 86:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:87:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>87:3 - 87:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:87:3: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>87:3 - 87:7<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:87:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>87:10 - 87:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:3: CallExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>88:3 - 88:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:3: UnexposedExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>88:3 - 88:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:3: DeclRefExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 (Reference) <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>88:3 - 88:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:16: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>88:16 - 88:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:16: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>88:16 - 88:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:32: UnexposedExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>88:32 - 88:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:32: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>88:32 - 88:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:38: UnexposedExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>88:38 - 88:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:88:38: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>88:38 - 88:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:89:3: WhileStmt= <US><UE> <DS><DE> Extent=<ES>89:3 - 130:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:89:9: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>89:9 - 89:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:89:11: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>89:11 - 130:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:90:5: CallExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>90:5 - 90:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:90:5: UnexposedExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>90:5 - 90:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:90:5: DeclRefExpr=BeriKey|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:131:6 (Reference) <US>c:@F@BeriKey<UE> <DS>void BeriKey(void)<DE> Extent=<ES>90:5 - 90:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:5: IfStmt= <US><UE> <DS><DE> Extent=<ES>92:5 - 126:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:8: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>92:8 - 92:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:8: CallExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>92:8 - 92:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:8: UnexposedExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>92:8 - 92:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:8: DeclRefExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 (Reference) <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>92:8 - 92:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:13: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>92:13 - 92:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>92:13 - 92:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:23: UnexposedExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>92:23 - 92:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:23: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>92:23 - 92:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:92:28: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>92:28 - 103:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:7: IfStmt= <US><UE> <DS><DE> Extent=<ES>93:7 - 101:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>93:10 - 93:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:10: UnexposedExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>93:10 - 93:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:10: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>93:10 - 93:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>93:22 - 93:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:93:24: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>93:24 - 101:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:94:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>94:9 - 94:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:94:9: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>94:9 - 94:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:95:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>95:9 - 95:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:95:9: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>95:9 - 95:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:95:17: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>95:17 - 95:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:9: IfStmt= <US><UE> <DS><DE> Extent=<ES>96:9 - 99:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:12: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>96:12 - 96:31<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:12: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>96:12 - 96:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:12: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>96:12 - 96:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:30: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>96:30 - 96:31<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:96:32: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>96:32 - 99:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:97:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>97:11 - 97:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:97:11: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>97:11 - 97:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:97:28: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>97:28 - 97:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:98:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>98:11 - 98:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:98:11: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>98:11 - 98:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:98:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>98:18 - 98:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:9: CallExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>100:9 - 100:50<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:9: UnexposedExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>100:9 - 100:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:9: DeclRefExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 (Reference) <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>100:9 - 100:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:22: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>100:22 - 100:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:22: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>100:22 - 100:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:38: UnexposedExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>100:38 - 100:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:38: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>100:38 - 100:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:44: UnexposedExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>100:44 - 100:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:100:44: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>100:44 - 100:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:102:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>102:7 - 102:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:102:7: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>102:7 - 102:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:102:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>102:18 - 102:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:10: IfStmt= <US><UE> <DS><DE> Extent=<ES>105:10 - 126:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:13: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>105:13 - 105:33<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:13: CallExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>105:13 - 105:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:13: UnexposedExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>105:13 - 105:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:13: DeclRefExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 (Reference) <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>105:13 - 105:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>105:18 - 105:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>105:18 - 105:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:28: UnexposedExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>105:28 - 105:33<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:28: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>105:28 - 105:33<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:105:34: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>105:34 - 116:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:7: IfStmt= <US><UE> <DS><DE> Extent=<ES>106:7 - 114:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:10: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>106:10 - 106:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:10: UnexposedExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>106:10 - 106:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:10: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>106:10 - 106:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>106:22 - 106:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:106:24: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>106:24 - 114:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:107:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>107:9 - 107:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:107:9: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>107:9 - 107:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:108:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>108:9 - 108:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:108:9: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>108:9 - 108:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:108:16: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>108:16 - 108:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:9: IfStmt= <US><UE> <DS><DE> Extent=<ES>109:9 - 112:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:12: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>109:12 - 109:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:12: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>109:12 - 109:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:12: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>109:12 - 109:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:30: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>109:30 - 109:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:30: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>109:30 - 109:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:45: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>109:45 - 109:46<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:109:47: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>109:47 - 112:10<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>110:11 - 110:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:11: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>110:11 - 110:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:28: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>110:28 - 110:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:28: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>110:28 - 110:40<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:110:43: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>110:43 - 110:44<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:111:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>111:11 - 111:20<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:111:11: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>111:11 - 111:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:111:19: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>111:19 - 111:20<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:9: CallExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>113:9 - 113:50<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:9: UnexposedExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>113:9 - 113:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:9: DeclRefExpr=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 (Reference) <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>113:9 - 113:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:22: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>113:22 - 113:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:22: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>113:22 - 113:36<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:38: UnexposedExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>113:38 - 113:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:38: DeclRefExpr=levo|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:14 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@levo<UE> <DS>levo<DE> Extent=<ES>113:38 - 113:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:44: UnexposedExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>113:44 - 113:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:113:44: DeclRefExpr=desno|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:85:7 (Reference) <US>c:test_mng.c@2175@F@LCD_getTestniProgram@desno<UE> <DS>desno<DE> Extent=<ES>113:44 - 113:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:115:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>115:7 - 115:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:115:7: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>115:7 - 115:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:115:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>115:18 - 115:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:10: IfStmt= <US><UE> <DS><DE> Extent=<ES>118:10 - 126:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:13: CallExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>118:13 - 118:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:13: UnexposedExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>118:13 - 118:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:13: DeclRefExpr=KGet|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:132:6 (Reference) <US>c:@F@KGet<UE> <DS>int KGet(char)<DE> Extent=<ES>118:13 - 118:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:18: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>118:18 - 118:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>118:18 - 118:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:118:25: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>118:25 - 122:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:119:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>119:7 - 119:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:119:7: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>119:7 - 119:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:119:28: UnexposedExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>119:28 - 119:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:119:28: DeclRefExpr=trenutnaIzbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:83:7 (Reference) <US>c:test_mng.c@2127@F@LCD_getTestniProgram@trenutnaIzbira<UE> <DS>trenutnaIzbira<DE> Extent=<ES>119:28 - 119:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>120:7 - 120:59<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:43: MemberRefExpr=treOperacija|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:33:7 (Reference) <US>c:@SA@s_testniProgram@FI@treOperacija<UE> <DS>treOperacija<DE> Extent=<ES>120:7 - 120:55<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:7: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>120:7 - 120:41<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:7: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>120:7 - 120:41<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:7: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>120:7 - 120:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:7: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>120:7 - 120:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:22: UnexposedExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>120:22 - 120:40<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:22: DeclRefExpr=izbranTesniProgram|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:23:12 (Reference) <US>c:test_mng.c@670@izbranTesniProgram<UE> <DS>izbranTesniProgram<DE> Extent=<ES>120:22 - 120:40<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:120:58: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>120:58 - 120:59<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:121:7: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>121:7 - 121:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:10: IfStmt= <US><UE> <DS><DE> Extent=<ES>124:10 - 126:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:14: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>124:14 - 124:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:14: UnexposedExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>124:14 - 124:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:14: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>124:14 - 124:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:26: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>124:26 - 124:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:124:28: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>124:28 - 126:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:125:7: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>125:7 - 125:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:125:7: DeclRefExpr=tipkaDol|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:84:7 (Reference) <US>c:test_mng.c@2154@F@LCD_getTestniProgram@tipkaDol<UE> <DS>tipkaDol<DE> Extent=<ES>125:7 - 125:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:125:18: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>125:18 - 125:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:5: FunctionDecl=strLen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:5 (Definition) <US>c:@F@strLen<UE> <DS>int strLen(char *)<DE> Extent=<ES>133:1 - 137:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:18: ParmDecl=str|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:18 (Definition) <US>c:test_mng.c@3247@F@strLen@str<UE> <DS>char *<DE> Extent=<ES>133:12 - 133:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:22: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>133:22 - 137:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>134:3 - 134:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:7: VarDecl=len|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:7 (Definition) <US>c:test_mng.c@3262@F@strLen@len<UE> <DS>len<DE> Extent=<ES>134:3 - 134:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>134:13 - 134:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:3: WhileStmt= <US><UE> <DS><DE> Extent=<ES>135:3 - 135:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>135:9 - 135:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:9: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>135:9 - 135:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:10: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>135:10 - 135:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:10: DeclRefExpr=str|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:18 (Reference) <US>c:test_mng.c@3247@F@strLen@str<UE> <DS>char *<DE> Extent=<ES>135:10 - 135:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:16: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>135:16 - 135:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:135:16: DeclRefExpr=len|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:7 (Reference) <US>c:test_mng.c@3262@F@strLen@len<UE> <DS>len<DE> Extent=<ES>135:16 - 135:19<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:136:3: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>136:3 - 136:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:136:10: UnexposedExpr=len|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:7 <US>c:test_mng.c@3262@F@strLen@len<UE> <DS>len<DE> Extent=<ES>136:10 - 136:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:136:10: DeclRefExpr=len|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:134:7 (Reference) <US>c:test_mng.c@3262@F@strLen@len<UE> <DS>len<DE> Extent=<ES>136:10 - 136:13<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6: FunctionDecl=izpisiIzbiro|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:6 (Definition) <US>c:@F@izpisiIzbiro<UE> <DS>void izpisiIzbiro(int, int, int)<DE> Extent=<ES>140:1 - 171:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23: ParmDecl=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23 (Definition) <US>c:test_mng.c@3404@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>140:19 - 140:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:35: ParmDecl=leviZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:35 (Definition) <US>c:test_mng.c@3416@F@izpisiIzbiro@leviZnak<UE> <DS>int<DE> Extent=<ES>140:31 - 140:43<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:49: ParmDecl=desniZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:49 (Definition) <US>c:test_mng.c@3430@F@izpisiIzbiro@desniZnak<UE> <DS>int<DE> Extent=<ES>140:45 - 140:58<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:59: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>140:59 - 171:2<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>141:3 - 141:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7: VarDecl=sir|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7 (Definition) <US>c:test_mng.c@3449@F@izpisiIzbiro@sir<UE> <DS>sir<DE> Extent=<ES>141:3 - 141:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>141:13 - 141:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>142:3 - 142:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7: VarDecl=margin|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7 (Definition) <US>c:test_mng.c@3467@F@izpisiIzbiro@margin<UE> <DS>margin<DE> Extent=<ES>142:3 - 142:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:16: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>142:16 - 142:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>143:3 - 143:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:7: VarDecl=sirNormFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:7 (Definition) <US>c:test_mng.c@3486@F@izpisiIzbiro@sirNormFonta<UE> <DS>sirNormFonta<DE> Extent=<ES>143:3 - 143:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>143:22 - 143:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>144:3 - 144:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:7: VarDecl=sirLCDFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:7 (Definition) <US>c:test_mng.c@3511@F@izpisiIzbiro@sirLCDFonta<UE> <DS>sirLCDFonta<DE> Extent=<ES>144:3 - 144:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:21: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>144:21 - 144:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>145:3 - 145:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7: VarDecl=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 (Definition) <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>145:3 - 145:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>145:22 - 145:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>146:3 - 146:69<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:7: VarDecl=sirBesedila|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:7 (Definition) <US>c:test_mng.c@3561@F@izpisiIzbiro@sirBesedila<UE> <DS>sirBesedila<DE> Extent=<ES>146:3 - 146:68<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:21: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>146:21 - 146:68<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:21: CallExpr=strLen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:5 <US>c:@F@strLen<UE> <DS>int strLen(char *)<DE> Extent=<ES>146:21 - 146:56<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:21: UnexposedExpr=strLen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:5 <US>c:@F@strLen<UE> <DS>int strLen(char *)<DE> Extent=<ES>146:21 - 146:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:21: DeclRefExpr=strLen|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:133:5 (Reference) <US>c:@F@strLen<UE> <DS>int strLen(char *)<DE> Extent=<ES>146:21 - 146:27<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:52: UnexposedExpr=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>146:28 - 146:55<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:52: MemberRefExpr=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Reference) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>146:28 - 146:55<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:28: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>146:28 - 146:50<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:28: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>146:28 - 146:50<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:28: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>146:28 - 146:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:28: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>146:28 - 146:42<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:43: UnexposedExpr=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23 <US>c:test_mng.c@3404@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>146:43 - 146:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:43: DeclRefExpr=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23 (Reference) <US>c:test_mng.c@3404@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>146:43 - 146:49<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:57: UnexposedExpr=sirLCDFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:7 <US>c:test_mng.c@3511@F@izpisiIzbiro@sirLCDFonta<UE> <DS>sirLCDFonta<DE> Extent=<ES>146:57 - 146:68<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:57: DeclRefExpr=sirLCDFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:144:7 (Reference) <US>c:test_mng.c@3511@F@izpisiIzbiro@sirLCDFonta<UE> <DS>sirLCDFonta<DE> Extent=<ES>146:57 - 146:68<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:3: CallExpr=clearArea|D:\Documents\IAR_LCD_test\MC_tester\head.h:227:6 <US>c:@F@clearArea<UE> <DS>void clearArea(int, int)<DE> Extent=<ES>149:3 - 149:26<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:3: UnexposedExpr=clearArea|D:\Documents\IAR_LCD_test\MC_tester\head.h:227:6 <US>c:@F@clearArea<UE> <DS>void clearArea(int, int)<DE> Extent=<ES>149:3 - 149:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:3: DeclRefExpr=clearArea|D:\Documents\IAR_LCD_test\MC_tester\head.h:227:6 (Reference) <US>c:@F@clearArea<UE> <DS>void clearArea(int, int)<DE> Extent=<ES>149:3 - 149:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:13: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>149:13 - 149:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>149:13 - 149:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:15: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>149:15 - 149:18<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:20: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>149:20 - 149:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:20: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>149:20 - 149:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:149:22: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>149:22 - 149:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:151:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>151:3 - 151:34<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:151:3: DeclRefExpr=OutDev|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:32:22 (Reference) <US>c:@OutDev<UE> <DS>OutDev<DE> Extent=<ES>151:3 - 151:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:151:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>151:12 - 151:34<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:151:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>151:12 - 151:34<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:153:3: IfStmt= <US><UE> <DS><DE> Extent=<ES>153:3 - 157:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:153:6: UnexposedExpr=leviZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:35 <US>c:test_mng.c@3416@F@izpisiIzbiro@leviZnak<UE> <DS>int<DE> Extent=<ES>153:6 - 153:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:153:6: DeclRefExpr=leviZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:35 (Reference) <US>c:test_mng.c@3416@F@izpisiIzbiro@leviZnak<UE> <DS>int<DE> Extent=<ES>153:6 - 153:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:153:15: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>153:15 - 157:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:154:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>154:5 - 154:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:154:5: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>154:5 - 154:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:154:11: UnexposedExpr=margin|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7 <US>c:test_mng.c@3467@F@izpisiIzbiro@margin<UE> <DS>margin<DE> Extent=<ES>154:11 - 154:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:154:11: DeclRefExpr=margin|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7 (Reference) <US>c:test_mng.c@3467@F@izpisiIzbiro@margin<UE> <DS>margin<DE> Extent=<ES>154:11 - 154:17<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:155:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>155:5 - 155:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:155:5: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>155:5 - 155:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:155:11: UnexposedExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>155:11 - 155:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:155:11: DeclRefExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 (Reference) <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>155:11 - 155:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:5: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>156:5 - 156:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:5: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>156:5 - 156:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:5: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>156:5 - 156:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>156:12 - 156:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>156:12 - 156:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:156:12: StringLiteral= <US><UE> <DS><DE> Extent=<ES>156:12 - 156:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:159:3: IfStmt= <US><UE> <DS><DE> Extent=<ES>159:3 - 163:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:159:6: UnexposedExpr=desniZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:49 <US>c:test_mng.c@3430@F@izpisiIzbiro@desniZnak<UE> <DS>int<DE> Extent=<ES>159:6 - 159:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:159:6: DeclRefExpr=desniZnak|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:49 (Reference) <US>c:test_mng.c@3430@F@izpisiIzbiro@desniZnak<UE> <DS>int<DE> Extent=<ES>159:6 - 159:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:159:16: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>159:16 - 163:4<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>160:5 - 160:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:5: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>160:5 - 160:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>160:11 - 160:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:11: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>160:11 - 160:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:11: UnexposedExpr=sir|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7 <US>c:test_mng.c@3449@F@izpisiIzbiro@sir<UE> <DS>sir<DE> Extent=<ES>160:11 - 160:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:11: DeclRefExpr=sir|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7 (Reference) <US>c:test_mng.c@3449@F@izpisiIzbiro@sir<UE> <DS>sir<DE> Extent=<ES>160:11 - 160:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:17: UnexposedExpr=sirNormFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:7 <US>c:test_mng.c@3486@F@izpisiIzbiro@sirNormFonta<UE> <DS>sirNormFonta<DE> Extent=<ES>160:17 - 160:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:17: DeclRefExpr=sirNormFonta|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:143:7 (Reference) <US>c:test_mng.c@3486@F@izpisiIzbiro@sirNormFonta<UE> <DS>sirNormFonta<DE> Extent=<ES>160:17 - 160:29<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:32: UnexposedExpr=margin|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7 <US>c:test_mng.c@3467@F@izpisiIzbiro@margin<UE> <DS>margin<DE> Extent=<ES>160:32 - 160:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:160:32: DeclRefExpr=margin|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:142:7 (Reference) <US>c:test_mng.c@3467@F@izpisiIzbiro@margin<UE> <DS>margin<DE> Extent=<ES>160:32 - 160:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:161:5: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>161:5 - 161:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:161:5: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>161:5 - 161:8<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:161:11: UnexposedExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>161:11 - 161:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:161:11: DeclRefExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 (Reference) <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>161:11 - 161:23<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:5: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>162:5 - 162:16<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:5: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>162:5 - 162:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:5: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>162:5 - 162:11<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>162:12 - 162:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>162:12 - 162:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:162:12: StringLiteral= <US><UE> <DS><DE> Extent=<ES>162:12 - 162:15<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:165:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>165:3 - 165:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:165:3: DeclRefExpr=OutDev|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:32:22 (Reference) <US>c:@OutDev<UE> <DS>OutDev<DE> Extent=<ES>165:3 - 165:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:165:12: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>165:12 - 165:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:165:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>165:12 - 165:22<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>166:3 - 166:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:3: DeclRefExpr=GrX|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:12 (Reference) <US>c:@GrX<UE> <DS>GrX<DE> Extent=<ES>166:3 - 166:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>166:9 - 166:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>166:9 - 166:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:9: UnexposedExpr=sir|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7 <US>c:test_mng.c@3449@F@izpisiIzbiro@sir<UE> <DS>sir<DE> Extent=<ES>166:9 - 166:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:9: DeclRefExpr=sir|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:141:7 (Reference) <US>c:test_mng.c@3449@F@izpisiIzbiro@sir<UE> <DS>sir<DE> Extent=<ES>166:9 - 166:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:13: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>166:13 - 166:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:17: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>166:17 - 166:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:17: UnexposedExpr=sirBesedila|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:7 <US>c:test_mng.c@3561@F@izpisiIzbiro@sirBesedila<UE> <DS>sirBesedila<DE> Extent=<ES>166:17 - 166:28<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:17: DeclRefExpr=sirBesedila|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:146:7 (Reference) <US>c:test_mng.c@3561@F@izpisiIzbiro@sirBesedila<UE> <DS>sirBesedila<DE> Extent=<ES>166:17 - 166:28<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:166:29: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>166:29 - 166:30<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>167:3 - 167:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:3: DeclRefExpr=GrY|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:42:16 (Reference) <US>c:@GrY<UE> <DS>GrY<DE> Extent=<ES>167:3 - 167:6<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:9: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>167:9 - 167:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:9: UnexposedExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>167:9 - 167:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:9: DeclRefExpr=visinaIzpisa|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:145:7 (Reference) <US>c:test_mng.c@3535@F@izpisiIzbiro@visinaIzpisa<UE> <DS>visinaIzpisa<DE> Extent=<ES>167:9 - 167:21<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:167:24: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>167:24 - 167:25<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:3: CallExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>168:3 - 168:38<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:3: UnexposedExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>168:3 - 168:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:3: DeclRefExpr=printf|C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib\c\stdio.h:171:42 (Reference) <US>c:@F@printf<UE> <DS>int printf(const char *, ...)<DE> Extent=<ES>168:3 - 168:9<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:34: UnexposedExpr=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>168:10 - 168:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:34: UnexposedExpr=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>168:10 - 168:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:34: MemberRefExpr=ime|D:\Documents\IAR_LCD_test\MC_tester\test_mng.h:32:9 (Reference) <US>c:@SA@s_testniProgram@FI@ime<UE> <DS>ime<DE> Extent=<ES>168:10 - 168:37<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:10: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:32<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:10: ArraySubscriptExpr= <US><UE> <DS><DE> Extent=<ES>168:10 - 168:32<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:10: UnexposedExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>168:10 - 168:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:10: DeclRefExpr=testniProgrami|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:22:25 (Reference) <US>c:test_mng.c@614@testniProgrami<UE> <DS>testniProgrami<DE> Extent=<ES>168:10 - 168:24<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:25: UnexposedExpr=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23 <US>c:test_mng.c@3404@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>168:25 - 168:31<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:168:25: DeclRefExpr=izbira|D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:140:23 (Reference) <US>c:test_mng.c@3404@F@izpisiIzbiro@izbira<UE> <DS>int<DE> Extent=<ES>168:25 - 168:31<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:170:3: CallExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>170:3 - 170:14<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:170:3: UnexposedExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>170:3 - 170:12<EE>
+<L>D:\Documents\IAR_LCD_test\MC_tester\test_mng.c:170:3: DeclRefExpr=LCD_sendC|D:\Documents\IAR_LCD_test\MC_tester\graphics.h:134:6 (Reference) <US>c:@F@LCD_sendC<UE> <DS>void LCD_sendC(void)<DE> Extent=<ES>170:3 - 170:12<EE>

@@ -2348,19 +2348,12 @@ void BeriKey(void)
             }
             i>>=1;      
         }
-  	if (DelayKey){
-          DelayKey--;
-        }
-  	if (DelayKey==0)
-        {
-            if (t & TkRept){
-    	       LastKey=0; 	   // sprozi ponovitev tipke
-               KeyBuf[0] = t;
-            }
-            DelayKey=5;   // zakasnitev ponavljanja po novi tipki
+        
+        if (t & TkRept){
+           LastKey=0; 	   // sprozi ponovitev tipke
+           KeyBuf[0] = t;
         }
     }
-    else  DelayKey=5;   // zakasnitev ponavljanja po novi tipki
      
     
     
@@ -2395,26 +2388,17 @@ void BeriKey(void)
 
 
 //desifriraj tipke
-unsigned char KGet(void)
+int KGet(char tipke)
 {
-unsigned char t;
-    t = KeyBuf[0];
-    KeyBuf[0]=0;
-    switch(t){
-    case TkEnt: //enter
-    case TkDes: //Desno
-    case TkLev: //Levo
-    case TkGor: //Gor
-    case TkDol: //Dol
-        return 1;
-        break;
-    case (TkLev | TkDes): //Dol
-        return 2;
-        break;
-    default:
-      return 0;
-      break;
+  
+    char t = KeyBuf[0];
+    if((t & tipke) == tipke){
+      KeyBuf[0] &= ~tipke;
+      return 1;
     }
+    return 0;
+    
+}
     
     
 //    if ((t=KeyBuf[0])!=0)
@@ -2424,7 +2408,7 @@ unsigned char t;
 //    }
     
     //return t;
-}
+
 
 //===========================================================================
 
@@ -2470,8 +2454,8 @@ void LCD_init(void)
     int i;
     P5OUT&=~0x01;    // LCDreset = 0
     LE573hold();    // P4 za LCD in tipke
-    P5OUT|=0x80;     // CSflash=1
-    //   P2OUT &=~0x80;                             // P2.7 LCDreset = 0
+    P5OUT|=0x80;   // CSflash=1
+                  //   P2OUT &=~0x80;                             // P2.7 LCDreset = 0
     KeyBuf[0]=KeyBuf[1]=0; // shranjene tipke
     P5OUT|=0x1f;    // wr=1, >CS=1 , E=1, RS=1 , LCDreset = 1
     //   LCD_cmd(0xe2);  // (14) reset

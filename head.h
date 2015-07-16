@@ -62,19 +62,7 @@
 #define FLASH_BUF_SIZE 1024
 
 
-//int stIzbir = 2;
-enum izbireProgramov{
-  PROG_FLASH,
-  PROG_NORM,
-};
 
-typedef struct {
-  char *ime;
-  int operacije;
-}izbira;
-
-//doloci kateri tip naprave bomo testirali
-extern int tipNaprave;
 
 
 //#define SizRcode 0x520
@@ -236,6 +224,7 @@ void pas(int i);
 void zgoraj_belo();
 void zgoraj_crno();
 void clear();
+void clearArea(int start, int stop);
 void display_test();
 int prev_kable_2(void);
 //rs232

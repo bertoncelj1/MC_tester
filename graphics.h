@@ -129,7 +129,7 @@ int FwriteEnd(void);            // zapis zadnjega sektorja v kreirano datoteko
 //******************************************************************************
 unsigned long DirTimeDate(void);
 void BeriKey(void);
-unsigned char KGet(void);
+int  KGet(char tipka);
 void LCD_init(void);
 void LCD_sendC(void);
 void LCD_fill(unsigned char d);

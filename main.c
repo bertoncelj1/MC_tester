@@ -6,88 +6,11 @@
 #include "timerb.h"
 #include "flash_test.h"
 #include "ledice_test.h"
-
-
-izbira izbira1 = {
-  "prog flash",
-  123,
-};
-
-izbira izbira2 = {
-  "brez",
-  123,
-};
-
-izbira *izbire[10];
+#include "test_mng.h"
 
 
 
-char strProgFlas[] = "prog flash";
-char strProgNorm[] = "brez";
 
-int strLen(char *str){
-  int len = 0;
-  while(*str++)len ++;
-  return len;
-}
-void izpisiIzbiro(char *str){
-  int sir = 132;
-  int margin = 5;
-  int sirNormFonta = 6;
-  int sirLCDFonta = 6;
-  int visinaIzpisa = 50;
-  int sirBesedila = strLen(str)*sirLCDFonta;
-  
-  OutDev = STDOUT_LCD_NORMAL_FONT;
-   
-  GrX = sir/2-sirBesedila/2-margin-sirNormFonta;  
-  GrY = visinaIzpisa; 
-  printf("<");
-  
-  GrX = sir/2+sirBesedila/2+margin;  
-  GrY = visinaIzpisa; 
-  printf(">");
-  
-  OutDev = STDOUT_LCD;
-  GrX = sir/2 - sirBesedila/2;
-  GrY = visinaIzpisa + 1; 
-  printf(str);
-  
-  LCD_sendC();
-}
-
-int LCD_zacetnaIzbira(){
-  clear();
-  OutDev = STDOUT_LCD; 
-  GrX = 20;  GrY = 5;
-  printf("Izberite tip");
-    
-  GrX = 20;  GrY = 15; 
-  printf("naprave, ki jo");
-  
-  GrX = 20;  GrY = 25; 
-  printf("zelite testirati");
-  
-  LCD_sendC();
-  
-  int trenutnaIzbira = PROG_FLASH;
-  while(1){
-    if(1){//(tipkaLevo()){
-      if(--trenutnaIzbira <= 0)trenutnaIzbira = 123 - 1;
-      
-    }else if(1){//(tipkaDesno()){
-      trenutnaIzbira++;
-      trenutnaIzbira %= 123;
-      
-    }else if(1){//(tipkaOK()){
-      return trenutnaIzbira;
-    }
-    izpisiIzbiro(izbire[trenutnaIzbira]->ime);
-    
-  }
-}
-
-int tipPrograma = PROG_NORM;
 
 int main( void )
 {
@@ -100,8 +23,9 @@ int main( void )
   //sahovnica_inverzno();
   LCD_init();
   
-  izbire[PROG_FLASH] = &izbira1;
-  izbire[PROG_NORM] = &izbira2;
+  test_mng_init();
+  //prikaze moznost za izbiro tipa testiranja
+  LCD_getTestniProgram();
   
   
   LCD_init_2();
@@ -130,24 +54,7 @@ int main( void )
   
   
   //tipPrograma = LCD_zacetnaIzbira();
-  /*
-  do{
-  clear();
-  //LCD_sendC_2();
-  
-  sahovnica();
-  LCD_sendC_2();
-  __delay_cycles(500000);
-  
-  clear();
-  sahovnica_inverzno();
-  LCD_sendC_2();
-  __delay_cycles(500000);
-  
-  
-}
-  while(1);
-  */
+
   
   apps.active = 0;
   apps.enabled_mask = 0;
