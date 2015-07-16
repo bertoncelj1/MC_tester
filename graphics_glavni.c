@@ -319,25 +319,182 @@ unsigned char KGet_2(void)
     return t;
 }
 
-void led_diode(void){
-    
-    if(LCD_vstavljen){
-        if(test_koncan){
-            if(napaka){
-                P6DIR |= (0x08 | 0x10);
-                P6OUT |=  0x08; //prižgi rdeèo
-                P6OUT &= ~0x10; //ugasne zeleno
-                return;
-            }
-            else{
-                P6DIR |= (0x08 | 0x10);
-                P6OUT |=  0x10; //prižgi zeleno
-                P6OUT &= ~0x08; //ugasne rdeèo
-                return;
-            } 
+//TODO: set enum for state !
+//nastavi diode glede na podano stanje
+void led_diode(int state){
+  static prevState = -1;
+
+  //nadaljuje samo ob spremembi stanja
+  if(prevState == state)return;
+  prevState = state;
+  
+  switch(state){
+  case 0:
+      P6OUT &= ~0x10; //ugasne zeleno
+      P6OUT &= ~0x08; //ugasne rdeèo
+           
+    //test OK  
+  case 1:
+      P6DIR |= (0x08 | 0x10);
+      P6OUT |=  0x10; //prižgi zeleno
+      P6OUT &= ~0x08; //ugasne rdeèo
+      
+      
+    //napaka pri testiranju
+  case 2:
+      P6DIR |= (0x08 | 0x10);
+      P6OUT |=  0x08; //prižgi rdeèo
+      P6OUT &= ~0x10; //ugasne zeleno
+  }
+}
+
+
+void sahovnica(void){
+    int menjaj,i;
+    int zamik;
+    zamik = 1;
+    menjaj = 1;
+    i = 0;
+    for(int b = 0; b < 8; ++b){ 
+        menjaj = 0;
+        
+        if ( zamik == 1 ) {
+            zamik = 0;
+        }
+        else{
+            zamik = 1;
         }
         
+        
+        for(int j = 0; j < 128; ++j){ 
+            if (zamik == 1){
+                if (menjaj < 8){
+                    LCD[i++]=0xFF;   // vsebina LCD prikazovalnika
+                    menjaj++;
+                }
+                else if(menjaj < 16){
+                    LCD[i++]=0x00;
+                    menjaj++;
+                }
+                else{
+                    LCD[i++]=0xFF;   // vsebina LCD prikazovalnika
+                    menjaj=1;}
+            }
+            else
+            {
+                if (menjaj < 8){
+                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    menjaj++;
+                }
+                else if(menjaj < 16){
+                    LCD[i++]=0xFF;
+                    menjaj++;
+                }
+                else{
+                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    menjaj=1;
+                }
+            }
+            
+        }
+     
     }
-    P6OUT &= ~0x10; //ugasne zeleno
-    P6OUT &= ~0x08; //ugasne rdeèo
 }
+void sahovnica_inverzno(void){
+    int menjaj,i;
+    int zamik;
+    zamik = 1;
+    menjaj = 1;
+    i = 0;
+    for(int b = 0; b < 8; ++b){ 
+        menjaj = 0;
+        
+        if ( zamik == 1 ) {
+            zamik = 0;
+        }
+        else{
+            zamik = 1;
+        }
+        
+        /* for(int j = 0; j < 32; ++j){ 
+        
+        LCD[i++]=0x00;
+        
+    }*/
+        
+        
+        for(int j = 0; j < 128; ++j){ 
+            if (zamik == 1){
+                if (menjaj < 8){
+                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    menjaj++;
+                }
+                else if(menjaj < 16){
+                    LCD[i++]=0xff;
+                    menjaj++;
+                }
+                else{
+                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    menjaj=1;}
+            }
+            else
+            {
+                if (menjaj < 8){
+                    LCD[i++]=0xff;   // vsebina LCD prikazovalnika
+                    menjaj++;
+                }
+                else if(menjaj < 16){
+                    LCD[i++]=0x00;
+                    menjaj++;
+                }
+                else{
+                    LCD[i++]=0xff;   // vsebina LCD prikazovalnika
+                    menjaj=1;
+                }
+            }
+            //LCD[i-1]=j;
+        }
+        /*for(int j = 0; j < 32; ++j){ 
+        
+        LCD[i++]=0x00;
+        
+    }*/
+        
+        
+    }
+}
+void pas(int i){
+    for(int j = 512; j < 1024; ++j){ 
+        
+        LCD[i++]=0xFF;
+        
+    }
+    
+    
+    
+    
+}
+void zgoraj_belo(){
+    for(int i = 512; i < 1024; ++i){ 
+        LCD[i]=0xFF;
+    }
+}
+void zgoraj_crno(){
+    for(int i = 0; i < 512; ++i){ 
+        LCD[i]=0xFF;
+    }
+    
+}
+void clear(){
+    for(int i = 0; i < 1024; ++i){ 
+        LCD[i]=0x00;
+    }
+}
+void clearArea(int start, int stop){
+    for(int i = start; i < stop; ++i){ 
+        LCD[i] =0x00;
+    }
+}
+
+
+

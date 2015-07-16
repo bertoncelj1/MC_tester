@@ -3,8 +3,6 @@
 #include  "graphics.h"
 
 
-
-int flags;
 #define SizRcode 0x500
 __no_init unsigned int Rcode[SizRcode/2];   // prostor v RAM za FLASHUP kodo
 
@@ -26,7 +24,7 @@ unsigned int teden=1565;   // stevec tednov
 //extern unsigned char Pisk; // 0 ni piska
 unsigned int BeepRol;  // 16-bitni vzorec za pisk
 unsigned char OutDev;  // izhodna enota 0=LCD, 1=srednji fonti, 2=veliki fonti, 4=RS232 PC
-unsigned char LCDpr;   // stevilka prikaza za LCD
+//unsigned char LCDpr;  //se ne uporablja // stevilka prikaza za LCD
 
 //#pragma data_alignment=2
 //__no_init unsigned char LCD[1024];   // vsebina LCD prikazovalnika
@@ -86,7 +84,6 @@ unsigned char DelayKey;  // zakasnitev ponavljanja tipk
 unsigned char LastKey;   // zadnja kombinacija tipk
 unsigned char KeyBuf[2]; // shranjene tipke
 u16 SekStev;   // stevec sekund
-int flags;
 s16 PosInv; 		// pozicija zacetka inverznega izpisa
 // - - - - -
 // za MMC

@@ -123,7 +123,7 @@ Before calling an app, set up the app trigger (similar for sub-apps).
 #define WRITE_TO_FLASH_APP      (unsigned int)(1 << (WRITE_TO_FLASH_ID - 1))
 #define AUX_TX_APP		(unsigned int)(1 << (AUX_TX_ID - 1))
 #define READ_KEY_APP	        (unsigned int)(1 << (READ_KEY_ID - 1))
-#define tipkeDVE_APP            (unsigned int)(1 << (tipkeDVE_ID - 1))
+#define KONTROLA_APP            (unsigned int)(1 << (KONTROLA_ID - 1))
 #define lediceToggle_APP        (unsigned int)(1 << (lediceToggle_ID - 1))
 #define a6_APP		        (unsigned int)(1 << (a6_ID - 1))
 

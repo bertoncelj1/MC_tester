@@ -55,9 +55,7 @@ void Init(void)
   OutDev=4;  // izhodna enota 0=LCD, 1=srednji fonti, 2=veliki fonti, 4=RS232 PC
   P4OUT=BL+CSSD; 
 
-  flags=1;  // za risanje
 
-  LCDpr=1;
   
   timerb_init();
   ledice_test_init();

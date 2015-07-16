@@ -1950,11 +1950,23 @@
       <data/>
     </settings>
   </configuration>
+  <group>
+    <name>Testi</name>
+    <file>
+      <name>$PROJ_DIR$\flash_test.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ledice_test.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\test_mng.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\tipke_test.c</name>
+    </file>
+  </group>
   <file>
     <name>$PROJ_DIR$\anze.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\flash_test.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\graphics.c</name>
@@ -1966,16 +1978,10 @@
     <name>$PROJ_DIR$\ini.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\ledice_test.c</name>
-  </file>
-  <file>
     <name>$PROJ_DIR$\main.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\scheduler.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\test_mng.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\TIMERB.C</name>

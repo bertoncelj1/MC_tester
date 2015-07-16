@@ -27,12 +27,11 @@ int main( void )
   //prikaze moznost za izbiro tipa testiranja
   LCD_getTestniProgram();
   
-  
+
   LCD_init_2();
   off_REDled;
   off_GREENled;
   flags=1;  // za risanje
-  LCDpr=1;
   blink = 0;
   zakasnitev_ser_mode = 0;
   
@@ -48,9 +47,6 @@ int main( void )
   LE573set_2();
   LE573hold_2();
   
-  napaka = 0;
-  LCD_vstavljen = 0;
-  test_koncan = 0;
   
   
   //tipPrograma = LCD_zacetnaIzbira();
@@ -58,11 +54,9 @@ int main( void )
   
   apps.active = 0;
   apps.enabled_mask = 0;
-  apps_enable(REFRESH_DIS_APP | REC_APP | READ_KEY_APP | tipkeDVE_APP | lediceToggle_APP );  
-  //timer_wait(REFRESH_DIS_ID, 100);
+  apps_enable(REFRESH_DIS_APP | READ_KEY_APP | KONTROLA_APP | lediceToggle_APP );  
   timer_wait(READ_KEY_ID, 10);
-  timer_wait(tipkeDVE_ID, 20);
-  //timer_wait(lediceToggle_ID, 50);
+  timer_wait(KONTROLA_ID, 20);
   
   
   
@@ -80,31 +74,23 @@ int main( void )
       
     case READ_KEY_APP:
       BeriKey_2();
-      BeriKey();
-      led_diode();
+      BeriKey(); 
+      
       apps_suspend(READ_KEY_APP);
       timer_wait(READ_KEY_ID, 5);
-      
       break;
       
-    case tipkeDVE_APP:
-      
+    case KONTROLA_APP:  
       potek_kontrole();
+      
       apps_suspend(tipkeDVE_APP);
-      timer_wait(tipkeDVE_ID,100);
-      //}else {
-      
-      //}
-      
+      timer_wait(tipkeDVE_ID,100);   
       break;
+      
+      
     case LCD_TEST_APP:
       
-      //display_test();
       if (tipke_2() == 1){
-        napaka = 0;
-        LCD_vstavljen = 1;
-        test_koncan = 1;
-        
         LCD_init_2();
         
         //ugasne backlight
@@ -132,28 +118,6 @@ int main( void )
       break; 
       
       
-    case REFRESH_DIS_APP:
-      break;
-      
-    case MENU_APP:
-      break;
-      
-    case AUX_TX_APP:
-      break;     
-      
-    case SET_GAIN_APP:
-      break;
-      
-    case REC_APP:
-      break;
-      
-      
-      
-    case WRITE_TO_FLASH_APP:
-      
-      //apps_suspend(WRITE_TO_FLASH_APP);
-      //timer_wait(REFRESH_DIS_ID, 300);
-      break;
     case lediceToggle_APP:
       setLedNext();
       
@@ -161,19 +125,7 @@ int main( void )
       timer_wait(lediceToggle_ID, 300); 
       
       break;
-    case a6_APP:
-      
-      break;
-      
-    case a7_APP:
-      
-      break;
-      
-    case a8_APP:
-      
-      break;
-      
-    }
+
   }
   
   

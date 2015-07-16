@@ -28,12 +28,9 @@
 #define Len2SRB 32
 #define Len2STB 32
 
-extern unsigned char LCDpr;   // stevilka prikaza za LCD
+//extern unsigned char LCDpr;  //se ne uporablja // stevilka prikaza za LCD
 extern unsigned char OutDev;  // izhodna enota 0=LCD, 1=srednji fonti, 2=veliki fonti, 4=RS232 PC
 extern int flags;
-extern char napaka;
-extern char LCD_vstavljen;
-extern char test_koncan;
 
 #pragma data_alignment=2
 extern unsigned int Rcode[];
@@ -52,9 +49,6 @@ extern s16 PosInv; 		// pozicija zacetka inverznega izpisa
 extern const unsigned char Tkode[];
 extern const unsigned char Tchar[];
 extern unsigned char P4LATCH;  // stanje za LATCH 74HC573
-extern unsigned char vhod4;
-extern unsigned char vhod5;
-extern unsigned char spre_prvr;
 extern unsigned char krei_del;
 extern char on;
 extern char blink;
@@ -259,6 +253,6 @@ char kontrola_vstavljen_LCD(void);
 void back_light_ON(void);
 void back_light_OFF(void);
 char test_back_light(void);
-void led_diode(void);
+void led_diode(int state);
 //===========================================================================
 
