@@ -3,14 +3,16 @@
 #include "graphics.h"
 #include "timerb.h"
 #include "flash_test.h"
+#include "test_mng.h"
 
+//osnnovna stalna stanja preverjanja naprave
+//vsa ostala stanja preverjanaja spadajo pod OPERACIJE
+typedef enum{
+  ZACETEK, CAKA_START, KONEC, NAPAKA, OPERACIJE
+}e_KontrolaStanja;
 
-enum KontrolaStanja{
-  ZACETEK, CAKA_START, KONEC, NAPAKA, KONTROLA_KABELNA, 
-  PREVERI_FLASH, PREVERI_LEDICE, PREVERI_TIPKE, PREVERI_BACKLIGHT,
-};
-
-enum KontrolaStanja kontrola;
+e_KontrolaStanja kontrolaState;
+e_TestneOperacije operacijeState;
 unsigned char zakasnitev_ser_mode;
 unsigned char zakasnitev_testa;
 
@@ -51,6 +53,7 @@ void potek_kontrole(void){
         off_REDled;
         off_GREENled;
         
+        operacijeState = getFirstOperation();
         //ugasne back light
         P4LATCH = 0x00;
         LE573set();
@@ -61,6 +64,10 @@ void potek_kontrole(void){
         LE573set_2();
         LE573hold_2();
         
+        
+        
+        //izpise zacetno besedilo
+        //TODO dej te sporocila v funkcijo
         clear();
         OutDev = STDOUT_LCD_NORMAL_FONT; 
         GrX =25;  GrY = 5;
@@ -86,42 +93,55 @@ void potek_kontrole(void){
         break; 
         
     case KONEC:
-      // èaka da stakne display
+      // caka da stakne display
       if (kontrola_vstavljen_LCD()==0){
           kontrola = ZACETEK;
       }   
       break;
-      
+    
+    //ce v katerih izmed operacijpride do napake poklicejo to stanje
+    //operacije je dolzna pred klicanjemizpisati napako
     case NAPAKA: 
-      // èaka da stakne display
+      // caka da stakne display
      if (kontrola_vstavljen_LCD()==0){
           kontrola = ZACETEK;
      }
     break; 
    
-    
-    /* PROCESI: */
-    case KONTROLA_KABELNA: 
-        preveriPine();
-        break;
-        
-    case PREVERI_FLASH:
-        preveriFlash();
-        break;
-        
-    case PREVERI_LEDICE:
-        preveriLedice();
-        break;
-        
-    case PREVERI_TIPKE:
-        break;
-    
-    case PREVERI_BACKLIGHT:
-        
-        break;
+    //po vrsti se izvajajo operacije izbranega programa
+    case PREVERJAJ:
+    	izvediOperacije();
+   	break;
     //    return 0;
 }
 
+//izvaja operacije ki so dolocene za izbrani testniProgram definiran v test_mng.c
+void izvediOperacije(){
+
+	switch (operacijeState){
+	
+		case KONTROLA_KABELNA: 
+		    preveriPine();
+		    break;
+		    
+		case PREVERI_FLASH:
+		    preveriFlash();
+		    break;
+		    
+		case PREVERI_LEDICE:
+		    preveriLedice();
+		    break;
+		    
+		case PREVERI_TIPKE:
+			
+		    break;
+		
+		case PREVERI_BACKLIGHT:
+		    preveri_backlight();
+		    break;
+	}
+
+}
 void preveriLedice(){
   //poklice se app za testiranje ledic
   timer_wait(lediceToggle_ID, 50);
@@ -135,7 +155,7 @@ void preveriPine(){
   //preveri ali je kratek stik na pinih
   napacenPin = prev_kable_2();
   if(napacenPin == 0){
-    //TODO vse je k
+    operacijeState = getNextOperation();
   }else{
     //nasel je napako na enem pinu
     
@@ -158,7 +178,9 @@ void preveriPine(){
 }
 
 void preveriFlash(){
-  if(!preveriFlash()){
+  if(preveriFlash()){
+  	operacijeState = getNextOperation();
+  }else
     //v primeru napake izpise obvestilo
     clear();
     OutDev = STDOUT_LCD_NORMAL_FONT;
@@ -188,7 +210,41 @@ void preveriFlash(){
     //gre v stanje NAPAKA kjer caka na reset
     kontrola =  NAPAKA;
   }
+}
 
+void preveri_backlight(){
+  if(test_back_light()){
+  	operacijeState = getNextOperation();
+  }else{
+    //v primeru napake izpise obvestilo
+    clear();
+    OutDev = STDOUT_LCD_NORMAL_FONT;
+    
+    GrX =10;  GrY = 5;
+    printf("NAPAKA BACKLIGHT");
+    
+    OutDev = STDOUT_LCD;
+    int lineY = 20;
+    GrX =5;  GrY = lineY;
+    printf("Opis Problema:");
+    lineY += 10;
+    
+    //prebere errorLine vrstico po vrstico
+    uint8_t line[50];
+    uint8_t lineLen = 20; //koliko znakov bo izpisal na vrstico
+    uint8_t offset = 0;
+    //povprasa po vrstici, jo ipise in se pomakne v naslednjo
+    while(getErrorBacklightLine(line, lineLen, offset)){
+      offset += lineLen;
+      GrX =5;  GrY = lineY;
+      printf("%s", line);
+      lineY += 8;
+    }
+    LCD_sendC();
+    
+    //gre v stanje NAPAKA kjer caka na reset
+    kontrola =  NAPAKA;
+  }
 }
 
 char kontrola_vstavljen_LCD(void){
@@ -209,76 +265,6 @@ char kontrola_vstavljen_LCD(void){
     P3REN |= 0x01; //  
     return 0;
 }
-
-
-
-
-void back_light_error(int t){
-      napaka = 1;
-      LCD_vstavljen = 1;
-      test_koncan = 1;
-
-      clear();
-      OutDev = STDOUT_LCD_NORMAL_FONT; 
-      GrX =25;  GrY = 5;
-      printf("NAPAKA !!!");
-      GrX =15;  GrY = 25; 
-      printf("BACK LIGHT");
-      GrX = 25 ;  GrY = 45;
-      
-      if(t == 2){
-        printf("TOK" );
-      }
-      else{
-        printf("NAPETOST" );  
-      }
-      
-      LCD_sendC();
-      apps_disable(LCD_TEST_APP); 
-      apps_enable(tipkeDVE_APP);
-      timer_wait(tipkeDVE_ID,200);
-}
-
-
-
-
-void back_light_ON(void){
-
-  P3DIR |= 0x02; // set port output 
-  P3OUT |= 0x02; // set 1
-}
-
-
-void back_light_OFF(void){
-  P3DIR |= 0x02; // set port output 
-  P3OUT &= ~0x02; // set 0
-}
-
-char test_back_light(void){
-  
-    if( P3OUT & 0x02 ){ //preveri ali je Backlight vkljuèen potem lahko vkljuèim test
-        
-        P2DIR &= ~ 0x80;  // P2.7 ali je napetost 3-4V
-        P2DIR &= ~ 0x40;  // P2.6 ali je tok veèji od 5mA
-        if(!(P2IN & 0x80 )){
-            return 3;
-            //napetost ni dovolj velika
-        }
-        if(!(P2IN & 0x40 )){
-            //tok ni dovolj velik
-            return 2;
-        }
-    }
- 
-    return 0;
-}
-
-
-
-
-
-
-
 
 
 int prev_kable_2(void){
@@ -392,11 +378,3 @@ int prev_kable_2(void){
     
 }
 
-void zakasni(void){
-    for(int i = 0; i < 200; ++i)
-    {
-        
-    }
-    
-    
-}

@@ -8,8 +8,6 @@ unsigned char KeyBuf_2[2]; // shranjene tipke
 
 
 
-
-
 void LCD_sendC_2(void)
 {
     unsigned int i,p;
@@ -348,6 +346,17 @@ void led_diode(int state){
   }
 }
 
+
+void back_light_ON(void){
+  P3DIR |= 0x02; // set port output 
+  P3OUT |= 0x02; // set 1
+}
+
+
+void back_light_OFF(void){
+  P3DIR |= 0x02; // set port output 
+  P3OUT &= ~0x02; // set 0
+}
 
 void sahovnica(void){
     int menjaj,i;

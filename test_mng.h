@@ -22,9 +22,9 @@ typedef enum{
 }testneOperacije;
 */
 
-enum testneOperacije {
-A,S,D,F,G,H   
-};
+typedef enum{
+KONTROLA_KABELNA,PREVERI_FLASH,PREVERI_LEDICE,PREVERI_TIPKE,PREVERI_BACKLIGHT 
+}e_TestneOperacije;
 
 
 #define MAX_OPERACIJ  20 //najvecje stevilo operacij, ki jih ima lahko ena izbira
@@ -32,7 +32,7 @@ typedef struct {
   char *ime;						//opis operacije
   int treOperacija; 				//trenutna izbrana operacija
   int stOperacij;					//stevilo operacij < MAX_OPERACIJ
-  enum testneOperacije operacijeID[MAX_OPERACIJ]; //nastete vse operacije, ki jih ta test izvede 
+  e_TestneOperacije operacijeID[MAX_OPERACIJ]; //nastete vse operacije, ki jih ta test izvede 
 }s_testniProgram;
 
 
@@ -40,9 +40,9 @@ typedef struct {
 //public functions
 void test_mng_init();
 void LCD_getTestniProgram();
-int getFirstOperation();
-int getNextOperation();
-int getOperation();
+e_TestneOperacije getFirstOperation();
+e_TestneOperacije getNextOperation();
+e_TestneOperacije getOperation();
 
 #else
 	#error test_mng_h  already included! 

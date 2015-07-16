@@ -54,7 +54,7 @@ uint8_t readId(uint8_t *manID, uint16_t *devID, uint8_t *uniqueID, uint8_t *uniq
 
 
 //vrne string v katerega prepise vsebino errorBufferja
-//lineLen pove koliko je prstora v nizu line-> koliko elementov najvec pricakuje
+//lineLen pove koliko je prstora v nizu line -> koliko elementov najvec pricakuje
 //errorOffest pove s kje naj zacne brati errorBuff
 //vrne 0 v primeru da ni nic vpisal v line, drugace vrne 1
 uint8_t getErrorLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset){
@@ -73,7 +73,6 @@ uint8_t getErrorLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset){
     
     line[i] = 0;
     return 1;
- 
 }
 
 //preveri ali flash deluje tako da poklice readId funkcijo in preveri vrnjene komponente

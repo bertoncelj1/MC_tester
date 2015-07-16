@@ -8,14 +8,14 @@ static s_testniProgram testFlash = {
   "prog flash",			//opis programa
   0,					//trenutna testna operacija
   4,					//stevilo operacij
-  A, S, D, F, //nastete vse operacije, ki jih ta test izvede      
+  KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_TIPKE //nastete vse operacije, ki jih ta test izvede      
 };
 
 static s_testniProgram testNormalen = {
   "prog normalen",		//opis programa
   0,					//trenutna testna operacija
   4,					//stevilo operacij
-  F, D, S, NAPAKA //nastete vse operacije, ki jih ta test izvede      
+  KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_LEDICE, PREVERI_FLASH, PREVERI_TIPKE //nastete vse operacije, ki jih ta test izvede      
 };
 
 
@@ -32,7 +32,7 @@ void test_mng_init(){
 }
 
 //vrne nasljednjo operacijo; ce ta ne obstaja vrne -1
-int getNextOperation(){
+e_TestneOperacije getNextOperation(){
 	if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
 	if(testniProgrami[izbranTesniProgram]->treOperacija++ > testniProgrami[izbranTesniProgram]->stOperacij){
 		return -1;
@@ -42,12 +42,12 @@ int getNextOperation(){
 }
 
 //vrne prvo operacijo testnega program
-int getFirstOperation(){
+e_TestneOperacije getFirstOperation(){
 	if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
 	return testniProgrami[izbranTesniProgram]->treOperacija = 0;
 }
 
-int getOperation(){
+e_TestneOperacije getOperation(){
   return testniProgrami[izbranTesniProgram]->treOperacija;
 }
 

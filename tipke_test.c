@@ -1,10 +1,11 @@
 #include "tipke_test.h"
+#include ""
 
 static int display_state;
 
 
 void izrisi_tipko(int tip);
-void  izpis_pritisnjenih_tipk(void);
+void izpis_pritisnjenih_tipk(void);
 
 void izrisi_tipko(int tip){
     
