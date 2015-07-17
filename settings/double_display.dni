@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=451423317
+Checksum=1672807162
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -26,8 +26,7 @@ MixedMode=1
 [BreakpointUsageDialog]
 Placement=_ 578 289 1184 571
 [Breakpoints]
-Bp0=_ "STD_CODE" "{$PROJ_DIR$\main.c}.63.7" 1 0 0 0 "" 0 ""
-Count=1
+Count=0
 [FET]
 Clock mode=14
 Extended Clock mode=-1

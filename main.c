@@ -5,6 +5,7 @@
 #include "scheduler.h"
 #include "timerb.h"
 #include "ledice_test.h"
+#include "flash_test.h"
 #include "test_mng.h"
 
 
@@ -19,14 +20,16 @@ int main( void )
   
   //enable interrupt
   _EINT();       
-  
+    
+
   //prikaze moznost za izbiro tipa testiranja
   LCD_getTestniProgram();
   
+
   //nastavi aplikacije
   apps.active = 0;
   apps.enabled_mask = 0;
-  apps_enable(REFRESH_DIS_APP | READ_KEY_APP | KONTROLA_APP | lediceToggle_APP );  
+  apps_enable(REFRESH_DIS_APP | READ_KEY_APP | KONTROLA_APP | lediceToggle_APP  );  
   timer_wait(READ_KEY_ID, 10);
   timer_wait(KONTROLA_ID, 20);
   
@@ -66,6 +69,7 @@ void switchApps(){
       timer_wait(lediceToggle_ID, 300); 
       
       break;
+      
 
     //TODO: kaj se naredi s temle?
     default:

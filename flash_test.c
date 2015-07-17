@@ -94,7 +94,7 @@ uint8_t preveriFlash(){
 	
         //ce je prislo do napake zapise sporocilo v errorBuff
         //zapise vse podatke v errorBuff sesnajstisko
-        if(1){//!vRedu){
+        if(!vRedu){
           errIndex = 0;
           //nabor sesnajstiskih znakov
           uint8_t nabor16x[17] = "0123456789ABCDEF";

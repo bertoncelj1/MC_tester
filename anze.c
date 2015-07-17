@@ -60,9 +60,6 @@ void potek_kontrole(void){
     
    
    case ZACETEK:
-        //inicializira na nov priklopljen zaslon
-        LCD_init_2();
-        
         //pridobi prvo testno operacijo ki jo bo izvajal
         operacijeState = getFirstOperation();
         
@@ -90,11 +87,23 @@ void potek_kontrole(void){
         
         LCD_input_port_2();
         
-        
     case CAKA_START: 
         if (kontrola_vstavljen_LCD()){
+
+            //LCD_init_2();  //inicializira na nov priklopljen zaslon
             kontrolaStanja = PREVERJAJ;
-        }     
+            //clear();
+        }   
+      //WORK IN PROGRESS HERE!!!  
+    if(preveriFlash()){
+      P6DIR |= (0x08 | 0x10);
+      P6OUT |=  0x10; //prižgi zeleno
+      P6OUT &= ~0x08; //ugasne rdeèo
+    }else{
+      P6DIR |= (0x08 | 0x10);
+      P6OUT =  ~0x10; //ugasne zeleno
+      P6OUT |= 0x08; //prižgi rdeèo
+    } 
 
         break; 
         
@@ -131,9 +140,10 @@ void izvediOperacije(){
         //v primeru napake operacije vrnejo 0; Zato da ima uporabnik potem moznost 
         //resetirati in ponovno pognati neuspelo operacijo
         int naprej = 0;
+            
 	switch (operacijeState){
 	
-		case KONTROLA_KABELNA: 
+		case KONTROLA_KABELNA:
 		    naprej = preveriPine();
 		    break;
 		    
@@ -166,7 +176,7 @@ void izvediOperacije(){
 }
 void drawLoadingBar(){
           //TODO
-        clear(0, 1);
+        clearLine(0, 1);
         OutDev = STDOUT_LCD; 
         GrX =0;  GrY = 0;
         printf("testiram %s", getCurrentOperationStr());
@@ -301,22 +311,31 @@ int preveri_backlight(){
   return 0;
 }
 
-char kontrola_vstavljen_LCD(void){
-    //return 1;   
+char kontrola_vstavljen_LCD(void){ 
     P2DIR |= 0x03;  P1DIR |= 0xCF; 
     P2OUT |= 0x03;  P1OUT |= 0xCF;  //postavi na 1 da tudi ce pritiskas tipko ne kvari detekcije
     
     P3DIR &= ~0x01; // tipke na vhod 
     P3REN &= ~0x01; //  
-    __delay_cycles(10000); //normalizacija nivojev
+    
+
+    
+    //__delay_cycles(10000); //normalizacija nivojev
+    
+
     if (P3IN & 0x01){
-        __delay_cycles(10000); //se enkrat preveri
+        //__delay_cycles(10000); //se enkrat preveri
+
         if (P3IN & 0x01){
             P3REN |= 0x01; //  
+
             return 1;
         }   
     }
-    P3REN |= 0x01; //  
+    P3REN |= 0x01; 
+    
+
+
     return 0;
 }
 
