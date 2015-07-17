@@ -320,22 +320,27 @@ unsigned char KGet_2(void)
 //TODO: set enum for state !
 //nastavi diode glede na podano stanje
 void led_diode(int state){
-  static prevState = -1;
+  static int prevState = -1;
 
   //nadaljuje samo ob spremembi stanja
   if(prevState == state)return;
   prevState = state;
   
   switch(state){
+    //obe OFF
   case 0:
       P6OUT &= ~0x10; //ugasne zeleno
       P6OUT &= ~0x08; //ugasne rdeèo
+      off_PULSEled;
+      off_ALARMled;
            
     //test OK  
   case 1:
       P6DIR |= (0x08 | 0x10);
       P6OUT |=  0x10; //prižgi zeleno
       P6OUT &= ~0x08; //ugasne rdeèo
+      off_PULSEled;
+      off_ALARMled;
       
       
     //napaka pri testiranju
@@ -343,6 +348,8 @@ void led_diode(int state){
       P6DIR |= (0x08 | 0x10);
       P6OUT |=  0x08; //prižgi rdeèo
       P6OUT &= ~0x10; //ugasne zeleno
+      on_PULSEled;
+      on_ALARMled;
   }
 }
 
@@ -477,11 +484,7 @@ void pas(int i){
         
         LCD[i++]=0xFF;
         
-    }
-    
-    
-    
-    
+    } 
 }
 void zgoraj_belo(){
     for(int i = 512; i < 1024; ++i){ 
@@ -499,10 +502,17 @@ void clear(){
         LCD[i]=0x00;
     }
 }
+
+//pobrise samo doloceno obmocje na ekranu
 void clearArea(int start, int stop){
     for(int i = start; i < stop; ++i){ 
         LCD[i] =0x00;
     }
+}
+
+//pobrise samo vrstice na ekranu
+void clearLine(int start, int end){
+  clearArea(start * 128, end * 128);
 }
 
 

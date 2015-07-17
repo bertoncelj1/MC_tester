@@ -3,10 +3,11 @@
 
 
 
-#define ST_TEST_PROG  0	 //stevilo testnih programov
+#define ST_TEST_PROG  2	 //stevilo testnih programov
 #define MAX_TEST_PROG 10 //najvecje stevilo programov vrednost mora biti > 0 in > ST_TEST_PROG
+#define TEST_PROGRAM_FIRST 0 //index prvega testnega programa
 enum izbireTestnihProgramov{
-  TEST_PROG_FLASH,
+  TEST_PROG_FLASH = TEST_PROGRAM_FIRST,
   TEST_PROG_NORM,
 };
 
@@ -22,8 +23,14 @@ typedef enum{
 }testneOperacije;
 */
 
-typedef enum{
-KONTROLA_KABELNA,PREVERI_FLASH,PREVERI_LEDICE,PREVERI_TIPKE,PREVERI_BACKLIGHT 
+#define TESTNE_OPR_FIRST 1 //index prve testne operacije
+typedef enum { 
+  KONTROLA_KABELNA = TESTNE_OPR_FIRST, 
+  PREVERI_FLASH, 
+  PREVERI_LEDICE, 
+  PREVERI_TIPKE, 
+  PREVERI_BACKLIGHT, 
+  ZAKLJUCI
 }e_TestneOperacije;
 
 
@@ -31,7 +38,6 @@ KONTROLA_KABELNA,PREVERI_FLASH,PREVERI_LEDICE,PREVERI_TIPKE,PREVERI_BACKLIGHT
 typedef struct {
   char *ime;						//opis operacije
   int treOperacija; 				//trenutna izbrana operacija
-  int stOperacij;					//stevilo operacij < MAX_OPERACIJ
   e_TestneOperacije operacijeID[MAX_OPERACIJ]; //nastete vse operacije, ki jih ta test izvede 
 }s_testniProgram;
 
@@ -43,6 +49,7 @@ void LCD_getTestniProgram();
 e_TestneOperacije getFirstOperation();
 e_TestneOperacije getNextOperation();
 e_TestneOperacije getOperation();
+const char *getCurrentOperationStr();
 
 #else
 	#error test_mng_h  already included! 

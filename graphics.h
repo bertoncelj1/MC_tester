@@ -30,7 +30,6 @@
 
 //extern unsigned char LCDpr;  //se ne uporablja // stevilka prikaza za LCD
 extern unsigned char OutDev;  // izhodna enota 0=LCD, 1=srednji fonti, 2=veliki fonti, 4=RS232 PC
-extern int flags;
 
 #pragma data_alignment=2
 extern unsigned int Rcode[];
@@ -39,7 +38,6 @@ extern unsigned int Rcode[];
 extern int GrX,GrY;   // koordinati tocke na LCD
 extern unsigned int inv;        // za inverzen izpis na LCD
 extern u16 SekStev;   // stevec sekund
-extern int flags;
 extern s16 SetPos; 			// pozicija za nastavljanje
 extern u16 LCDset; 	// koda parametra za nastavitve
 extern unsigned long LCDval; 	// vrednost za nastavljanje
@@ -51,7 +49,6 @@ extern const unsigned char Tchar[];
 extern unsigned char P4LATCH;  // stanje za LATCH 74HC573
 extern unsigned char krei_del;
 extern char on;
-extern char blink;
 extern char test_tipk_biti;
 extern unsigned char KeyBuf_2[];
 unsigned int SwapW(unsigned int w);
@@ -216,10 +213,10 @@ void LE573hold(void);  // P4 za LCD in tipke
 //#define on_GREENled      P2DIR |= 0x80; P2OUT  |= 0x80
 //#define off_GREENled      P2DIR &= ~0x80; P2OUT  &= ~0x80
 
-#define on_REDled      P5DIR |= 0x40; P5OUT  |= 0x40
-#define off_REDled      P5DIR &= ~0x40; P5OUT  &= ~0x40
-#define on_GREENled      P5DIR |= 0x80; P5OUT  |= 0x80
-#define off_GREENled      P5DIR &= ~0x80; P5OUT  &= ~0x80
+#define on_PULSEled      P5DIR |= 0x40; P5OUT  |= 0x40          //P5.6
+#define off_PULSEled      P5DIR &= ~0x40; P5OUT  &= ~0x40
+#define on_ALARMled      P5DIR |= 0x80; P5OUT  |= 0x80          //P5.7
+#define off_ALARMled      P5DIR &= ~0x80; P5OUT  &= ~0x80
 
 
 /* SPI za data FLASH */
@@ -252,7 +249,6 @@ void BeriKey_2(void);
 char kontrola_vstavljen_LCD(void);
 void back_light_ON(void);
 void back_light_OFF(void);
-char test_back_light(void);
 void led_diode(int state);
 //===========================================================================
 

@@ -3,6 +3,7 @@
 #include "TIMERB.H"
 #include "ledice_test.h"
 #include "flash_test.h"
+#include "test_mng.h"
 
 void Init(void)
 {
@@ -56,10 +57,23 @@ void Init(void)
   P4OUT=BL+CSSD; 
 
 
-  
+  //inicializacija timerB
   timerb_init();
+  
+  //inicializira nekatere testne postopke
   ledice_test_init();
   flash_test_init();
-
+  
+  test_mng_init(); //inicializira test managerja, ki je odgovoren za klice testnih programov
+  
+  //init oba zaslona
+  LCD_init();
+  //LCD 2 se inicializira takrat, ko ga dejansko priklopimo
+  
+  //ugasne back light
+  //pri MC330 se krmili tranzistor 
+  P4LATCH = 0x00;
+  LE573set();
+  LE573hold();
   
 }

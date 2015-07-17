@@ -5,11 +5,14 @@
 
 
 //TYPE DEFINE
+#ifndef UINT
+#define UINT
 typedef unsigned char uint8_t;
 typedef char int8_t;
 
 typedef unsigned int uint16_t;
 typedef int int16_t;
+#endif
 
 //PINS
 //notice: set latch on high, before changing led values!

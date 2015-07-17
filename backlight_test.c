@@ -1,4 +1,6 @@
 #include "backlight_test.h"
+#include "graphics.h"
+
 
 //v primeru da je prislo do napake bo sporocilo napake zapisano v errorBuff
 static char errorBuff[100];
@@ -21,23 +23,27 @@ void addToErrorBuff(char * str){
 
 int test_back_light(void){
   
-    if( P3OUT & 0x02 ){ //preveri ali je Backlight vkljuèen potem lahko vkljuèim test
+    int vRedu = 1;
+    if( P3OUT & 0x02 ){ //preveri ali je Backlight vkljucen; potem lahko vkljucim test
         
         P2DIR &= ~ 0x80;  // P2.7 ali je napetost 3-4V
         P2DIR &= ~ 0x40;  // P2.6 ali je tok veèji od 5mA
         
         errIndex = 0;
+        
         if(!(P2IN & 0x80 )){
-        	//napetost ni dovolj velika
-        	addToErrorBuff("Premajna Napetost   ");
+            //napetost ni dovolj velika
+            addToErrorBuff("Premajna Napetost   ");
+            vRedu = 1;
         }
         if(!(P2IN & 0x40 )){
             //tok ni dovolj velik
             addToErrorBuff("Premajhen Tok");
+            vRedu = 1;
         }
     }
  
-    return 0;
+    return vRedu;
 }
 
 //TODO: dodaj da bo zaznaval \n v errorBuff in tako vrnil dejansko vrstico
@@ -63,26 +69,4 @@ uint8_t getErrorBacklightLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffse
     return 1;
 }
 
-void back_light_error(int t){
-
-      clear();
-      OutDev = STDOUT_LCD_NORMAL_FONT; 
-      GrX =25;  GrY = 5;
-      printf("NAPAKA !!!");
-      GrX =15;  GrY = 25; 
-      printf("BACK LIGHT");
-      GrX = 25 ;  GrY = 45;
-      
-      if(t == 2){
-        printf("TOK");
-      }
-      else{
-        printf("NAPETOST" );  
-      }
-      
-      LCD_sendC();
-      apps_disable(LCD_TEST_APP); 
-      apps_enable(tipkeDVE_APP);
-      timer_wait(tipkeDVE_ID,200);
-}
 

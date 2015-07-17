@@ -102,7 +102,7 @@ Before calling an app, set up the app trigger (similar for sub-apps).
 #define WRITE_TO_FLASH_ID	6
 #define AUX_TX_ID		7
 #define READ_KEY_ID		8
-#define tipkeDVE_ID		9
+#define KONTROLA_ID		9
 #define lediceToggle_ID		10
 
 #define a6_ID                  11

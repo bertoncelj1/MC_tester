@@ -46,12 +46,7 @@
 #define TO_STRING                5
 #define Tmax 7
 
-#define ZACETEK              0
-#define CAKA_START           1
-#define KONTROLA_KABELNA     2
-#define NAPAKA       3
-#define KONTROLA_LCD         4
-#define SERVICE_MODE         5
+
 
 
 #define MOTOR_1_A 0x10
@@ -154,7 +149,6 @@ extern int log[5000];
 extern int display_state;
 extern char key_pressed;
 extern unsigned char P4LATCH2;
-extern unsigned char kontrola;
 extern unsigned char zakasnitev_ser_mode;
 extern unsigned char zakasnitev_testa;
 
@@ -225,6 +219,7 @@ void zgoraj_belo();
 void zgoraj_crno();
 void clear();
 void clearArea(int start, int stop);
+void clearLine(int start, int end);
 void display_test();
 int prev_kable_2(void);
 //rs232
@@ -275,5 +270,6 @@ void meni_max_min(void);
 
 //main
 void izpis_to_RAM_LCD(void);
+void switchApps();
 
 #endif

@@ -1,13 +1,13 @@
 #include "tipke_test.h"
-#include ""
+#include "graphics.h"
 
 static int display_state;
 
 
-void izrisi_tipko(int tip);
+void izrisi_tipko(e_tipTipke tip);
 void izpis_pritisnjenih_tipk(void);
 
-void izrisi_tipko(int tip){
+void izrisi_tipko(e_tipTipke tip){
     
     switch (tip){
     case ENTER:
@@ -165,20 +165,22 @@ void key_error(int t){
       }
       //ponovi test
       LCD_sendC();
+      /*TODO
       apps_disable(LCD_TEST_APP); 
       apps_enable(tipkeDVE_APP);
       timer_wait(tipkeDVE_ID,200);
+      */
 }
 
 
 int tipke_2(void){
-    int t;
+    int tipka;
     
-    t=KeyBuf_2[0];
+    tipka=KeyBuf_2[0];
     KeyBuf_2[0] = 0;
     //(TkGor+TkDol+TkLev+TkDes+TkEnt)
-    if(t){
-        switch (t){
+    if(tipka){
+        switch (tipka){
         case TkEnt: //enter
             if(test_tipk_biti & 0x01){
             }
@@ -228,19 +230,13 @@ int tipke_2(void){
         default:
             
             // napaka
-            key_error(t);
+            key_error(tipka);
             return 0;
             break;
             
         }
         display_test();
         izpis_pritisnjenih_tipk();
-        
-        if (test_back_light()){
-           //back light ne dela dobro
-           back_light_error(tmp); 
-           return 0; 
-        }
         
         if(test_tipk_biti == 0x1F){
           return 1;

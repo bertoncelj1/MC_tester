@@ -1953,6 +1953,9 @@
   <group>
     <name>Testi</name>
     <file>
+      <name>$PROJ_DIR$\backlight_test.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\flash_test.c</name>
     </file>
     <file>
