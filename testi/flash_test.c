@@ -1,9 +1,6 @@
 #include  "msp430x24x.h"
 #include  "flash_test.h"
 
-//v primeru da je prislo do napake bo sporocilo napake zapisano v errorBuff
-static uint8_t errorBuff[100];
-static uint8_t errIndex = 0;
 
 void flash_test_init(){
 	//sets pins directions, 1->pin out, 0->pin input
@@ -13,7 +10,7 @@ void flash_test_init(){
 	dir_chipSel_1;
 }
 
-//prebere ID od flasha in vrne atribute, ki mu jih podamo 
+//prebere ID od flasha in vrne atribute, ki mu jih podamo
 //manId -> manufacturer ID      1Byte
 //devID -> device ID            2Byta
 //uniqueID          pointer na string
@@ -53,27 +50,6 @@ uint8_t readId(uint8_t *manID, uint16_t *devID, uint8_t *uniqueID, uint8_t *uniq
 }
 
 
-//vrne string v katerega prepise vsebino errorBufferja
-//lineLen pove koliko je prstora v nizu line -> koliko elementov najvec pricakuje
-//errorOffest pove s kje naj zacne brati errorBuff
-//vrne 0 v primeru da ni nic vpisal v line, drugace vrne 1
-uint8_t getErrorLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset){
-    int i = 0;
-    
-    //ce v errorBuff ni vec zapisov vrne 0
-    if(errorOffset >= errIndex){
-      line[i] = 0;
-      return 0;
-    }
-  
-    while(i < lineLen & (errorOffset + i) < errIndex){
-      line[i] = errorBuff[errorOffset + i];
-      i++;
-    }
-    
-    line[i] = 0;
-    return 1;
-}
 
 //preveri ali flash deluje tako da poklice readId funkcijo in preveri vrnjene komponente
 //v primero napake, zapise v errorBuff sporocilo, kaj je so narobe
@@ -95,32 +71,37 @@ uint8_t preveriFlash(){
         //ce je prislo do napake zapise sporocilo v errorBuff
         //zapise vse podatke v errorBuff sesnajstisko
         if(!vRedu){
-          errIndex = 0;
+          char error[50];
+          char errIndex = 0;
           //nabor sesnajstiskih znakov
           uint8_t nabor16x[17] = "0123456789ABCDEF";
           //manID
-          errorBuff[errIndex++] = nabor16x[(manID >> 4)& 0x0F];
-          errorBuff[errIndex++] = nabor16x[(manID & 0x0F)];
-          errorBuff[errIndex++] = ' ';
+          error[errIndex++] = nabor16x[(manID >> 4)& 0x0F];
+          error[errIndex++] = nabor16x[(manID & 0x0F)];
+          error[errIndex++] = ' ';
           
           //devID
-          errorBuff[errIndex++] = nabor16x[(devID >> 12)& 0x0F];
-          errorBuff[errIndex++] = nabor16x[(devID >> 8)& 0x0F];
-          errorBuff[errIndex++] = nabor16x[(devID >> 4)& 0x0F];
-          errorBuff[errIndex++] = nabor16x[(devID & 0x0F)];
-          errorBuff[errIndex++] = ' ';
+          error[errIndex++] = nabor16x[(devID >> 12)& 0x0F];
+          error[errIndex++] = nabor16x[(devID >> 8)& 0x0F];
+          error[errIndex++] = nabor16x[(devID >> 4)& 0x0F];
+          error[errIndex++] = nabor16x[(devID & 0x0F)];
+          error[errIndex++] = ' ';
           
           //uniqueLen
-          errorBuff[errIndex++] = nabor16x[(uniqueLen >> 4)& 0x0F];
-          errorBuff[errIndex++] = nabor16x[(uniqueLen & 0x0F)];
+          error[errIndex++] = nabor16x[(uniqueLen >> 4)& 0x0F];
+          error[errIndex++] = nabor16x[(uniqueLen & 0x0F)];
           
           int i;
           for(i=0; i<uniqueLen; i++){
-            errorBuff[errIndex++] = nabor16x[(uniqueID[i] >> 4)& 0x0F];
-            errorBuff[errIndex++] = nabor16x[(uniqueID[i] & 0x0F)];
+            error[errIndex++] = nabor16x[(uniqueID[i] >> 4)& 0x0F];
+            error[errIndex++] = nabor16x[(uniqueID[i] & 0x0F)];
           }
           
-          errorBuff[errIndex++] = 0;
+          error[errIndex++] = 0;
+          
+          emptyErrorBuff();
+          addToErrorBuff(error);
+          
         }
         
 	return vRedu;

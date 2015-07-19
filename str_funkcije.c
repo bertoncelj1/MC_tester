@@ -1,5 +1,4 @@
-
-
+#include "str_funkcije.h"
 
 //kopira celoten strAdd v strMain, vrne dolzino strAdd
 int strCp(char *strMain, char *strAdd){
