@@ -37,8 +37,6 @@ typedef int int16_t;
 #define get_latch_out	(P6OUT & 0x80)         
 
 void ledice_test_init();
-//void toggle_ledAlert();
-//void toggle_ledPulse();
 void setLed();
 void setLedNext();
 

@@ -165,11 +165,6 @@ void key_error(int t){
       }
       //ponovi test
       LCD_sendC();
-      /*TODO
-      apps_disable(LCD_TEST_APP); 
-      apps_enable(tipkeDVE_APP);
-      timer_wait(tipkeDVE_ID,200);
-      */
 }
 
 
@@ -229,6 +224,7 @@ int tipke_2(void){
             
         default:
             
+            //TODO popravi da bo to boljse delalo
             // napaka
             key_error(tipka);
             return 0;

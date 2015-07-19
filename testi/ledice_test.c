@@ -29,7 +29,7 @@ void setLed(int prizgane){
 }
 
 //prizge nasljednjo konfiguracijo ledic
-static int roll = 0;
 void setLedNext(){
+  static int roll = 0;
   setLed(roll ++);
 }

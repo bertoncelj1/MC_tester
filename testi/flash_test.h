@@ -47,8 +47,7 @@ typedef int int16_t;
 
 void flash_test_init();
 uint8_t preveriFlash();
-uint8_t getErrorLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset);
-//nevidna od zunaj, ni ravno prav da se klice ta funkcija kot sama, raje klici getErrorLIne ali preveriFlash
+//nevidna od zunaj, ni ravno prav da se klice ta funkcija kot sama, raje klici preveriFlash in potem preberi napako z getErrorLine
 //uint8_t readId(uint8_t *manID, uint16_t *devID, uint8_t *uniqueID, uint8_t *uniqueLen);
 void sendByte(uint8_t byte);
 uint8_t readByte();

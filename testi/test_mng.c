@@ -30,11 +30,6 @@ static s_testniProgram *testniProgrami[MAX_TEST_PROG];
 static int izbranTesniProgram = -1;
 static int stOperacij; //stevilo operacij za trenutno izbrani program
 
-//v primeru da je prislo do napake bo sporocilo napake zapisano v errorBuff
-static char errorBuff[100];
-static int errIndex = 0;
-
-
 
 void test_mng_init(){
         //init testne programe
@@ -56,7 +51,7 @@ void test_mng_init(){
 e_TestneOperacije getNextOperation(){
 	if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
         
-        int treOperacija = ++testniProgrami[izbranTesniProgram]->treOperacija;
+    int treOperacija = ++testniProgrami[izbranTesniProgram]->treOperacija;
         
         //ce je trenutna operacija 0 pomeni, da je prisel do konca, saj ni definirane nobene vec operacije
 	if(testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] == 0){
@@ -79,6 +74,7 @@ e_TestneOperacije getCurrentOperation(){
     return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
 }
 
+
 const char *getCurrentOperationStr(){
   //uporablja v primeru ko je opisTesta prazen
   static char prazen[] = "null (XX)";
@@ -97,33 +93,10 @@ const char *getCurrentOperationStr(){
   return opisTesta[treOperacija];
 }
 
-
-
-//doda niz str v error buffer
-void addToErrorBuff(char * str){
-	errIndex = strCp(&errorBuff[errIndex], str);
-}
-
-//vrne string v katerega prepise vsebino errorBufferja
-//lineLen pove koliko je prstora v nizu line -> koliko elementov najvec pricakuje
-//errorOffest pove s kje naj zacne brati errorBuff
-//vrne 0 v primeru da ni nic vpisal v line, drugace vrne 1
-uint8_t getErrorLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset){
-    int i = 0;
-    
-    //ce v errorBuff ni vec zapisov vrne 0
-    if(errorOffset >= errIndex){
-      line[i] = 0;
-      return 0;
-    }
-  
-    while(i < lineLen & (errorOffset + i) < errIndex){
-      line[i] = errorBuff[errorOffset + i];
-      i++;
-    }
-    
-    line[i] = 0;
-    return 1;
+//vrne kolikisen del x-sa je ze opravil
+//odstotek pomeni del od sto, odxtotek pomeni del od x :)
+int dobiNapredekOdxtotek(int x){
+	return (testniProgrami[izbranTesniProgram]->treOperacija * x) / stOperacij;
 }
 
 //presteje stevilo operacij za trenutno izbran program. Rezultat zapise v stOperacij
