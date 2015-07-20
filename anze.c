@@ -2,17 +2,21 @@
 #include "scheduler.h"
 #include "graphics.h"
 #include "timerb.h"
-#include "flash_test.h"
+#include "testi/flash_test.h"
 #include "test_mng.h"
 #include "backlight_test.h"
+#include "error_mng.h"
+#include "pini_test.h"
+#include "str_funkcije.h"
+#include "tipke_test.h"
 
 //osnnovna stalna stanja preverjanja naprave
 //vsa ostala stanja preverjanaja spadajo pod OPERACIJE
 typedef enum{
-  ZACETEK, CAKA_START, CAKAJ_RESET, NAPAKA, OPERACIJE, PREVERJAJ
+  ZACETEK, CAKA_START, CAKAJ_RESET, NAPAKA, OPERACIJE, PREVERJAJ, GET_TESTNI_PROGRAM
 }e_KontrolaStanja;
 
-e_KontrolaStanja kontrolaStanja = ZACETEK;
+e_KontrolaStanja kontrolaStanja = GET_TESTNI_PROGRAM;
 e_TestneOperacije operacijeState;
 unsigned char zakasnitev_ser_mode;
 unsigned char zakasnitev_testa;
@@ -27,6 +31,7 @@ char kontrola_vstavljen_LCD(void);
 int prev_kable_2(void);
 void izpisiKonec();
 void drawLoadingBar();
+void izpisiSporocilo(const char *sporocilo, const char *podSporocilo, int yZamik);
 
 
 
@@ -62,16 +67,11 @@ void potek_kontrole(void){
    case ZACETEK:
         //pridobi prvo testno operacijo, ki jo bo izvajal
         operacijeState = getFirstOperation();
-        
-        //ugasne back light //TODO kako je s tem ?
-        P4LATCH2 = 0x00;
-        LE573set_2();
-        LE573hold_2();
-        
+                
         led_diode(OFF);
         
         //izpise zacetno besedilo
-        izpisiSporocilo("VSTAVI" "\n" "LCD" "\n" "DISPLAY");
+        izpisiSporocilo("VSTAVI" "\n" "LCD" "\n" "DISPLAY", getOpisProgramaStr(), 8);
         
         kontrolaStanja = CAKA_START;
         
@@ -82,27 +82,47 @@ void potek_kontrole(void){
             LCD_init_2();  //inicializira na nov priklopljen zaslon
             kontrolaStanja = PREVERJAJ;
             clear();
-        }   
-
+        }
+        
+        if(KGet(TkEnt)){
+            kontrolaStanja = GET_TESTNI_PROGRAM;
+        }
         break; 
     
-    //koncal je s preverjanjem in caka na reset
-    //TODO: dodaj da se bo dal resetirat s tipko    
+ 
+    case GET_TESTNI_PROGRAM:
+      LCD_getTestniProgram();
+      kontrolaStanja = ZACETEK;
+    break;
+    
+    
+    //koncal je s preverjanjem in caka na reset 
     case CAKAJ_RESET:
+      led_diode(GREEN);
       // caka da stakne display
       if (kontrola_vstavljen_LCD()==0){
           kontrolaStanja = ZACETEK;
-      }   
+      }
+      
+      //TODO izpisi kaj se zgodi ko se pritisn tipka
+      if(KGet(TkEnt)){
+          kontrolaStanja = ZACETEK;
+      }
       break;
     
     //ce v katerih izmed operacijpride do napake poklicejo to stanje
     //operacije je dolzna pred klicanjem izpisati na ekran napako 
     case NAPAKA: 
-     //TODO dodej da se bo dal ponovit poiskus s tipko
+      led_diode(RED);
      // caka da stakne display
      if (kontrola_vstavljen_LCD()==0){
           kontrolaStanja = ZACETEK;
      }
+      
+     if(KGet(TkEnt)){
+          kontrolaStanja = ZACETEK;
+     }
+     
     break; 
    
     //po vrsti se izvajajo operacije izbranega programa
@@ -138,24 +158,18 @@ void izvediOperacije(){
 		    break;
 		    
 		case PREVERI_TIPKE:
-            naprej = tipke_2();
+                    naprej = tipke_2();
+                    if(naprej == -1)kontrolaStanja =  NAPAKA;
 		    break;
 		
 		case PREVERI_BACKLIGHT:
 		    naprej = preveri_backlight();
 		    break;
                     
-        case ZAKLJUCI:
-            //TODO comment ?
-			//ugasne backlight
-			P4LATCH2 = 0x00;
-			LE573set_2();
-			LE573hold_2();
-				
-			izpisiSporocilo("TEST" "\n" "KONCAN");
-		
-            kontrolaStanja = CAKAJ_RESET;
-            break;
+                case ZAKLJUCI:
+                    izpisiSporocilo("TEST" "\n" "KONCAN", "odstranite napravo", 10);
+                    kontrolaStanja = CAKAJ_RESET;
+                    break;
 	}
     
     //postavi nasljednjo operacijo    
@@ -168,12 +182,18 @@ void izvediOperacije(){
 void drawLoadingBar(){
     clearLine(0, 2);
     
-    //TODO izrise loadingbar
-    int napredek = dobiNapredekOdxtotek(128);
+    //izrise progress bar
+    int napredek = dobiNapredekOdxtek(128);
+    int vel = 2;
+    char bar = (1 << vel) - 1;
+    int i;
+    for(i=128; i >= 128 - napredek; i--){
+      LCD[i] = bar;
+    }
     
     //izpise trenutno operacijo, ki jo testiramo
     OutDev = STDOUT_LCD;
-    GrX =0;  GrY = 8;
+    GrX =0;  GrY = 3;
     printf("testiram %s", getCurrentOperationStr());
     LCD_sendC();
 }
@@ -212,6 +232,7 @@ int operacijaFlash(){
     return 1;
   }
   
+  
   //v primeru napake izpise obvestilo
   izpisiError("NAPAKA SPOMINA", "flash output:");	
   
@@ -235,34 +256,46 @@ int preveri_backlight(){
 }
 
 
-#define ST_CRKN_NA_VRSTO 	20
-#define Y_SIZE 				20	//koliko pix so vrstice narazen
+#define ST_CRK_NA_VRSTO 	20
+#define Y_SIZE 				14	//koliko pix so vrstice narazen
 #define SIR_EKR 			128	//sirina ekrana
-#define SIR_FONTA			6
+#define SIR_FONTA			8
 //izpise sporocilo na sredino ekrana
-void izpisiSporocilo(char *sporocilo){
-	clearLine(2, 8);
+//yZamik -> koiko bo sporocilo zamaknjeno na dol
+void izpisiSporocilo(const char *sporocilo, const char *podSporocilo, int yZamik){
+	//clearLine(2, 8);
+        clear();
 	
-	int yLine = 20; 	//trenutna pozicija vrstice na y osi
-	char line[stCrkNaVrsto+1];
-	int len;		//dolzina trenutne vrstice
+	int yLine = yZamik; //trenutna pozicija vrstice na y osi
+	int i = 0;		//mesto kjer se bere sporcilo
+        int len;                //dolzina vrstce
 	
 	OutDev = STDOUT_LCD_NORMAL_FONT; //nasltavi font
 	while(*sporocilo){		
-		//poisce vrstico in jo zapise v line
-		len = 0;
-		while(*pSpor != '\n' || len >= ST_CRKN_NA_VRSTO || *sporocilo == 0){
-			line[len] = *sporocilo;
-			len ++;
+		//poisce konec vrstice
+                len = 0;
+		while(*sporocilo != '\n' && len < ST_CRK_NA_VRSTO && *sporocilo != 0){
+			i ++;
+                        sporocilo ++;
+                        len ++;
 		}
-		line[len] = 0;
 		
 		//izpise vrstico
 		GrX = SIR_EKR/2 - (len*SIR_FONTA)/2; GrY = yLine;
-		printf("%s", line);
+		printf("%.*s", len, &sporocilo[-len]);
 		yLine += Y_SIZE;
-		
+                
+                //ce je nasel znak \n mora povecati i zato da ga v nasljednji iritaciji izspusti
+                if(*sporocilo == '\n'){
+                  i++;
+                  sporocilo ++;
+                }
 	}
+        
+        OutDev = STDOUT_LCD;
+        GrX = SIR_EKR/2 - (strLen(podSporocilo)*6)/2; GrY = yLine;
+        printf("%s", podSporocilo);
+        
 	
 	LCD_sendC();
 	

@@ -146,7 +146,6 @@ extern char st_resetov;
 extern char verzija;
 extern unsigned int pov;
 extern int log[5000];
-extern int display_state;
 extern char key_pressed;
 extern unsigned char P4LATCH2;
 extern unsigned char zakasnitev_ser_mode;
@@ -217,6 +216,7 @@ void sahovnica_inverzno(void);
 void pas(int i);
 void zgoraj_belo();
 void zgoraj_crno();
+void clear_2();
 void clear();
 void clearArea(int start, int stop);
 void clearLine(int start, int end);
@@ -271,5 +271,15 @@ void meni_max_min(void);
 //main
 void izpis_to_RAM_LCD(void);
 void switchApps();
+void initApps();
 
 #endif
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
-#include  "msp430x24x.h"
-#include  "flash_test.h"
+#include "msp430x24x.h"
+#include "flash_test.h"
+#include "error_mng.h"
 
 
 void flash_test_init(){
@@ -8,6 +9,7 @@ void flash_test_init(){
 	dir_input_1;
 	dir_output_0;
 	dir_chipSel_1;
+        set_chipSel_1;
 }
 
 //prebere ID od flasha in vrne atribute, ki mu jih podamo

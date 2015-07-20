@@ -11,17 +11,6 @@ enum izbireTestnihProgramov{
   TEST_PROG_NORM,
 };
 
-#define ST_OPERACIJ  6
-/*
-typedef enum{
-	ZACETEK,         
-	CAKA_START,     
-	KONTROLA_KABELNA,
-	NAPAKA,       
-	KONTROLA_LCD,    
-	SERVICE_MODE,    
-}testneOperacije;
-*/
 
 #define TESTNE_OPR_FIRST 1 //index prve testne operacije
 typedef enum { 
@@ -36,7 +25,7 @@ typedef enum {
 
 #define MAX_OPERACIJ  20 //najvecje stevilo operacij, ki jih ima lahko ena izbira
 typedef struct {
-  char *ime;						//opis operacije
+  char *ime;					//opis programa
   int treOperacija; 				//trenutna izbrana operacija
   e_TestneOperacije operacijeID[MAX_OPERACIJ]; //nastete vse operacije, ki jih ta test izvede 
 }s_testniProgram;
@@ -50,6 +39,8 @@ e_TestneOperacije getFirstOperation();
 e_TestneOperacije getNextOperation();
 e_TestneOperacije getOperation();
 const char *getCurrentOperationStr();
+int dobiNapredekOdxtek(int x);
+const char *getOpisProgramaStr();
 
 #else
 	#error test_mng_h  already included! 

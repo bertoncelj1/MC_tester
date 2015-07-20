@@ -82,7 +82,7 @@ int GrX,GrY;   // koordinati tocke na LCD
 unsigned int inv;        // za inverzen izpis na LCD
 unsigned char DelayKey;  // zakasnitev ponavljanja tipk
 unsigned char LastKey;   // zadnja kombinacija tipk
-unsigned char KeyBuf[2]; // shranjene tipke
+unsigned char KeyBuf; // shranjene tipke
 u16 SekStev;   // stevec sekund
 s16 PosInv; 		// pozicija zacetka inverznega izpisa
 // - - - - -
@@ -161,7 +161,7 @@ void LE573hold(void)  // P4 za LCD in tipke
 #define FLASH_CS_1  P5OUT |= 0x80
 #define FLASH_CS_0  P5OUT &=~0x80
 
-/* SPI za data FLASH */
+/* SPI za datFa FLASH */
 /* --------------------------------
 serijski DATA FLASH
 -------------------------------- */
@@ -2345,41 +2345,28 @@ void BeriKey(void)
             }
             i>>=1;      
         }
-        
+        /*
         if (t & TkRept){
            LastKey=0; 	   // sprozi ponovitev tipke
-           KeyBuf[0] = t;
+           KeyBuf = t;
         }
+        */
     }
      
     
+    if (LastKey != t)
+    {
+        LastKey = t;
+        
+        if (t)
+        {
+            KeyBuf = t;
+            TBCCTL6 = OUTMOD_7;   // PWM (beep ON)
+        }
+    }
     
-//    if (LastKey != t)
-//    {
-//        LastKey = t;
-//        //     Pisk=t>>1; 	//BEEP on (P6.6) ali off(t=0)
-//        if (t)
-//        {
-//            for (i=0;i<Tmax;i++)
-//                if (Tkode[i]==t)
-//                {
-//                    t=Tchar[i];   // zamenjava normalnih tipk
-//                    //     	      BeepRol=Tpiskov[i];  // 16-bitni vzorec za pisk
-//                }
-//            if (KeyBuf[0])
-//                KeyBuf[1]=t;
-//            else
-//                KeyBuf[0]=t;
-//            TBCCTL6 = OUTMOD_7;   // PWM (beep ON)
-//            //	Pisk=1; 	//BEEP on (P6.6)
-//        }
-//        //     else 
-//        //        BeepRol=0;  // 16-bitni vzorec za pisk
-//    }
-//    else
-        TBCCTL6 = OUTMOD_5;   // resst (beep OFF)
-    //     if (t)
-    //      BeepRol=0;	//BEEP off (P6.6)
+
+    //TBCCTL6 = OUTMOD_5;   // resst (beep OFF)
     LE573set();   // P4 na 574 izhode
 }
 
@@ -2389,13 +2376,13 @@ void BeriKey(void)
 int KGet(char tipke)
 {
   
-    char t = KeyBuf[0];
-    if((t & tipke) == tipke){
-      KeyBuf[0] &= ~tipke;
-      return 1;
-    }
-    return 0;
-    
+  char t = KeyBuf;
+  if((t & tipke) == tipke){
+    KeyBuf &= ~tipke;
+    return 1;
+  }
+  return 0;
+  
 }
     
     
@@ -2445,7 +2432,7 @@ void LCD_init(void)
     LE573hold();    // P4 za LCD in tipke
     P5OUT|=0x80;   // CSflash=1
                   //   P2OUT &=~0x80;                             // P2.7 LCDreset = 0
-    KeyBuf[0]=KeyBuf[1]=0; // shranjene tipke
+    KeyBuf=0; // shranjene tipke
     P5OUT|=0x1f;    // wr=1, >CS=1 , E=1, RS=1 , LCDreset = 1
     //   LCD_cmd(0xe2);  // (14) reset
     //	LCD_fill(0);  //brisanje LCD

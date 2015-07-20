@@ -317,7 +317,8 @@
         </option>
         <option>
           <name>newCCIncludePaths</name>
-          <state></state>
+          <state>$PROJ_DIR$</state>
+          <state>$PROJ_DIR$\testi</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -350,7 +351,7 @@
         <option>
           <name>CCOptStrategy</name>
           <version>0</version>
-          <state>0</state>
+          <state>2</state>
         </option>
         <option>
           <name>CCOptLevelSlave</name>
@@ -1953,19 +1954,25 @@
   <group>
     <name>Testi</name>
     <file>
-      <name>$PROJ_DIR$\backlight_test.c</name>
+      <name>$PROJ_DIR$\testi\backlight_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\flash_test.c</name>
+      <name>$PROJ_DIR$\testi\error_mng.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\ledice_test.c</name>
+      <name>$PROJ_DIR$\testi\flash_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\test_mng.c</name>
+      <name>$PROJ_DIR$\testi\ledice_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\tipke_test.c</name>
+      <name>$PROJ_DIR$\testi\pini_test.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\testi\test_mng.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\testi\tipke_test.c</name>
     </file>
   </group>
   <file>
@@ -1985,6 +1992,9 @@
   </file>
   <file>
     <name>$PROJ_DIR$\scheduler.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\str_funkcije.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\TIMERB.C</name>

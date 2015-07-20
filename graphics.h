@@ -150,10 +150,7 @@ void hline(s16  y);
 void boxr(s16 dx, s16 dy);
 void Hbar(s16 dx, u16 dy, s16 b);
 void SetInv(s16 fl);
-int tipke_2(void);
 int prev_kable(void);
-void key_error(int t);
-void back_light_error(int t);
 
 //===========================================================================
 // 74HC573 LACH biti
@@ -249,7 +246,7 @@ void BeriKey_2(void);
 char kontrola_vstavljen_LCD(void);
 void back_light_ON(void);
 void back_light_OFF(void);
-typedef enum {OFF, OK, ERROR}e_Led_diode_state;
-void led_diode(int state);
+typedef enum {OFF, GREEN, RED}e_Led_diode_state;
+void led_diode(e_Led_diode_state state);
 //===========================================================================
 

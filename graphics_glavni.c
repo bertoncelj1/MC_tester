@@ -6,7 +6,7 @@ unsigned char DelayKey_2;  // zakasnitev ponavljanja tipk
 unsigned char LastKey_2;   // zadnja kombinacija tipk 
 unsigned char KeyBuf_2; // shranjene tipke
 
-
+unsigned char LCD2[1024]; //vsebina LCD priazovalnika, ki se testira
 
 //TODO:spremen da bo uporablov svoj array za ta drug ekran namest LCD 
 void LCD_sendC_2(void)
@@ -37,7 +37,7 @@ void LCD_sendC_2(void)
         }
         
         //P4OUT=LCD[i];
-        writeP1P2_out(LCD[i]);
+        writeP1P2_out(LCD2[i]);
         //P5OUT&=~0x10;   // >CS=0
         //P5OUT|=0x10;    // >CS=1
         _clear_CS;
@@ -84,6 +84,8 @@ void LCD_init_2(void)
     LCD_cmd_2(0x00AC);  // (19)  Static indicator OFF
     LCD_cmd_2(0x00F0);  // (22) Test (konec testa)
     LE573set_2();   // P4 na 574 izhode
+    
+    back_light_ON();
 }
 
 void LCD_input_port_2(void)
@@ -308,44 +310,6 @@ int TipkaVhod_2(void)
     return v;
 }
 
-
-
-//nastavi diode glede na podano stanje
-void led_diode(e_Led_diode_state state){
-  static int prevState = -1;
-
-  //nadaljuje samo ob spremembi stanja
-  if(prevState == state)return;
-  prevState = state;
-  
-  switch(state){
-    //obe OFF
-  case OFF:
-      P6OUT &= ~0x10; //ugasne zeleno
-      P6OUT &= ~0x08; //ugasne rdeèo
-      off_PULSEled;
-      off_ALARMled;
-           
-    //test OK  
-  case OK:
-      P6DIR |= (0x08 | 0x10);
-      P6OUT |=  0x10; //prižgi zeleno
-      P6OUT &= ~0x08; //ugasne rdeèo
-      off_PULSEled;
-      off_ALARMled;
-      
-      
-    //napaka pri testiranju
-  case ERROR:
-      P6DIR |= (0x08 | 0x10);
-      P6OUT |=  0x08; //prižgi rdeèo
-      P6OUT &= ~0x10; //ugasne zeleno
-      on_PULSEled;
-      on_ALARMled;
-  }
-}
-
-
 void back_light_ON(void){
   P3DIR |= 0x02; // set port output 
   P3OUT |= 0x02; // set 1
@@ -377,29 +341,29 @@ void sahovnica(void){
         for(int j = 0; j < 128; ++j){ 
             if (zamik == 1){
                 if (menjaj < 8){
-                    LCD[i++]=0xFF;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0xFF;   // vsebina LCD prikazovalnika
                     menjaj++;
                 }
                 else if(menjaj < 16){
-                    LCD[i++]=0x00;
+                    LCD2[i++]=0x00;
                     menjaj++;
                 }
                 else{
-                    LCD[i++]=0xFF;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0xFF;   // vsebina LCD prikazovalnika
                     menjaj=1;}
             }
             else
             {
                 if (menjaj < 8){
-                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0x00;   // vsebina LCD prikazovalnika
                     menjaj++;
                 }
                 else if(menjaj < 16){
-                    LCD[i++]=0xFF;
+                    LCD2[i++]=0xFF;
                     menjaj++;
                 }
                 else{
-                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0x00;   // vsebina LCD prikazovalnika
                     menjaj=1;
                 }
             }
@@ -434,29 +398,29 @@ void sahovnica_inverzno(void){
         for(int j = 0; j < 128; ++j){ 
             if (zamik == 1){
                 if (menjaj < 8){
-                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0x00;   // vsebina LCD prikazovalnika
                     menjaj++;
                 }
                 else if(menjaj < 16){
-                    LCD[i++]=0xff;
+                    LCD2[i++]=0xff;
                     menjaj++;
                 }
                 else{
-                    LCD[i++]=0x00;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0x00;   // vsebina LCD prikazovalnika
                     menjaj=1;}
             }
             else
             {
                 if (menjaj < 8){
-                    LCD[i++]=0xff;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0xff;   // vsebina LCD prikazovalnika
                     menjaj++;
                 }
                 else if(menjaj < 16){
-                    LCD[i++]=0x00;
+                    LCD2[i++]=0x00;
                     menjaj++;
                 }
                 else{
-                    LCD[i++]=0xff;   // vsebina LCD prikazovalnika
+                    LCD2[i++]=0xff;   // vsebina LCD prikazovalnika
                     menjaj=1;
                 }
             }
@@ -474,21 +438,69 @@ void sahovnica_inverzno(void){
 void pas(int i){
     for(int j = 512; j < 1024; ++j){ 
         
-        LCD[i++]=0xFF;
+        LCD2[i++]=0xFF;
         
     } 
 }
 void zgoraj_belo(){
     for(int i = 512; i < 1024; ++i){ 
-        LCD[i]=0xFF;
+        LCD2[i]=0xFF;
     }
 }
 void zgoraj_crno(){
     for(int i = 0; i < 512; ++i){ 
-        LCD[i]=0xFF;
+        LCD2[i]=0xFF;
     }
     
 }
+
+void clear_2(){
+    for(int i = 0; i < 1024; ++i){ 
+        LCD2[i]=0x00;
+    }
+}
+
+
+
+
+//nastavi diode glede na podano stanje
+void led_diode(e_Led_diode_state state){
+  static int prevState = -1;
+
+  //nadaljuje samo ob spremembi stanja
+  if(prevState == state)return;
+  prevState = state;
+  
+  switch(state){
+    //obe OFF
+  case OFF:
+      P6DIR |= (0x08 | 0x10);
+      P6OUT &= ~0x10; //ugasne zeleno
+      P6OUT &= ~0x08; //ugasne rdeèo
+      off_PULSEled;
+      off_ALARMled;
+      break;
+      
+    //test OK  
+  case GREEN:
+      P6DIR |= (0x08 | 0x10);
+      P6OUT |=  0x10; //prižgi zeleno
+      P6OUT &= ~0x08; //ugasne rdeèo
+      off_PULSEled;
+      off_ALARMled;
+      break;
+      
+    //napaka pri testiranju
+  case RED:
+      P6DIR |= (0x08 | 0x10);
+      P6OUT |=  0x08; //prižgi rdeèo
+      P6OUT &= ~0x10; //ugasne zeleno
+      on_PULSEled;
+      on_ALARMled;
+      break;
+  }
+}
+
 void clear(){
     for(int i = 0; i < 1024; ++i){ 
         LCD[i]=0x00;

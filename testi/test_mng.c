@@ -1,23 +1,25 @@
 #include "test_mng.h"
-#include  "graphics.h"
+#include "graphics.h"
+#include "str_funkcije.h"
 
 /*PRIVATNE FUNKCIJE*/
 void izpisiIzbiro(int izbira, int leviZnak, int desniZnak);
 void addNumberToStr(char *str, int st, int mesto, int vel);
 void prestejStOperacij();
 
+//TODO naredi da bo imela vsaka operacija init in delovno funkcijo
 
 /*DEFININICIJE TESTNIH PROGRAMOV*/
 //obvestilo: pri dodajanju novega testnega programa ne pozabite popraviti ST_TEST_PROG
 static s_testniProgram testFlash = {
-  "prog flash",			//opis programa
+  "tipke 350 (flash)",			//opis programa
   0,					//trenutna testna operacija
   KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_LEDICE, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
-  
+    
 };
 
 static s_testniProgram testNormalen = {
-  "prog normalen",		//opis programa
+  "tipke 330",		        //opis programa
   0,				//trenutna testna operacija
   KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };
@@ -32,48 +34,47 @@ static int stOperacij; //stevilo operacij za trenutno izbrani program
 
 
 void test_mng_init(){
-        //init testne programe
-	testniProgrami[TEST_PROG_FLASH] = &testFlash;
-	testniProgrami[TEST_PROG_NORM] = &testNormalen;
-        
-        
-        //init opis testov
-        //opisi naj bodo dovolj kratiki da bodo primeri za izpis na ekranu
-        opisTesta[KONTROLA_KABELNA] = "kabel";
-        opisTesta[PREVERI_FLASH] = "flash";
-        opisTesta[PREVERI_LEDICE] = "ledice";
-        opisTesta[PREVERI_TIPKE] = "tipke";
-        opisTesta[PREVERI_BACKLIGHT] = "backlight";
-        opisTesta[ZAKLJUCI] = "konec";
+  //init testne programe
+  testniProgrami[TEST_PROG_FLASH] = &testFlash;
+  testniProgrami[TEST_PROG_NORM] = &testNormalen;
+  
+  
+  //init opis testov
+  //opisi naj bodo dovolj kratiki da bodo primeri za izpis na ekranu
+  opisTesta[KONTROLA_KABELNA] = "kabel";
+  opisTesta[PREVERI_FLASH] = "flash";
+  opisTesta[PREVERI_LEDICE] = "ledice";
+  opisTesta[PREVERI_TIPKE] = "tipke";
+  opisTesta[PREVERI_BACKLIGHT] = "backlight";
+  opisTesta[ZAKLJUCI] = "konec";
 }
 
 //vrne nasljednjo operacijo; ce ta ne obstaja vrne -1
 e_TestneOperacije getNextOperation(){
-	if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
-        
-    int treOperacija = ++testniProgrami[izbranTesniProgram]->treOperacija;
-        
-        //ce je trenutna operacija 0 pomeni, da je prisel do konca, saj ni definirane nobene vec operacije
-	if(testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] == 0){
-		return ZAKLJUCI;
-	}
-        
-	return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
+  if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
+  
+  int treOperacija = ++testniProgrami[izbranTesniProgram]->treOperacija;
+  
+  //ce je trenutna operacija 0 pomeni, da je prisel do konca, saj ni definirane nobene vec operacije
+  if(testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] == 0){
+    return ZAKLJUCI;
+  }
+  
+  return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
 }
 
 //vrne prvo operacijo testnega program
 e_TestneOperacije getFirstOperation(){
-	if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
-	testniProgrami[izbranTesniProgram]->treOperacija = 0;
-	return testniProgrami[izbranTesniProgram]->operacijeID[0];
+  if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
+  testniProgrami[izbranTesniProgram]->treOperacija = 0;
+  return testniProgrami[izbranTesniProgram]->operacijeID[0];
 }
 
 //vrne trenutno operacijo
 e_TestneOperacije getCurrentOperation(){
-    int treOperacija = testniProgrami[izbranTesniProgram]->treOperacija;
-    return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
+  int treOperacija = testniProgrami[izbranTesniProgram]->treOperacija;
+  return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
 }
-
 
 const char *getCurrentOperationStr(){
   //uporablja v primeru ko je opisTesta prazen
@@ -85,30 +86,34 @@ const char *getCurrentOperationStr(){
   
   //pogleda ce je opisTesta definiran
   if(opisTesta[operacijaID] == NULL){
-      //namesto XX zapise st. trenutne operacije operacije
-      addNumberToStr(prazen, treOperacija, prazenMestoSt, prazenVelSt);
-      return prazen;
+    //namesto XX zapise st. trenutne operacije operacije
+    addNumberToStr(prazen, operacijaID, prazenMestoSt, prazenVelSt);
+    return prazen;
   }
   
-  return opisTesta[treOperacija];
+  return opisTesta[operacijaID];
 }
+
+const char *getOpisProgramaStr(){
+  return testniProgrami[izbranTesniProgram]->ime;
+}
+
 
 //vrne kolikisen del x-sa je ze opravil
 //odstotek pomeni del od sto, odxtotek pomeni del od x :)
-int dobiNapredekOdxtotek(int x){
-	return (testniProgrami[izbranTesniProgram]->treOperacija * x) / stOperacij;
+int dobiNapredekOdxtek(int x){
+  return (testniProgrami[izbranTesniProgram]->treOperacija * x) / stOperacij;
 }
 
 //presteje stevilo operacij za trenutno izbran program. Rezultat zapise v stOperacij
 void prestejStOperacij(){
-  int treOperacija = testniProgrami[izbranTesniProgram]->treOperacija;
   stOperacij = 0;
   
   //v operacijah isce ZAKLJUCI ali pa 0
-  while(testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] != 0 &&
-  		testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] != ZAKLJUCI){
-  	stOperacij++;		
-  }
+  while(testniProgrami[izbranTesniProgram]->operacijeID[stOperacij] != 0 &&
+        testniProgrami[izbranTesniProgram]->operacijeID[stOperacij] != ZAKLJUCI){
+          stOperacij++;		
+        }
 }
 
 
@@ -120,7 +125,7 @@ void LCD_getTestniProgram(){
   int xPoz = 15;
   GrX = xPoz;  GrY = 5;
   printf("Izberite tip");
-    
+  
   GrX = xPoz;  GrY = 15; 
   printf("naprave, ki jo");
   
@@ -128,28 +133,28 @@ void LCD_getTestniProgram(){
   printf("zelite testirati:");
   
   if(ST_TEST_PROG == 0){
-	GrX = xPoz;  GrY = 45; 
-	printf("ni programov :(");
-	LCD_sendC();
-	izbranTesniProgram = -1;
-	while(1); //ERROR: ni definiranih testnih programov
+    GrX = xPoz;  GrY = 45; 
+    printf("ni programov :(");
+    LCD_sendC();
+    izbranTesniProgram = -1;
+    while(1); //ERROR: ni definiranih testnih programov
   }
   
   
   LCD_sendC();
   
   //pregleduje tipke in izpisuje trenutno izbrani program
-  int trenutnaIzbira = TEST_PROGRAM_FIRST; //tnrenutno izbiro postavi na index prvega testnega programa
+  int trenutnaIzbira = (izbranTesniProgram == -1)? TEST_PROGRAM_FIRST : izbranTesniProgram; //tnrenutno izbiro postavi na index prvega testnega programa
   int tipkaDol = 0;     //oznacuje, da uporabnik drzi tipko
   int desno, levo;      //oznacuje, ce se bo narisal levi/desni znak
-  desno = (ST_TEST_PROG == 1)? 0 : 1;
-  levo = 0;
+  desno = (trenutnaIzbira >= ST_TEST_PROG-1)? 0 : 1;
+  levo = (trenutnaIzbira <= 0)? 0 : 1;
   izpisiIzbiro(trenutnaIzbira, levo, desno);
   
   
   while(1){
     BeriKey();
-  
+    
     if(KGet(TkLev) && levo){
       if(tipkaDol == 0){
         trenutnaIzbira--;
@@ -180,6 +185,7 @@ void LCD_getTestniProgram(){
       izbranTesniProgram = trenutnaIzbira;
       //postavi trenutno operacijo na zacetek
       testniProgrami[izbranTesniProgram]->treOperacija = 0;
+      prestejStOperacij();
       return;
     }
     //nobena tipka ni bila pritisnjena 

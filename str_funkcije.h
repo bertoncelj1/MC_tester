@@ -2,8 +2,8 @@
 #define str_funkcije_h
 
 
-int strCp(char *strMain, char *strAdd);
-int strLen(char *str);
+int strCp(char *strMain, const char *strAdd);
+int strLen(const char *str);
 void addNumberToStr(char *str, int st, int mesto, int vel);
 
 #else

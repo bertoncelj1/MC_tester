@@ -70,10 +70,6 @@ void Init(void)
   LCD_init();
   //LCD 2 se inicializira takrat, ko ga dejansko priklopimo
   
-  //ugasne back light
-  //pri MC330 se krmili tranzistor 
-  P4LATCH = 0x00;
-  LE573set();
-  LE573hold();
+  led_diode(OFF);
   
 }

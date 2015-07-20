@@ -20,24 +20,14 @@ int main( void )
   
   //enable interrupt
   _EINT();       
-    
-
-  //prikaze moznost za izbiro tipa testiranja
-  LCD_getTestniProgram();
-  
-
+      
   //nastavi aplikacije
-  apps.active = 0;
-  apps.enabled_mask = 0;
-  apps_enable(REFRESH_DIS_APP | READ_KEY_APP | KONTROLA_APP | lediceToggle_APP  );  
-  timer_wait(READ_KEY_ID, 10);
-  timer_wait(KONTROLA_ID, 20);
+  initApps();
   
   while (1){
     switchApps();
   }
 }
-
 
 
 void switchApps(){
@@ -57,7 +47,7 @@ void switchApps(){
       potek_kontrole();
       
       apps_suspend(KONTROLA_APP);
-      timer_wait(KONTROLA_ID,1000);   
+      timer_wait(KONTROLA_ID, 20);   
       break;
       
     //uporablja za testiranje ledic
@@ -69,10 +59,17 @@ void switchApps(){
       timer_wait(lediceToggle_ID, 300); 
       break;
       
-
-    //TODO: kaj se naredi s temle?
     default:
     case NO_APP:break;
   }
+}
+
+
+void initApps(){
+  apps.active = 0;
+  apps.enabled_mask = 0;
+  apps_enable(REFRESH_DIS_APP | READ_KEY_APP | KONTROLA_APP | lediceToggle_APP ); 
+  timer_wait(READ_KEY_ID, 10);
+  timer_wait(KONTROLA_ID, 20);
 }
 

@@ -1,7 +1,7 @@
 #include "str_funkcije.h"
 
 //kopira celoten strAdd v strMain, vrne dolzino strAdd
-int strCp(char *strMain, char *strAdd){
+int strCp(char *strMain, const char *strAdd){
 	int len = 0;
 	while(*strAdd){
 		*strMain++ = *strAdd++;
@@ -10,7 +10,7 @@ int strCp(char *strMain, char *strAdd){
 	return len;
 }
 
-int strLen(char *str){
+int strLen(const char *str){
   int len = 0;
   while(*str++)len ++;
   return len;

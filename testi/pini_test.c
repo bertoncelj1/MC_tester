@@ -1,5 +1,6 @@
 #include "pini_test.h"
-
+#include "error_mng.h"
+#include "graphics.h"
 
 // pin 3 tipka, 4 GND in 5 Vcc se izpustijo
 char testP1[6] = {0x01,0x02,0x04,0x08,0x40,0x80};
@@ -11,13 +12,17 @@ char pinP3[3]  = {  7 ,  9 };
 
 //zapise napacin string v error 
 void writePInToError(char pin){
-	char error[3];
-	
-	error[1] = pin % 10;	  //zapise enice
-	pin /= 10;
-	error[0] = pin % 10; //zapise desetice
-	error[2] = ' ';
-	error[3] = 0;			  
+	char error[4];
+	int stLen = (pin < 10)? 1 : 2;
+               
+        int i = stLen - 1; //kam bo zapisal desni del stevila, (azpisuje iz desnega proti levi)
+        while(pin > 0){
+          error[i--] =  pin % 10 + '0';
+          pin /= 10;
+        }
+        
+        error[stLen++] = ' ';
+        error[stLen++] = 0;
 	
 	addToErrorBuff(error);
 }
@@ -35,17 +40,14 @@ int prev_pine(void){
     //zapovni si vrednosti registrov
     char m_P1DIR = P1DIR;
     char m_P1OUT = P1OUT;
-    char m_P1IN = P1IN;
     char m_P1REN = P1REN;
     
     char m_P2DIR = P2DIR;
     char m_P2OUT = P2OUT;
-    char m_P2IN = P2IN;
     char m_P2REN = P2REN;
     
     char m_P3DIR = P3DIR;
     char m_P3OUT = P3OUT;
-    char m_P3IN = P3IN;
     char m_P3REN = P3REN;
     
     int vRedu = 1;
@@ -91,18 +93,18 @@ int prev_pine(void){
         zakasni();
         pin = P1IN & ~(0x10 | 0x20);
         if (pin  != 0){
-			writePInToError(pinP2[i]);
-			vRedu = 0;
+            writePInToError(pinP2[i]);
+            vRedu = 0;
         }
         pin = P2IN & ~(testP2[i] | 0x20);
         if (pin  != 0){
-			writePInToError(pinP2[i]);
-			vRedu = 0;
+            writePInToError(pinP2[i]);
+            vRedu = 0;
         }
         pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
-        if (pin  != 0){// preskoèi se tipka
-			writePInToError(pinP2[i]);
-			vRedu = 0;
+        if (pin  != 0){// preskoci se tipka
+            writePInToError(pinP2[i]);
+            vRedu = 0;
         }
     }
     
@@ -119,47 +121,40 @@ int prev_pine(void){
         zakasni();
         pin = P1IN & ~(0x10 | 0x20);
         if (pin  != 0){
-			writePInToError(pinP3[i]);
-			vRedu = 0;
+            writePInToError(pinP3[i]);
+            vRedu = 0;
         }
         
         pin = P2IN & ~(0x20);
         if (pin  != 0){
-			writePInToError(pinP3[i]);
-			vRedu = 0;
+            writePInToError(pinP3[i]);
+            vRedu = 0;
         }
         
         pin = P3IN & ~(testP3[i] | 0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
-        if (pin  != 0){// preskoèi se tipka
-			writePInToError(pinP3[i]);
-			vRedu = 0;
+        if (pin  != 0){// preskoci se tipka
+            writePInToError(pinP3[i]);
+            vRedu = 0;
         }
     }
     
     //ponastavi vrednosti rtegistrov
     P1DIR = m_P1DIR;
     P1OUT = m_P1OUT;
-    P1IN =  m_P1IN;
     P1REN = m_P1REN;
     
     P2DIR = m_P2DIR;
     P2OUT = m_P2OUT;
-    P2IN =  m_P2IN;
     P2REN = m_P2REN;
     
     P3DIR = m_P3DIR;
     P3OUT = m_P3OUT;
-    P3IN =  m_P3IN;
     P3REN = m_P3REN;
     
     return vRedu;
     
 }
 
-//TODO: preveri ce se to sploh rabi!
 void zakasni(void){
-    for(int i = 0; i < 200; ++i)
-    {
-        
-    }
+    for(int i = 0; i < 200; ++i);
 }
