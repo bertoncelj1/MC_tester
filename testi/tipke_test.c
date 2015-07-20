@@ -13,7 +13,7 @@ void display_test(){
   {
   case 1:
     back_light_ON();
-    zgoraj_belo();
+    clear_2();
     break;
     
   case 2:
@@ -32,7 +32,8 @@ void display_test(){
     
   case 5:
     back_light_ON();
-    clear_2();
+    zgoraj_belo();
+    zgoraj_crno();
     break;
   }
   
