@@ -3,11 +3,12 @@
 
 unsigned char P4LATCH2;  // stanje za LATCH 74HC573
 unsigned char DelayKey_2;  // zakasnitev ponavljanja tipk
-unsigned char LastKey_2;   // zadnja kombinacija tipk
-unsigned char KeyBuf_2[2]; // shranjene tipke
+unsigned char LastKey_2;   // zadnja kombinacija tipk 
+unsigned char KeyBuf_2; // shranjene tipke
 
 
 
+//TODO:spremen da bo uporablov svoj array za ta drug ekran namest LCD 
 void LCD_sendC_2(void)
 {
     unsigned int i,p;
@@ -59,7 +60,7 @@ void LCD_init_2(void)
     LE573hold_2();    // P4 za LCD in tipke
     //P5OUT|=0x80;     // CSflash=1
     _set_CSFLASH;  // CSflash=1
-    KeyBuf_2[0]=KeyBuf_2[1]=0; // shranjene tipke
+    KeyBuf_2=0; // ponastavi shranjene tipke
     //P5OUT|=0x1f;    // wr=1, >CS=1 , E=1, RS=1 , LCDreset = 1
     _set_RW;
     _set_CS;
@@ -237,6 +238,7 @@ char LCD_read_2(int rs)
     return d;
 }
 
+//prebere tipke testnega zaslona in jih shrani v KeyBuf2
 void BeriKey_2(void)
 {
     unsigned char t,i,tmp;
@@ -269,7 +271,7 @@ void BeriKey_2(void)
         else{ // zakasnitev potekla
             if (t & TkRept){
     		//LastKey_2=0; 	   // sprozi ponovitev tipke
-                KeyBuf_2[0] = t;   // vpise vrednost
+                KeyBuf_2 = t;   // vpise vrednost
             }
             DelayKey_2=5;   // zakasnitev ponavljanja po novi tipki
         }
@@ -289,7 +291,8 @@ void BeriKey_2(void)
 int TipkaVhod_2(void)
 {
     int v;
-    v = P3IN;  
+    v = P3IN;
+    // 3us zakasnitev (vsaj 2us brez dodatnega pul-up)
     v |= P3IN;
     v &= P3IN;
     
@@ -305,21 +308,10 @@ int TipkaVhod_2(void)
     return v;
 }
 
-unsigned char KGet_2(void)
-{
-    unsigned char t;
-    
-    if ((t=KeyBuf_2[0])!=0)
-    {
-        KeyBuf_2[0]= KeyBuf_2[1];
-	KeyBuf_2[1]=0;
-    }
-    return t;
-}
 
-//TODO: set enum for state !
+
 //nastavi diode glede na podano stanje
-void led_diode(int state){
+void led_diode(e_Led_diode_state state){
   static int prevState = -1;
 
   //nadaljuje samo ob spremembi stanja
@@ -328,14 +320,14 @@ void led_diode(int state){
   
   switch(state){
     //obe OFF
-  case 0:
+  case OFF:
       P6OUT &= ~0x10; //ugasne zeleno
       P6OUT &= ~0x08; //ugasne rdeèo
       off_PULSEled;
       off_ALARMled;
            
     //test OK  
-  case 1:
+  case OK:
       P6DIR |= (0x08 | 0x10);
       P6OUT |=  0x10; //prižgi zeleno
       P6OUT &= ~0x08; //ugasne rdeèo
@@ -344,7 +336,7 @@ void led_diode(int state){
       
       
     //napaka pri testiranju
-  case 2:
+  case ERROR:
       P6DIR |= (0x08 | 0x10);
       P6OUT |=  0x08; //prižgi rdeèo
       P6OUT &= ~0x10; //ugasne zeleno

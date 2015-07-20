@@ -67,7 +67,6 @@ void switchApps(){
       
       apps_suspend(lediceToggle_APP);        
       timer_wait(lediceToggle_ID, 300); 
-      
       break;
       
 

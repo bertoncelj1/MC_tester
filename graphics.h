@@ -50,7 +50,7 @@ extern unsigned char P4LATCH;  // stanje za LATCH 74HC573
 extern unsigned char krei_del;
 extern char on;
 extern char test_tipk_biti;
-extern unsigned char KeyBuf_2[];
+extern unsigned char KeyBuf_2;
 unsigned int SwapW(unsigned int w);
 void ToTX1(void);
 void ToTX2(void);
@@ -249,6 +249,7 @@ void BeriKey_2(void);
 char kontrola_vstavljen_LCD(void);
 void back_light_ON(void);
 void back_light_OFF(void);
+typedef enum {OFF, OK, ERROR}e_Led_diode_state;
 void led_diode(int state);
 //===========================================================================
 

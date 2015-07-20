@@ -171,8 +171,8 @@ void key_error(int t){
 int tipke_2(void){
     int tipka;
     
-    tipka=KeyBuf_2[0];
-    KeyBuf_2[0] = 0;
+    tipka=KeyBuf_2;
+    KeyBuf_2 = 0;
     //(TkGor+TkDol+TkLev+TkDes+TkEnt)
     if(tipka){
         switch (tipka){

@@ -2385,6 +2385,7 @@ void BeriKey(void)
 
 
 //desifriraj tipke
+//ce so isti biti postavljeni v tipke in v KeyBuf, vrne 1, in poanstavi bite
 int KGet(char tipke)
 {
   
@@ -2398,15 +2399,6 @@ int KGet(char tipke)
 }
     
     
-//    if ((t=KeyBuf[0])!=0)
-//    {
-//        KeyBuf[0]=KeyBuf[1];
-//	KeyBuf[1]=0;
-//    }
-    
-    //return t;
-
-
 //===========================================================================
 
 void LCD_cmd(unsigned char d)

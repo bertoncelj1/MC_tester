@@ -60,13 +60,15 @@ void potek_kontrole(void){
     
    
    case ZACETEK:
-        //pridobi prvo testno operacijo ki jo bo izvajal
+        //pridobi prvo testno operacijo, ki jo bo izvajal
         operacijeState = getFirstOperation();
         
         //ugasne back light //TODO kako je s tem ?
         P4LATCH2 = 0x00;
         LE573set_2();
         LE573hold_2();
+        
+        led_diode(OFF);
         
         //izpise zacetno besedilo
         izpisiSporocilo("VSTAVI" "\n" "LCD" "\n" "DISPLAY");
@@ -83,7 +85,9 @@ void potek_kontrole(void){
         }   
 
         break; 
-        
+    
+    //koncal je s preverjanjem in caka na reset
+    //TODO: dodaj da se bo dal resetirat s tipko    
     case CAKAJ_RESET:
       // caka da stakne display
       if (kontrola_vstavljen_LCD()==0){
@@ -94,7 +98,8 @@ void potek_kontrole(void){
     //ce v katerih izmed operacijpride do napake poklicejo to stanje
     //operacije je dolzna pred klicanjem izpisati na ekran napako 
     case NAPAKA: 
-      // caka da stakne display
+     //TODO dodej da se bo dal ponovit poiskus s tipko
+     // caka da stakne display
      if (kontrola_vstavljen_LCD()==0){
           kontrolaStanja = ZACETEK;
      }
@@ -149,8 +154,6 @@ void izvediOperacije(){
 				
 			izpisiSporocilo("TEST" "\n" "KONCAN");
 		
-			//ponastavi keyBufferje TODO preveri kako je s tem
-			KeyBuf_2[0]=KeyBuf_2[1]=0; 
             kontrolaStanja = CAKAJ_RESET;
             break;
 	}
@@ -265,36 +268,6 @@ void izpisiSporocilo(char *sporocilo){
 	
 }
 
-//iz test_mng errof bufferja prebere npako in jo izpise
-//to napako naj bi tja zapisal ze sam proces
-void izpisiError(char *imeNapake, char *opisNapake){
-  clearLine(2, 8);
-
-  //izpise naslov na sredino horizontalno
-  OutDev = STDOUT_LCD_NORMAL_FONT;
-  GrX = 64 - strLen(imeNapake)/2;  GrY = 5;
-  printf(imeNapake);
-  
-  
-  OutDev = STDOUT_LCD;
-  int lineY = 20;
-  GrX =5;  GrY = lineY;
-  printf(opisNapake);
-  lineY += 10;
-  
-  //prebere errorLine vrstico po vrstico
-  int line[25];
-  int lineLen = 20; //koliko znakov bo izpisal na vrstico
-  int offset = 0;
-  //povprasa po vrstici, jo ipise in se pomakne v naslednjo
-  while(getErrorLine(line, lineLen, offset)){
-    offset += lineLen;
-    GrX =5;  GrY = lineY;
-    printf("%s", line);
-    lineY += 8;
-  }
-  LCD_sendC();
-}
 
 
 
