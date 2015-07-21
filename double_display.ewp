@@ -317,8 +317,10 @@
         </option>
         <option>
           <name>newCCIncludePaths</name>
-          <state>$PROJ_DIR$</state>
-          <state>$PROJ_DIR$\testi</state>
+          <state>$PROJ_DIR$\src\testi</state>
+          <state>$PROJ_DIR$\src\scheduler</state>
+          <state>$PROJ_DIR$\src\graphics</state>
+          <state>$PROJ_DIR$\src\</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -1952,52 +1954,58 @@
     </settings>
   </configuration>
   <group>
+    <name>graphics</name>
+    <file>
+      <name>$PROJ_DIR$\src\graphics\graphics.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\graphics\graphics_glavni.c</name>
+    </file>
+  </group>
+  <group>
+    <name>scheduler</name>
+    <file>
+      <name>$PROJ_DIR$\src\scheduler\scheduler.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\scheduler\TIMERB.C</name>
+    </file>
+  </group>
+  <group>
     <name>Testi</name>
     <file>
-      <name>$PROJ_DIR$\testi\backlight_test.c</name>
+      <name>$PROJ_DIR$\src\testi\backlight_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\error_mng.c</name>
+      <name>$PROJ_DIR$\src\testi\error_mng.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\flash_test.c</name>
+      <name>$PROJ_DIR$\src\testi\flash_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\ledice_test.c</name>
+      <name>$PROJ_DIR$\src\testi\ledice_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\pini_test.c</name>
+      <name>$PROJ_DIR$\src\testi\pini_test.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\test_mng.c</name>
+      <name>$PROJ_DIR$\src\testi\test_mng.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\testi\tipke_test.c</name>
+      <name>$PROJ_DIR$\src\testi\tipke_test.c</name>
     </file>
   </group>
   <file>
-    <name>$PROJ_DIR$\anze.c</name>
+    <name>$PROJ_DIR$\src\anze.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\graphics.c</name>
+    <name>$PROJ_DIR$\src\ini.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\graphics_glavni.c</name>
+    <name>$PROJ_DIR$\src\main.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\ini.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\main.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\scheduler.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\str_funkcije.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\TIMERB.C</name>
+    <name>$PROJ_DIR$\src\str_funkcije.c</name>
   </file>
 </project>
 

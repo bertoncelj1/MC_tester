@@ -19,7 +19,7 @@ void emptyErrorBuff(){
 }
 
 
-//iz test_mng errof bufferja prebere npako in jo izpise
+//iz test_mng errof bufferja prebere napako in jo izpise
 //to napako naj bi tja zapisal ze sam proces
 void izpisiError(char *imeNapake, char *opisNapake){
   clearLine(2, 8);
@@ -34,7 +34,6 @@ void izpisiError(char *imeNapake, char *opisNapake){
   
   //izpise opis napake
   OutDev = STDOUT_LCD;
-  
   GrX = MARGIN_LEFT-3;  GrY = lineY;
   printf("%s", opisNapake);
   lineY += OPIS_SPACE;

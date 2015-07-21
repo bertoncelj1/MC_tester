@@ -36,6 +36,7 @@ typedef int int16_t;
 #define set_latch_0   	P6OUT &= ~0x80;                 //izklopi latch
 #define get_latch_out	(P6OUT & 0x80)         
 
+#define BLINK_SPEED     200     //kako hitro se prizigajo in ugasajo
 void ledice_test_init();
 void setLed();
 void setLedNext();

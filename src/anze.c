@@ -29,6 +29,7 @@ int operacijaFlash();
 int preveri_backlight();
 char kontrola_vstavljen_LCD(void);
 int prev_kable_2(void);
+int preveriTipke();
 void izpisiKonec();
 void drawLoadingBar();
 void izpisiSporocilo(const char *sporocilo, const char *podSporocilo, int yZamik);
@@ -128,6 +129,10 @@ void potek_kontrole(void){
     //po vrsti se izvajajo operacije izbranega programa
     case PREVERJAJ:
     	izvediOperacije();
+        
+        if(KGet(TkEnt)){
+          kontrolaStanja = ZACETEK;
+        }
    	break;
  }
  
@@ -138,9 +143,7 @@ void izvediOperacije(){
     //na ekran izrise loading bar in izpise trenutno operacijo
     drawLoadingBar();  
 
-    //ce operacije vrne 1 se bo program premaknil naprej na salednjo operacijo
-    //v primeru napake operacije vrnejo 0; Zato da ima uporabnik potem moznost 
-    //resetirati in ponovno pognati neuspelo operacijo
+    //ce operacije vrne 1 se bo program premaknil naprej na naslednjo operacijo
     int naprej = 0;
             
 	switch (operacijeState){
@@ -158,8 +161,8 @@ void izvediOperacije(){
 		    break;
 		    
 		case PREVERI_TIPKE:
-                    naprej = tipke_2();
-                    if(naprej == -1)kontrolaStanja =  NAPAKA;
+                    //TODO popravi, da se bo napaka izvedla ze znotraj tipk
+                    naprej = preveriTipke();
 		    break;
 		
 		case PREVERI_BACKLIGHT:
@@ -194,7 +197,7 @@ void drawLoadingBar(){
     //izpise trenutno operacijo, ki jo testiramo
     OutDev = STDOUT_LCD;
     GrX =0;  GrY = 3;
-    printf("testiram %s", getCurrentOperationStr());
+    printf("test %s (%d%%)", getCurrentOperationStr(), dobiNapredekOdxtek(100));
     LCD_sendC();
 }
 
@@ -252,6 +255,21 @@ int preveri_backlight(){
   
   //gre v stanje NAPAKA kjer caka na reset
   kontrolaStanja =  NAPAKA;
+  return 0;
+}
+
+int preveriTipke(){
+  int ret;
+  if((ret = tipke_2()) >= 0){
+    return ret;
+  }
+  
+  //v primeru napake izpise obvestilo
+  izpisiError("NAPAKA TIPKE", "hkrati pritisnjene:");
+  
+  //gre v stanje NAPAKA kjer caka na reset
+  kontrolaStanja =  NAPAKA;
+  
   return 0;
 }
 

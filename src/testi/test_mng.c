@@ -12,14 +12,14 @@ void prestejStOperacij();
 /*DEFININICIJE TESTNIH PROGRAMOV*/
 //obvestilo: pri dodajanju novega testnega programa ne pozabite popraviti ST_TEST_PROG
 static s_testniProgram testFlash = {
-  "tipke 350 (flash)",			//opis programa
+  "MC 350 (flash)",			//opis programa
   0,					//trenutna testna operacija
-  KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_LEDICE, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  KONTROLA_KABELNA, PREVERI_LEDICE, PREVERI_BACKLIGHT, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
     
 };
 
 static s_testniProgram testNormalen = {
-  "tipke 330",		        //opis programa
+  "MC 330",		        //opis programa
   0,				//trenutna testna operacija
   KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };

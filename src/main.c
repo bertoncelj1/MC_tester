@@ -51,12 +51,12 @@ void switchApps(){
       break;
       
     //uporablja za testiranje ledic
-    //na vsake 300ms se prizge nasljednja kombinacija ledic
+    //na vsake 200ms (BLINK_SPEED) se prizge nasljednja kombinacija ledic
     case lediceToggle_APP:
       setLedNext();
       
       apps_suspend(lediceToggle_APP);        
-      timer_wait(lediceToggle_ID, 300); 
+      timer_wait(lediceToggle_ID, BLINK_SPEED); 
       break;
       
     default:

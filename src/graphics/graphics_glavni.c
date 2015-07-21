@@ -84,7 +84,6 @@ void LCD_init_2(void)
     LCD_cmd_2(0x00AC);  // (19)  Static indicator OFF
     LCD_cmd_2(0x00F0);  // (22) Test (konec testa)
     LE573set_2();   // P4 na 574 izhode
-    
     back_light_ON();
 }
 
