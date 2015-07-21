@@ -8,7 +8,10 @@
 #include "flash_test.h"
 #include "test_mng.h"
 
-
+//TODO nekje izpisi verzijo programa
+const char *getVersion(){
+  return "v1.0";
+}
 
 int main( void )
 {

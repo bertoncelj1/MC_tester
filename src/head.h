@@ -272,6 +272,7 @@ void meni_max_min(void);
 void izpis_to_RAM_LCD(void);
 void switchApps();
 void initApps();
+const char *getVersion();
 
 #endif
 
