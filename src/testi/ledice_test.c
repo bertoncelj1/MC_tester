@@ -1,6 +1,18 @@
-#include  "msp430x24x.h"
-#include  "ledice_test.h"
+#include "msp430x24x.h"
+#include "ledice_test.h"
+#include "scheduler.h"
 
+
+
+s_testnaOperacija ledice_test = {
+  "ledice",
+  ledice_test_init,
+  preveriLedice,
+};
+
+void* getTstOprLedice(){
+  return &ledice_test;
+}
 
 void ledice_test_init(){
 	//postavi vse na pine na out
@@ -9,6 +21,12 @@ void ledice_test_init(){
 	dir_latch_1;
 }
 
+e_OprState preveriLedice(){
+  //poklice se app za testiranje ledic
+  //opercije je vedno uspesa saj uporabnik sam preveri ledice
+  timer_wait(lediceToggle_ID, 50);
+  return 1;
+}
 
 //sprejme stevilo od 0 do 3 in glede na binarno vrednost tega stevila prizge ledici
 void setLed(int prizgane){

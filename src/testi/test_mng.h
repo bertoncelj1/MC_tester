@@ -14,13 +14,20 @@ enum izbireTestnihProgramov{
 
 #define TESTNE_OPR_FIRST 1 //index prve testne operacije
 typedef enum { 
-  KONTROLA_KABELNA = TESTNE_OPR_FIRST, 
+  PREVERI_PINE = TESTNE_OPR_FIRST, 
   PREVERI_FLASH, 
   PREVERI_LEDICE, 
   PREVERI_TIPKE, 
   PREVERI_BACKLIGHT, 
   ZAKLJUCI
 }e_TestneOperacije;
+
+typedef enum { 
+  OPR_NAPAKA,
+  OPR_IZVAJA,
+  OPR_KONCANA,
+  OPR_ZADNJA,
+}e_OprState;
 
 
 #define MAX_OPERACIJ  20 //najvecje stevilo operacij, ki jih ima lahko ena izbira
@@ -31,13 +38,22 @@ typedef struct {
 }s_testniProgram;
 
 
+typedef struct {
+  char *ime;					//opis operacije
+  void (*init)(); 				//init funkcija operacije
+  e_OprState (*work)();                                //delovna funkcije operacije
+}s_testnaOperacija;
+
 
 //public functions
 void test_mng_init();
 void LCD_getTestniProgram();
-e_TestneOperacije getFirstOperation();
-e_TestneOperacije getNextOperation();
-e_TestneOperacije getOperation();
+//e_TestneOperacije getFirstOperation();
+//e_TestneOperacije getNextOperation();
+//e_TestneOperacije getOperation();
+e_OprState izvediTrenutnoOperacijo();
+void setFirstOperation();
+void setNextOperation();
 const char *getCurrentOperationStr();
 int dobiNapredekOdxtek(int x);
 const char *getOpisProgramaStr();

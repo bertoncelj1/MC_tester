@@ -1,6 +1,11 @@
 #include "test_mng.h"
 #include "graphics.h"
 #include "str_funkcije.h"
+#include "flash_test.h"
+#include "backlight_test.h"
+#include "pini_test.h"
+#include "tipke_test.h"
+#include "ledice_test.h"
 
 /*PRIVATNE FUNKCIJE*/
 void izpisiIzbiro(int izbira, int leviZnak, int desniZnak);
@@ -14,22 +19,25 @@ void prestejStOperacij();
 static s_testniProgram testFlash = {
   "MC 350 (flash)",			//opis programa
   0,					//trenutna testna operacija
-  KONTROLA_KABELNA, PREVERI_LEDICE, PREVERI_BACKLIGHT, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_LEDICE, PREVERI_BACKLIGHT, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
     
 };
 
 static s_testniProgram testNormalen = {
   "MC 330",		        //opis programa
   0,				//trenutna testna operacija
-  KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };
 
 /*PRIVATNE SPREMENLJIVKE*/
-//uporablja za izpis imena testa, ki ga trenutno testiramo
-static char *opisTesta[MAX_TEST_PROG];
+
+//vse operacije so spravljene tu notri
+static s_testnaOperacija *operacije[MAX_OPERACIJ];
+
 
 static s_testniProgram *testniProgrami[MAX_TEST_PROG];
 static int izbranTesniProgram = -1;
+e_TestneOperacije trenutnaOprID;
 static int stOperacij; //stevilo operacij za trenutno izbrani program
 
 
@@ -38,43 +46,52 @@ void test_mng_init(){
   testniProgrami[TEST_PROG_FLASH] = &testFlash;
   testniProgrami[TEST_PROG_NORM] = &testNormalen;
   
-  
   //init opis testov
   //opisi naj bodo dovolj kratiki da bodo primeri za izpis na ekranu
-  opisTesta[KONTROLA_KABELNA] = "kabel";
-  opisTesta[PREVERI_FLASH] = "flash";
-  opisTesta[PREVERI_LEDICE] = "ledice";
-  opisTesta[PREVERI_TIPKE] = "tipke";
-  opisTesta[PREVERI_BACKLIGHT] = "backlight";
-  opisTesta[ZAKLJUCI] = "konec";
+  operacije[PREVERI_PINE] = getTstOprPini();
+  operacije[PREVERI_FLASH] = getTstOprFlash();
+  operacije[PREVERI_LEDICE] = getTstOprLedice();
+  operacije[PREVERI_TIPKE] = getTstOprTipke();
+  operacije[PREVERI_BACKLIGHT] = getTstOprBacklight();
+  
 }
 
-//vrne nasljednjo operacijo; ce ta ne obstaja vrne -1
-e_TestneOperacije getNextOperation(){
+
+e_OprState izvediTrenutnoOperacijo(){
+  if(trenutnaOprID == ZAKLJUCI){
+    return -1;
+  }
+  //run the operation
+  return operacije[trenutnaOprID]->work();
+}
+
+void setFirstOperation(){
+  if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
+  testniProgrami[izbranTesniProgram]->treOperacija = 0;
+  trenutnaOprID = testniProgrami[izbranTesniProgram]->operacijeID[0];
+  
+  //init operation
+  operacije[trenutnaOprID]->init();
+}
+
+
+void setNextOperation(){
   if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
   
   int treOperacija = ++testniProgrami[izbranTesniProgram]->treOperacija;
   
   //ce je trenutna operacija 0 pomeni, da je prisel do konca, saj ni definirane nobene vec operacije
   if(testniProgrami[izbranTesniProgram]->operacijeID[treOperacija] == 0){
-    return ZAKLJUCI;
+    trenutnaOprID = ZAKLJUCI;
+  }else{
+    trenutnaOprID =  testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
   }
   
-  return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
+  //init next operation
+  operacije[trenutnaOprID]->init();
 }
 
-//vrne prvo operacijo testnega program
-e_TestneOperacije getFirstOperation(){
-  if(izbranTesniProgram < 0)while(1); //NAPAKA, trenutna izbira ni dolocena
-  testniProgrami[izbranTesniProgram]->treOperacija = 0;
-  return testniProgrami[izbranTesniProgram]->operacijeID[0];
-}
 
-//vrne trenutno operacijo
-e_TestneOperacije getCurrentOperation(){
-  int treOperacija = testniProgrami[izbranTesniProgram]->treOperacija;
-  return testniProgrami[izbranTesniProgram]->operacijeID[treOperacija];
-}
 
 const char *getCurrentOperationStr(){
   //uporablja v primeru ko je opisTesta prazen
@@ -85,19 +102,19 @@ const char *getCurrentOperationStr(){
   e_TestneOperacije operacijaID = getCurrentOperation();
   
   //pogleda ce je opisTesta definiran
-  if(opisTesta[operacijaID] == NULL){
+  if(operacije[operacijaID]->ime == NULL){
     //namesto XX zapise st. trenutne operacije operacije
     addNumberToStr(prazen, operacijaID, prazenMestoSt, prazenVelSt);
     return prazen;
   }
   
-  return opisTesta[operacijaID];
+  return operacije[operacijaID]->ime;
 }
+
 
 const char *getOpisProgramaStr(){
   return testniProgrami[izbranTesniProgram]->ime;
 }
-
 
 //vrne kolikisen del x-sa je ze opravil
 //odstotek pomeni del od sto, odxtotek pomeni del od x :)
@@ -115,6 +132,20 @@ void prestejStOperacij(){
           stOperacij++;		
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //na zaslon izrise vmesnik s katermi lahko uporabnik izbere testni program

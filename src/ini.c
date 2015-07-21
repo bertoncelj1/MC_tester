@@ -1,9 +1,8 @@
 #include  "msp430x24x.h"
 #include  "graphics.h"
 #include "TIMERB.H"
-#include "ledice_test.h"
-#include "flash_test.h"
 #include "test_mng.h"
+
 
 void Init(void)
 {
@@ -60,9 +59,6 @@ void Init(void)
   //inicializacija timerB
   timerb_init();
   
-  //inicializira nekatere testne postopke
-  ledice_test_init();
-  flash_test_init();
   
   test_mng_init(); //inicializira test managerja, ki je odgovoren za klice testnih programov
   

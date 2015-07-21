@@ -1,6 +1,8 @@
 #ifndef backlight_test_h
 #define backlight_test_h
 
+#include "test_mng.h"
+
 //TYPE DEFINE
 #ifndef UINT
 #define UINT
@@ -14,8 +16,8 @@ typedef int int16_t;
 
 //javne funkcije
 uint8_t getErrorBacklightLine(uint8_t *line, uint8_t lineLen, uint8_t errorOffset);
-int test_back_light(void);
-
+e_OprState preveri_backlight(void);
+void* getTstOprBacklight();
 
 #else
 	#error backlight_test_h  already included! 

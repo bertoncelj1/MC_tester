@@ -3,6 +3,17 @@
 #include "error_mng.h"
 
 
+
+s_testnaOperacija flash_test = {
+  "flash",
+  flash_test_init,
+  operacijaFlash,
+};
+
+void* getTstOprFlash(){
+  return &flash_test;
+}
+
 void flash_test_init(){
 	//sets pins directions, 1->pin out, 0->pin input
 	dir_clock_1;
@@ -10,6 +21,18 @@ void flash_test_init(){
 	dir_output_0;
 	dir_chipSel_1;
         set_chipSel_1;
+}
+
+e_OprState operacijaFlash(){
+  if(preveriFlash()){
+    return OPR_KONCANA;
+  }
+  
+  //v primeru napake izpise obvestilo
+  izpisiError("NAPAKA SPOMINA", "flash output:");	
+  
+  return OPR_NAPAKA;
+
 }
 
 //prebere ID od flasha in vrne atribute, ki mu jih podamo
@@ -55,7 +78,7 @@ uint8_t readId(uint8_t *manID, uint16_t *devID, uint8_t *uniqueID, uint8_t *uniq
 
 //preveri ali flash deluje tako da poklice readId funkcijo in preveri vrnjene komponente
 //v primero napake, zapise v errorBuff sporocilo, kaj je so narobe
-uint8_t preveriFlash(){
+int preveriFlash(){
 	uint8_t manID = 0;
 	uint16_t devID = 0;
 	uint8_t uniqueID[20];

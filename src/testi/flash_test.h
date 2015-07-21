@@ -1,8 +1,8 @@
 #ifndef flash_test_h
 #define flash_test_h
 
-#include  "msp430x24x.h"
-
+#include "msp430x24x.h"
+#include "test_mng.h"
 
 //TYPE DEFINE
 #ifndef UINT
@@ -46,11 +46,13 @@ typedef int int16_t;
 
 
 void flash_test_init();
-uint8_t preveriFlash();
+int preveriFlash();
 //nevidna od zunaj, ni ravno prav da se klice ta funkcija kot sama, raje klici preveriFlash in potem preberi napako z getErrorLine
 //uint8_t readId(uint8_t *manID, uint16_t *devID, uint8_t *uniqueID, uint8_t *uniqueLen);
 void sendByte(uint8_t byte);
 uint8_t readByte();
+void* getTstOprFlash();
+e_OprState operacijaFlash();
 
 #else
 	#error flash_test_h  already included! 

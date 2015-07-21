@@ -1,8 +1,8 @@
 #ifndef ledice_test_h
 #define ledice_test_h
 
-#include  "msp430x24x.h"
-
+#include "msp430x24x.h"
+#include "test_mng.h"
 
 //TYPE DEFINE
 #ifndef UINT
@@ -40,6 +40,8 @@ typedef int int16_t;
 void ledice_test_init();
 void setLed();
 void setLedNext();
+void *getTstOprLedice();
+e_OprState preveriLedice();
 
 #else
 	#error ledice_test_h  already included! 

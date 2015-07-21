@@ -2,7 +2,37 @@
 #include "graphics.h"
 #include "error_mng.h"
 
+
 void delay(unsigned int d);
+void init_back_light();
+int test_back_light(void);
+
+
+
+s_testnaOperacija backlight_test = {
+  "backlight",
+  init_back_light,
+  preveri_backlight,
+};
+
+void* getTstOprBacklight(){
+  return &backlight_test;
+}
+
+void init_back_light(){
+
+}
+
+e_OprState preveri_backlight(){
+  if(test_back_light()){
+    return OPR_KONCANA;
+  }
+  
+  //v primeru napake izpise obvestilo
+  izpisiError("NAPAKA BACKLIGHT", "opis napake:");
+  
+  return OPR_NAPAKA;
+}
 
 int test_back_light(void){
     int vRedu = 1;

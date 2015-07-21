@@ -2309,6 +2309,7 @@ int TipkaVhod(void)
     
     return v;
 }
+
 #define TkGor 0x10
 #define TkLev 0x02
 #define TkDes 0x08

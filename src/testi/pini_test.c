@@ -2,6 +2,43 @@
 #include "error_mng.h"
 #include "graphics.h"
 
+int prev_pine(void);
+
+s_testnaOperacija pini_test = {
+  "pini",
+  pini_test_init,
+  preveriPine,
+};
+
+void* getTstOprPini(){
+  return &pini_test;
+}
+
+
+void pini_test_init(){
+  
+}
+
+e_OprState preveriPine(){
+
+  //TODO: ugotovi zakaj je to tukaj?
+  __delay_cycles(500000);
+
+  //preveri ali je kratek stik na pinih
+  if(prev_pine()){
+    return OPR_KONCANA;
+  }
+  
+  //nasel je napako na enem pinu
+  //izpise opozorilo
+  //v primeru napake izpise obvestilo
+  izpisiError("NAPAKA PINI", "pini v stiku:");	
+
+
+  return OPR_NAPAKA;
+
+}
+
 // pin 3 tipka, 4 GND in 5 Vcc se izpustijo
 char testP1[6] = {0x01,0x02,0x04,0x08,0x40,0x80};
 char pinP1[6]  = { 11,  13,  15,  17,  18,  16 };
@@ -11,7 +48,7 @@ char testP3[3] = {0x04,0x08};
 char pinP3[3]  = {  7 ,  9 };
 
 //zapise napacin string v error 
-void writePInToError(char pin){
+void writePinToError(char pin){
 	char error[4];
 	int stLen = (pin < 10)? 1 : 2;
                
@@ -64,17 +101,17 @@ int prev_pine(void){
         zakasni();
         pin = P1IN & ~(testP1[i] | 0x10 | 0x20);
         if (pin  != 0){
-        	 writePInToError(pinP1[i]);
+        	 writePinToError(pinP1[i]);
         	 vRedu = 0;
         }
         pin = P2IN & ~(0x20);
         if (pin  != 0){
-			writePInToError(pinP1[i]);
+			writePinToError(pinP1[i]);
 			vRedu = 0;
         }
         pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
         if (pin  != 0){// preskoèi se tipka
-			writePInToError(pinP1[i]);
+			writePinToError(pinP1[i]);
 			vRedu = 0;
         }
     }
@@ -93,17 +130,17 @@ int prev_pine(void){
         zakasni();
         pin = P1IN & ~(0x10 | 0x20);
         if (pin  != 0){
-            writePInToError(pinP2[i]);
+            writePinToError(pinP2[i]);
             vRedu = 0;
         }
         pin = P2IN & ~(testP2[i] | 0x20);
         if (pin  != 0){
-            writePInToError(pinP2[i]);
+            writePinToError(pinP2[i]);
             vRedu = 0;
         }
         pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
         if (pin  != 0){// preskoci se tipka
-            writePInToError(pinP2[i]);
+            writePinToError(pinP2[i]);
             vRedu = 0;
         }
     }
@@ -121,19 +158,19 @@ int prev_pine(void){
         zakasni();
         pin = P1IN & ~(0x10 | 0x20);
         if (pin  != 0){
-            writePInToError(pinP3[i]);
+            writePinToError(pinP3[i]);
             vRedu = 0;
         }
         
         pin = P2IN & ~(0x20);
         if (pin  != 0){
-            writePInToError(pinP3[i]);
+            writePinToError(pinP3[i]);
             vRedu = 0;
         }
         
         pin = P3IN & ~(testP3[i] | 0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
         if (pin  != 0){// preskoci se tipka
-            writePInToError(pinP3[i]);
+            writePinToError(pinP3[i]);
             vRedu = 0;
         }
     }

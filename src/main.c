@@ -4,13 +4,10 @@
 #include "head.h"
 #include "scheduler.h"
 #include "timerb.h"
-#include "ledice_test.h"
-#include "flash_test.h"
 #include "test_mng.h"
 
-//TODO nekje izpisi verzijo programa
 const char *getVersion(){
-  return "v1.0";
+  return "v0.9b";
 }
 
 int main( void )
@@ -56,10 +53,10 @@ void switchApps(){
     //uporablja za testiranje ledic
     //na vsake 200ms (BLINK_SPEED) se prizge nasljednja kombinacija ledic
     case lediceToggle_APP:
-      setLedNext();
+      //setLedNext();
       
       apps_suspend(lediceToggle_APP);        
-      timer_wait(lediceToggle_ID, BLINK_SPEED); 
+      //timer_wait(lediceToggle_ID, BLINK_SPEED); 
       break;
       
     default:

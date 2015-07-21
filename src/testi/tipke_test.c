@@ -2,12 +2,43 @@
 #include "graphics.h"
 #include "error_mng.h"
 
+
+int preveriLedice();
+void tipke_test_init();
+int preveriTipke();
+
+s_testnaOperacija tipke_test = {
+  "tipke",
+  tipke_test_init,
+  preveriTipke,
+};
+
+void* getTstOprTipke(){
+  return &tipke_test;
+}
+
 static int display_state;
 
 void izpis_pritisnjenih_tipk(void);
 void key_error(int t);
 
 char vse = (TkGor | TkDol | TkLev | TkDes | TkEnt);//vse tipke ki se testirajo
+
+e_OprState preveriTipke(){
+  int ret;
+  if((ret = tipke_2()) >= 0){
+    return ret;
+  }
+  
+  //v primeru napake izpise obvestilo
+  izpisiError("NAPAKA TIPKE", "hkrati pritisnjene:");
+  
+  //gre v stanje NAPAKA kjer caka na reset
+  kontrolaStanja =  NAPAKA;
+  
+  return 0;
+}
+
 
 static int prvic = 0;
 void tipke_test_init(){
@@ -110,6 +141,7 @@ int tipke_2(void){
   //TODO dodej da bo vsak test mu svojo init funkcijo
   if(!prvic){
     LCD_init_2();
+    display_test();
     prvic = 1;
   }
   
