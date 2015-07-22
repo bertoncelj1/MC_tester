@@ -10,6 +10,8 @@
 #include "run.h"
 #include "main.h"
 
+//TODO add log file
+
 const char* getVersion(){
   return "v1.0";
 }
