@@ -20,8 +20,6 @@ e_TestneOperacije operacijeState;
 int pozYOperationOK;
 
 
-
-
 void potek_kontrole(void){
     
   switch (kontrolaStanja){

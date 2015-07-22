@@ -2,7 +2,7 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\double_display.ewp</path>
+    <path>$WS_DIR$\Mc_tester.ewp</path>
   </project>
   <batchBuild/>
 </workspace>
