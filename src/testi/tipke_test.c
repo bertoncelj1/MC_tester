@@ -11,7 +11,8 @@ void display_test();
 
 char naborTipk = (TkGor | TkDol | TkLev | TkDes | TkEnt);//vse tipke ki se testirajo
 
-//TOD0 pobrisi tisti del ekrana na katerega bos risal
+//TODO pobrisi tisti del ekrana na katerega bos risal
+//TODO izpisi navodila ... pac da mora zacet pritiskat tipke
 void tipke_test_init(){
       LCD_init_2();
       test_tipk_biti = 0;
@@ -116,11 +117,8 @@ void key_error(int t){
 int tipke_2(void){
   int tipka;
   
-  
   tipka=KeyBuf_2;
   KeyBuf_2 = 0;
-  
-  
   
   if(tipka){
     //odstrani vse tipke ki so bile ze pritisnjene

@@ -11,7 +11,7 @@
 #include "main.h"
 
 const char* getVersion(){
-  return "v9.1b";
+  return "v1.0";
 }
 
 int main( void )
