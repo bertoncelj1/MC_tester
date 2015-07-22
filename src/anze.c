@@ -32,6 +32,7 @@ int prev_kable_2(void);
 int preveriTipke();
 void izpisiKonec();
 void drawLoadingBar();
+void drawVersion(int x, int y);
 void izpisiSporocilo(const char *sporocilo, const char *podSporocilo, int yZamik);
 
 
@@ -66,6 +67,7 @@ void potek_kontrole(void){
     
    
    case ZACETEK:
+   		initApps(); // ##########################################SAMO ZA TEST IZBRISI ME #############################################
         //pridobi prvo testno operacijo, ki jo bo izvajal
         operacijeState = getFirstOperation();
                 
@@ -82,6 +84,7 @@ void potek_kontrole(void){
         if (kontrola_vstavljen_LCD()){
             LCD_init_2();  //inicializira na nov priklopljen zaslon
             kontrolaStanja = PREVERJAJ;
+            pozYOperationOK = 20; //postavi pozicijo kamor se bojo izpisovali ze preverjeni programi na zacetek
             clear();
         }
         
@@ -161,7 +164,6 @@ void izvediOperacije(){
 		    break;
 		    
 		case PREVERI_TIPKE:
-                    //TODO popravi, da se bo napaka izvedla ze znotraj tipk
                     naprej = preveriTipke();
 		    break;
 		
@@ -177,6 +179,7 @@ void izvediOperacije(){
     
     //postavi nasljednjo operacijo    
     if(naprej){
+      drawOperationOK()//preden nastavi novo stanje se izpise operacijo
       operacijeState = getNextOperation();
     }
 
@@ -199,6 +202,23 @@ void drawLoadingBar(){
     GrX =0;  GrY = 3;
     printf("test %s (%d%%)", getCurrentOperationStr(), dobiNapredekOdxtek(100));
     LCD_sendC();
+}
+
+
+//na lokacijo (x, y) izpise verzijo programa
+void drawVersion(int x, int y){
+	GrX = x; GrY = y;
+	printf("%s", getVersion());
+	LCD_sendC();
+}
+
+
+//na levem delu zaslona izpise da se je operacija uspesno izvedla
+void drawOperationOK(){
+	GrX = 0; GrY = pozYOperationOK;
+	printf("%s OK",  getCurrentOperationStr());
+	LCD_sendC();
+	pozYOperationOK += 8;
 }
 
 
