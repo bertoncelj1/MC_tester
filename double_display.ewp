@@ -1959,7 +1959,7 @@
       <name>$PROJ_DIR$\src\graphics\graphics.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\src\graphics\graphics_glavni.c</name>
+      <name>$PROJ_DIR$\src\graphics\graphics_LCD2.c</name>
     </file>
   </group>
   <group>
@@ -1996,13 +1996,13 @@
     </file>
   </group>
   <file>
-    <name>$PROJ_DIR$\src\anze.c</name>
-  </file>
-  <file>
     <name>$PROJ_DIR$\src\ini.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\src\main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\src\run.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\src\str_funkcije.c</name>

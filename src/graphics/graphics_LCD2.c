@@ -1,5 +1,5 @@
 #include  "graphics.h"
-
+#include "graphics_LCD2.h"
 
 unsigned char P4LATCH2;  // stanje za LATCH 74HC573
 unsigned char DelayKey_2;  // zakasnitev ponavljanja tipk
@@ -8,7 +8,6 @@ unsigned char KeyBuf_2; // shranjene tipke
 
 unsigned char LCD2[1024]; //vsebina LCD priazovalnika, ki se testira
 
-//TODO:spremen da bo uporablov svoj array za ta drug ekran namest LCD 
 void LCD_sendC_2(void)
 {
     unsigned int i,p;
@@ -85,6 +84,8 @@ void LCD_init_2(void)
     LCD_cmd_2(0x00F0);  // (22) Test (konec testa)
     LE573set_2();   // P4 na 574 izhode
     back_light_ON();
+    clear_2();
+    LCD_sendC_2();
 }
 
 void LCD_input_port_2(void)
@@ -500,23 +501,7 @@ void led_diode(e_Led_diode_state state){
   }
 }
 
-void clear(){
-    for(int i = 0; i < 1024; ++i){ 
-        LCD[i]=0x00;
-    }
-}
 
-//pobrise samo doloceno obmocje na ekranu
-void clearArea(int start, int stop){
-    for(int i = start; i < stop; ++i){ 
-        LCD[i] =0x00;
-    }
-}
-
-//pobrise samo vrstice na ekranu
-void clearLine(int start, int end){
-  clearArea(start * 128, end * 128);
-}
 
 
 

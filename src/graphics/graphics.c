@@ -647,6 +647,26 @@ unsigned int MMC_wait(int max)
     return i;
 }
 
+
+void clear(){
+    for(int i = 0; i < 1024; ++i){ 
+        LCD[i]=0x00;
+    }
+}
+
+//pobrise samo doloceno obmocje na ekranu
+void clearArea(int start, int stop){
+    for(int i = start; i < stop; ++i){ 
+        LCD[i] =0x00;
+    }
+}
+
+//pobrise samo vrstice na ekranu
+void clearLine(int start, int end){
+  clearArea(start * 128, end * 128);
+}
+
+
 unsigned int MMC_cmd(int cmd, unsigned long par)
 {
     unsigned char buf[6];
@@ -2309,12 +2329,7 @@ int TipkaVhod(void)
     
     return v;
 }
-#define TkGor 0x10
-#define TkLev 0x02
-#define TkDes 0x08
-#define TkEnt 0x04
-#define TkDol 0x01
-//#define TkRept (TkGor+TkDol+TkLev+TkDes)
+
 //#define TkRept (TkGor+TkDol)
 
 //#define Tmax 6

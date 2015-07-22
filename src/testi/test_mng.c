@@ -7,21 +7,20 @@ void izpisiIzbiro(int izbira, int leviZnak, int desniZnak);
 void addNumberToStr(char *str, int st, int mesto, int vel);
 void prestejStOperacij();
 
-//TODO naredi da bo imela vsaka operacija init in delovno funkcijo
 
 /*DEFININICIJE TESTNIH PROGRAMOV*/
 //obvestilo: pri dodajanju novega testnega programa ne pozabite popraviti ST_TEST_PROG
 static s_testniProgram testFlash = {
   "MC 350 (flash)",			//opis programa
   0,					//trenutna testna operacija
-  KONTROLA_KABELNA, PREVERI_LEDICE, PREVERI_BACKLIGHT, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_LEDICE, PREVERI_BACKLIGHT, PREVERI_FLASH, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
     
 };
 
 static s_testniProgram testNormalen = {
   "MC 330",		        //opis programa
   0,				//trenutna testna operacija
-  KONTROLA_KABELNA, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };
 
 /*PRIVATNE SPREMENLJIVKE*/
@@ -41,7 +40,7 @@ void test_mng_init(){
   
   //init opis testov
   //opisi naj bodo dovolj kratiki da bodo primeri za izpis na ekranu
-  opisTesta[KONTROLA_KABELNA] = "kabel";
+  opisTesta[PREVERI_PINE] = "kabel";
   opisTesta[PREVERI_FLASH] = "flash";
   opisTesta[PREVERI_LEDICE] = "ledice";
   opisTesta[PREVERI_TIPKE] = "tipke";

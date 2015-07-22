@@ -1,13 +1,14 @@
 #include <msp430.h>
-#include "graphics.h"
 #include "ini.h"
-#include "head.h"
+#include "graphics.h"
+#include "graphics_LCD2.h"
 #include "scheduler.h"
 #include "timerb.h"
 #include "ledice_test.h"
 #include "flash_test.h"
 #include "test_mng.h"
-
+#include "run.h"
+#include "main.h"
 
 const char* getVersion(){
   return "v9.1b";

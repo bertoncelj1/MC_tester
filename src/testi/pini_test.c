@@ -1,6 +1,7 @@
 #include "pini_test.h"
 #include "error_mng.h"
 #include "graphics.h"
+#include "graphics_LCD2.h"
 
 // pin 3 tipka, 4 GND in 5 Vcc se izpustijo
 char testP1[6] = {0x01,0x02,0x04,0x08,0x40,0x80};

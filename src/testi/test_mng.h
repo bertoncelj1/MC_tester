@@ -14,7 +14,7 @@ enum izbireTestnihProgramov{
 
 #define TESTNE_OPR_FIRST 1 //index prve testne operacije
 typedef enum { 
-  KONTROLA_KABELNA = TESTNE_OPR_FIRST, 
+  PREVERI_PINE = TESTNE_OPR_FIRST, 
   PREVERI_FLASH, 
   PREVERI_LEDICE, 
   PREVERI_TIPKE, 

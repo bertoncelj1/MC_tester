@@ -1,5 +1,6 @@
 #include "backlight_test.h"
 #include "graphics.h"
+#include "graphics_LCD2.h"
 #include "error_mng.h"
 
 void delay(unsigned int d);

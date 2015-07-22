@@ -1,6 +1,8 @@
-//typedef signed short s16;
-//typedef unsigned short u16;
-#include "head.h"
+#include <stdio.h>
+
+
+typedef signed short s16;
+typedef unsigned short u16;
 #define MSP430X 0
 #define MSP1X 1
 
@@ -128,6 +130,9 @@ void IzpisLCD(void);
 void ObdTipk(void);
 void LCDtoRS(int tipka);
 void PrVJniz(const char *niz);
+void clear();
+void clearArea(int start, int stop);
+void clearLine(int start, int end);
 //******************************************************************************
 
 void LCD_fill(unsigned char d);
@@ -215,6 +220,22 @@ void LE573hold(void);  // P4 za LCD in tipke
 #define on_ALARMled      P5DIR |= 0x80; P5OUT  |= 0x80          //P5.7
 #define off_ALARMled      P5DIR &= ~0x80; P5OUT  &= ~0x80
 
+#define BUFFER_SIZE  0x1F //velikost buffra sme biti  (2^x -1)  7,15,31,63 ..
+#define STDOUT_LCD               0
+#define STDOUT_LCD_NORMAL_FONT   1
+#define STDOUT_LCD_LARGE_FONT    2 
+#define STDOUT_RS232             3
+#define STDOUT_FLASH             4
+#define TO_STRING                5
+#define Tmax 7
+
+
+#define TkGor 0x10
+#define TkLev 0x02
+#define TkDes 0x08
+#define TkEnt 0x04
+#define TkDol 0x01
+#define TkRept (TkGor+TkDol+TkLev+TkDes+TkEnt)
 
 /* SPI za data FLASH */
 /* --------------------------------
@@ -226,27 +247,6 @@ void LE573hold(void);  // P4 za LCD in tipke
 // velikost bloka (bytov)
 #define DFblokS  1024
 
-void LCD_sendC_2(void);
-void LCD_init_2(void);
-void LE573set_2(void);
-void LCD_cmd_2(unsigned char d);
-void LCD_input_port_2(void);
-void LCD_output_port_2(void);
 
-void LE573hold_2(void);
-void writeP1P2_out(char data);
-void writeP1P2_in(char data);
-char P2P1_out(void);
-char P2P1_in(void);
-char LCD_read_2(int rs);
-int TipkaVhod_2(void);
-unsigned char KGet_2(void);
-void zakasni(void);
-void BeriKey_2(void);
-char kontrola_vstavljen_LCD(void);
-void back_light_ON(void);
-void back_light_OFF(void);
-typedef enum {OFF, GREEN, RED}e_Led_diode_state;
-void led_diode(e_Led_diode_state state);
 //===========================================================================
 

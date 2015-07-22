@@ -1,19 +1,21 @@
 #include "tipke_test.h"
 #include "graphics.h"
+#include "graphics_LCD2.h"
 #include "error_mng.h"
 
 static int display_state;
 
 void izpis_pritisnjenih_tipk(void);
 void key_error(int t);
+void display_test();
 
-char vse = (TkGor | TkDol | TkLev | TkDes | TkEnt);//vse tipke ki se testirajo
+char naborTipk = (TkGor | TkDol | TkLev | TkDes | TkEnt);//vse tipke ki se testirajo
 
-static int prvic = 0;
+//TOD0 pobrisi tisti del ekrana na katerega bos risal
 void tipke_test_init(){
+      LCD_init_2();
       test_tipk_biti = 0;
       display_state = 0;
-      prvic = 0;
 }
 
 void display_test(){
@@ -51,30 +53,37 @@ void display_test(){
 }
 
 void  izpis_pritisnjenih_tipk(void){
-  clearLine(2,8);
   OutDev = STDOUT_LCD_NORMAL_FONT; 
   
   int sirEkr = 128;
   int visEkr = 64;
   
+  //postvavi izris za tipke v podane meje:
+  int x1 = sirEkr/2+10;
+  int y1 = 16;
+  int x2 = sirEkr;
+  int y2 = visEkr;
+  int velPis = 8; //velikost pisave
+  
+  
   if(test_tipk_biti & TkGor){
-    GrX =sirEkr/2;  GrY = visEkr/4;
+    GrX = x1 +(x2-x1-velPis)/2;  GrY = y1;
     printf("%s","+");
   }
   if(test_tipk_biti & TkDol){
-    GrX =sirEkr/2;  GrY = visEkr - visEkr/4;
+    GrX =x1 +(x2-x1-velPis)/2;  GrY = y2 - velPis;
     printf("%s","-");
   }
   if(test_tipk_biti & TkLev){
-    GrX =sirEkr / 4;  GrY = visEkr/2;
+    GrX =x1;  GrY = y1 + (y2-y1-velPis)/2;
     printf("%s","<");
   }
   if(test_tipk_biti & TkDes){
-    GrX =sirEkr - sirEkr / 4;  GrY = visEkr/2;
+    GrX =x2 - velPis;  GrY =  y1 + (y2-y1-velPis)/2;
     printf("%s",">");
   }
   if(test_tipk_biti & TkEnt){
-    GrX =sirEkr/2-8;  GrY = visEkr/2;
+    GrX =x1 +(x2-x1-velPis*2)/2;  GrY =  y1 + (y2-y1-velPis)/2;
     printf("%s","OK");
   }
   LCD_sendC();
@@ -107,11 +116,6 @@ void key_error(int t){
 int tipke_2(void){
   int tipka;
   
-  //TODO dodej da bo vsak test mu svojo init funkcijo
-  if(!prvic){
-    LCD_init_2();
-    prvic = 1;
-  }
   
   tipka=KeyBuf_2;
   KeyBuf_2 = 0;
@@ -121,13 +125,14 @@ int tipke_2(void){
   if(tipka){
     //odstrani vse tipke ki so bile ze pritisnjene
     tipka &= ~test_tipk_biti;
-    tipka &= vse;
+    //gleda samo tiste tike ki so predpisane v vse
+    tipka &= naborTipk;
     
     int i;
     int st = 0;
     for(i=0x80; i > 0; i>>=1){
       //pogleda ce obstaja tipka v naboru vseh tipk in ce je bila pritisnjena
-      if(i&vse && tipka&i){
+      if(i&naborTipk && tipka&i){
         test_tipk_biti |= i;
         st ++;
         display_state++;
@@ -142,15 +147,9 @@ int tipke_2(void){
     display_test();
     izpis_pritisnjenih_tipk();
     
-    if(test_tipk_biti == vse){
-      tipke_test_init();
-      return 1;
-    }
-    else{
-      return 0;
-    }
+    //1-test tipke koncan, 0-se v teku
+    return (test_tipk_biti == naborTipk);
   }
-  
   
   return 0;
 }

@@ -61,7 +61,7 @@ uint8_t preveriFlash(){
 	uint8_t uniqueID[20];
 	uint8_t uniqueLen = 20;
 	
-	flash_test_init(); // ponastavi pine za vsak slucaj, ce je to uporabnik pozabil
+	//flash_test_init(); // ponastavi pine za vsak slucaj, ce je to uporabnik pozabil
 	int vRedu = 1;
         if(!readId(&manID, &devID, uniqueID, &uniqueLen))vRedu = 0;
 	
