@@ -13,7 +13,7 @@
 //TODO add log file
 
 const char* getVersion(){
-  return "v1.0";
+  return "v1.01";
 }
 
 int main( void )

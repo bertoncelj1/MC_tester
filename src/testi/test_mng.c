@@ -17,10 +17,11 @@ static s_testniProgram testFlash = {
     
 };
 
+//TODO posodbi navodila
 static s_testniProgram testNormalen = {
   "MC 330",		        //opis programa
   0,				//trenutna testna operacija
-  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_FLASH_FAIL, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };
 
 /*PRIVATNE SPREMENLJIVKE*/
