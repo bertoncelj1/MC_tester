@@ -110,6 +110,25 @@ uint8_t preveriFlash(){
 }
 
 
+//preveri ali je flash vstavljen ali ne
+int preveriFlashOff(){
+      uint8_t manID = 0;
+      uint16_t devID = 0;
+      uint8_t uniqueID[20];
+      uint8_t uniqueLen = 20;
+      
+      int vRedu = 1;
+      emptyErrorBuff();
+      if(readId(&manID, &devID, uniqueID, &uniqueLen)){
+        addToErrorBuff("ReadID succ.\n");
+        vRedu = 0;
+      }
+      
+      //TODO: najdi se druge nacine da preveris ali je flash notri ali ne
+      
+      return vRedu;
+}
+
 //poslje Byte flashu. Posilja ga bit po bit iz leve proti desni, MSB first
 void sendByte(uint8_t byte){
 	int i;

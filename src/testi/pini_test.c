@@ -29,131 +29,131 @@ void writePInToError(char pin){
 }
 
 int prev_pine(void){
-	emptyErrorBuff();//sprazne errotBuffer in ga pripravi za zapis
+  emptyErrorBuff();//sprazne errorBuffer in ga pripravi za zapis
+  
+  char P1,P2,P3;
+  char pin;
+  
+  P1 = 0x01 | 0x02 | 0x04 | 0x08 | 0x40 | 0x80;
+  P2 = 0x01 | 0x02 | 0x04 | 0x08 | 0x10 | 0x40 | 0x80;
+  P3 = 0x01 | 0x04 | 0x08;
+  
+  //zapovni si vrednosti registrov
+  char m_P1DIR = P1DIR;
+  char m_P1OUT = P1OUT;
+  char m_P1REN = P1REN;
+  
+  char m_P2DIR = P2DIR;
+  char m_P2OUT = P2OUT;
+  char m_P2REN = P2REN;
+  
+  char m_P3DIR = P3DIR;
+  char m_P3OUT = P3OUT;
+  char m_P3REN = P3REN;
+  
+  int vRedu = 1;
+  
+  for(int i = 0; i < 6; ++i)
+  {
+    P1DIR = 0;  P1REN = P1;  P1OUT = 0;
+    P2DIR = 0;  P2REN = P2;  P2OUT = 0;
+    P3DIR = 0;  P3REN = P3;  P3OUT = 0;
     
-    char P1,P2,P3;
-    char pin;
+    P1DIR  = testP1[i]; 
+    P1OUT =  testP1[i];
+    P1REN = ~ testP1[i];
+    zakasni();
+    pin = P1IN & ~(testP1[i] | 0x10 | 0x20);
+    if (pin  != 0){
+      writePInToError(pinP1[i]);
+      vRedu = 0;
+    }
+    pin = P2IN & ~(0x20);
+    if (pin  != 0){
+      writePInToError(pinP1[i]);
+      vRedu = 0;
+    }
+    pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
+    if (pin  != 0){// preskoci se tipka
+      writePInToError(pinP1[i]);
+      vRedu = 0;
+    }
+  }
+  
+  
+  //test P2
+  for(int i = 0; i < 7; ++i)
+  {
+    P1DIR = 0;  P1REN = P1;  P1OUT = 0;
+    P2DIR = 0;  P2REN = P2;  P2OUT = 0;
+    P3DIR = 0;  P3REN = P3;  P3OUT = 0;
     
-    P1 = 0x01 | 0x02 | 0x04 | 0x08 | 0x40 | 0x80;
-    P2 = 0x01 | 0x02 | 0x04 | 0x08 | 0x10 | 0x40 | 0x80;
-    P3 = 0x01 | 0x04 | 0x08;
+    P2DIR  = testP2[i]; 
+    P2OUT =  testP2[i];
+    P2REN = ~ testP2[i];
+    zakasni();
+    pin = P1IN & ~(0x10 | 0x20);
+    if (pin  != 0){
+      writePInToError(pinP2[i]);
+      vRedu = 0;
+    }
+    pin = P2IN & ~(testP2[i] | 0x20);
+    if (pin  != 0){
+      writePInToError(pinP2[i]);
+      vRedu = 0;
+    }
+    pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
+    if (pin  != 0){// preskoci se tipka
+      writePInToError(pinP2[i]);
+      vRedu = 0;
+    }
+  }
+  
+  //test P3
+  for(int i = 0; i < 2; ++i)
+  {
+    P1DIR = 0;  P1REN = P1;  P1OUT = 0;
+    P2DIR = 0;  P2REN = P2;  P2OUT = 0;
+    P3DIR = 0;  P3REN = P3;  P3OUT = 0;
     
-    //zapovni si vrednosti registrov
-    char m_P1DIR = P1DIR;
-    char m_P1OUT = P1OUT;
-    char m_P1REN = P1REN;
-    
-    char m_P2DIR = P2DIR;
-    char m_P2OUT = P2OUT;
-    char m_P2REN = P2REN;
-    
-    char m_P3DIR = P3DIR;
-    char m_P3OUT = P3OUT;
-    char m_P3REN = P3REN;
-    
-    int vRedu = 1;
-    
-    for(int i = 0; i < 6; ++i)
-    {
-        P1DIR = 0;  P1REN = P1;  P1OUT = 0;
-        P2DIR = 0;  P2REN = P2;  P2OUT = 0;
-        P3DIR = 0;  P3REN = P3;  P3OUT = 0;
-        
-        P1DIR  = testP1[i]; 
-        P1OUT =  testP1[i];
-        P1REN = ~ testP1[i];
-        zakasni();
-        pin = P1IN & ~(testP1[i] | 0x10 | 0x20);
-        if (pin  != 0){
-        	 writePInToError(pinP1[i]);
-        	 vRedu = 0;
-        }
-        pin = P2IN & ~(0x20);
-        if (pin  != 0){
-			writePInToError(pinP1[i]);
-			vRedu = 0;
-        }
-        pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
-        if (pin  != 0){// preskoèi se tipka
-			writePInToError(pinP1[i]);
-			vRedu = 0;
-        }
+    P3DIR  = testP3[i]; 
+    P3OUT =  testP3[i];
+    P3REN = ~ testP3[i];
+    zakasni();
+    pin = P1IN & ~(0x10 | 0x20);
+    if (pin  != 0){
+      writePInToError(pinP3[i]);
+      vRedu = 0;
     }
     
-    
-    //test P2
-    for(int i = 0; i < 7; ++i)
-    {
-        P1DIR = 0;  P1REN = P1;  P1OUT = 0;
-        P2DIR = 0;  P2REN = P2;  P2OUT = 0;
-        P3DIR = 0;  P3REN = P3;  P3OUT = 0;
-        
-        P2DIR  = testP2[i]; 
-        P2OUT =  testP2[i];
-        P2REN = ~ testP2[i];
-        zakasni();
-        pin = P1IN & ~(0x10 | 0x20);
-        if (pin  != 0){
-            writePInToError(pinP2[i]);
-            vRedu = 0;
-        }
-        pin = P2IN & ~(testP2[i] | 0x20);
-        if (pin  != 0){
-            writePInToError(pinP2[i]);
-            vRedu = 0;
-        }
-        pin = P3IN & ~(0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
-        if (pin  != 0){// preskoci se tipka
-            writePInToError(pinP2[i]);
-            vRedu = 0;
-        }
+    pin = P2IN & ~(0x20);
+    if (pin  != 0){
+      writePInToError(pinP3[i]);
+      vRedu = 0;
     }
     
-    //test P3
-    for(int i = 0; i < 2; ++i)
-    {
-        P1DIR = 0;  P1REN = P1;  P1OUT = 0;
-        P2DIR = 0;  P2REN = P2;  P2OUT = 0;
-        P3DIR = 0;  P3REN = P3;  P3OUT = 0;
-        
-        P3DIR  = testP3[i]; 
-        P3OUT =  testP3[i];
-        P3REN = ~ testP3[i];
-        zakasni();
-        pin = P1IN & ~(0x10 | 0x20);
-        if (pin  != 0){
-            writePInToError(pinP3[i]);
-            vRedu = 0;
-        }
-        
-        pin = P2IN & ~(0x20);
-        if (pin  != 0){
-            writePInToError(pinP3[i]);
-            vRedu = 0;
-        }
-        
-        pin = P3IN & ~(testP3[i] | 0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
-        if (pin  != 0){// preskoci se tipka
-            writePInToError(pinP3[i]);
-            vRedu = 0;
-        }
+    pin = P3IN & ~(testP3[i] | 0x01 | 0x02 | 0x10 | 0x20 | 0x40 | 0x80);
+    if (pin  != 0){// preskoci se tipka
+      writePInToError(pinP3[i]);
+      vRedu = 0;
     }
-    
-    //ponastavi vrednosti rtegistrov
-    P1DIR = m_P1DIR;
-    P1OUT = m_P1OUT;
-    P1REN = m_P1REN;
-    
-    P2DIR = m_P2DIR;
-    P2OUT = m_P2OUT;
-    P2REN = m_P2REN;
-    
-    P3DIR = m_P3DIR;
-    P3OUT = m_P3OUT;
-    P3REN = m_P3REN;
-    
-    return vRedu;
-    
+  }
+  
+  //ponastavi vrednosti rtegistrov
+  P1DIR = m_P1DIR;
+  P1OUT = m_P1OUT;
+  P1REN = m_P1REN;
+  
+  P2DIR = m_P2DIR;
+  P2OUT = m_P2OUT;
+  P2REN = m_P2REN;
+  
+  P3DIR = m_P3DIR;
+  P3OUT = m_P3OUT;
+  P3REN = m_P3REN;
+  
+  return vRedu;
+  
 }
 
 void zakasni(void){

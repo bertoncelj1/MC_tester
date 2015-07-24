@@ -127,6 +127,10 @@ void izvediOperacije(){
     naprej = preveri_backlight();
     break;
     
+  case PREVERI_FLASH_OFF:
+    naprej = operacijaFlashOff();
+    break;
+    
   case ZAKLJUCI:
     izpisiSporocilo("TEST" "\n" "KONCAN", "odstranite napravo", 10);
     kontrolaStanja = CAKAJ_RESET;
@@ -147,7 +151,8 @@ void initOperation(){
   switch (operacijeState){
   case PREVERI_PINE:
     break;
-    
+  
+  case PREVERI_FLASH_OFF: 
   case PREVERI_FLASH:
     flash_test_init();
     break;
@@ -246,6 +251,21 @@ int operacijaFlash(){
   kontrolaStanja =  NAPAKA;
   return 0;
   
+}
+
+//isto kakor operacija flash, samo da je ta negirana
+//uporablja se takrat, ko naprava ne sme vsebovati flasha
+int operacijaFlashOff(){
+  if(preveriFlashOff()){
+    return 1;
+  }
+  
+  //v primeru, da flash deluje izpise obvestillo
+  izpisiError("NAPAKA SPOMINA", "flash je vklopljen!");	
+  
+  //gre v stanje NAPAKA kjer caka na reset
+  kontrolaStanja =  NAPAKA;
+  return 0;
 }
 
 int preveri_backlight(){
