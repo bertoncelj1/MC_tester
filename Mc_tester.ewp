@@ -647,7 +647,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state>double_display.d43</state>
+          <state>Mc_tester.d43</state>
         </option>
         <option>
           <name>OutputFormat</name>
@@ -1959,7 +1959,13 @@
       <name>$PROJ_DIR$\src\graphics\graphics.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\graphics\graphics.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\graphics\graphics_LCD2.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\graphics\graphics_LCD2.h</name>
     </file>
   </group>
   <group>
@@ -1968,7 +1974,13 @@
       <name>$PROJ_DIR$\src\scheduler\scheduler.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\scheduler\scheduler.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\scheduler\TIMERB.C</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\scheduler\TIMERB.H</name>
     </file>
   </group>
   <group>
@@ -1977,35 +1989,68 @@
       <name>$PROJ_DIR$\src\testi\backlight_test.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\testi\backlight_test.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\testi\error_mng.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\testi\error_mng.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\src\testi\flash_test.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\testi\flash_test.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\testi\ledice_test.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\testi\ledice_test.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\src\testi\pini_test.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\testi\pini_test.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\testi\test_mng.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\src\testi\test_mng.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\src\testi\tipke_test.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\testi\tipke_test.h</name>
     </file>
   </group>
   <file>
     <name>$PROJ_DIR$\src\ini.c</name>
   </file>
   <file>
+    <name>$PROJ_DIR$\src\ini.h</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\src\main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\src\main.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\src\run.c</name>
   </file>
   <file>
+    <name>$PROJ_DIR$\src\run.h</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\src\str_funkcije.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\src\str_funkcije.h</name>
   </file>
 </project>
 

@@ -17,7 +17,7 @@ static void izvediOperacije();
 static int preveriLedice();
 static int preveriPine();
 static int operacijaFlash();
-static int operacijaFlashFail();
+static int operacijaFlashOff();
 static int preveri_backlight();
 static char kontrola_vstavljen_LCD(void);
 static int prev_kable_2(void);

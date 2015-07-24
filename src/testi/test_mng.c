@@ -21,7 +21,7 @@ static s_testniProgram testFlash = {
 static s_testniProgram testNormalen = {
   "MC 330",		        //opis programa
   0,				//trenutna testna operacija
-  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_FLASH_FAIL, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
+  PREVERI_PINE, PREVERI_BACKLIGHT, PREVERI_FLASH_OFF, PREVERI_TIPKE, ZAKLJUCI //nastete vse operacije, ki jih ta test izvede      
 };
 
 /*PRIVATNE SPREMENLJIVKE*/
@@ -46,6 +46,7 @@ void test_mng_init(){
   opisTesta[PREVERI_LEDICE] = "ledice";
   opisTesta[PREVERI_TIPKE] = "tipke";
   opisTesta[PREVERI_BACKLIGHT] = "backlight";
+  opisTesta[PREVERI_FLASH_OFF] = "flash off";
   opisTesta[ZAKLJUCI] = "konec";
 }
 

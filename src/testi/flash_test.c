@@ -110,6 +110,35 @@ uint8_t preveriFlash(){
 }
 
 
+//preveri ali je flash vstavljen ali ne
+int preveriFlashOff(){
+      uint8_t manID = 0;
+      uint16_t devID = 0;
+      uint8_t uniqueID[20];
+      uint8_t uniqueLen = 20;
+      
+      int vRedu = 1;
+      emptyErrorBuff();
+      if(readId(&manID, &devID, uniqueID, &uniqueLen)){
+        addToErrorBuff("ReadID ON\n");
+        vRedu = 0;
+      }
+      
+      set_chipSel_1;
+      if(get_output){
+        addToErrorBuff("output high\n");
+        vRedu = 0;
+      }
+      
+      dir_input_0;
+      if(get_input){
+        addToErrorBuff("input high\n");
+        vRedu = 0;
+      }
+      
+      return vRedu;
+}
+
 //poslje Byte flashu. Posilja ga bit po bit iz leve proti desni, MSB first
 void sendByte(uint8_t byte){
 	int i;
