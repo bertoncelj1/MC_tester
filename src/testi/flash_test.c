@@ -120,21 +120,11 @@ int preveriFlashOff(){
       int vRedu = 1;
       emptyErrorBuff();
       if(readId(&manID, &devID, uniqueID, &uniqueLen)){
-        addToErrorBuff("ReadID ON\n");
+        addToErrorBuff("ReadID succ.\n");
         vRedu = 0;
       }
       
-      set_chipSel_1;
-      if(get_output){
-        addToErrorBuff("output high\n");
-        vRedu = 0;
-      }
-      
-      dir_input_0;
-      if(get_input){
-        addToErrorBuff("input high\n");
-        vRedu = 0;
-      }
+      //TODO: najdi se druge nacine da preveris ali je flash notri ali ne
       
       return vRedu;
 }
